@@ -1,0 +1,43 @@
+.sebm-google-map-container {
+    height: 100%;
+    width: 100%; 
+ }
+
+.assetlist-container {
+	width: 103%;
+	height: 250px;
+}
+
+.assetlists-container {
+	width: 100%;
+	height: 100%;
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
+/*.fleetDisMap1{	
+      height: 111s%;
+    width: 100%;  
+}*/
+
+
+/*------------------------------Mobile version*/
+
+@media only screen and (max-width: 500px) {
+	.assetlists-container{
+		width: 105%;
+		height: 250px;
+	}
+	.fleetDisMap1{	
+    height: 450px;
+    width: 104%;    
+}
+}
+/*------------------------------Tab version*/
+  @media (max-width:900px) and (min-width:600px) {
+  	.assetlists-container{
+		width: 106%;
+		height: 250px;
+	}
+  }
+

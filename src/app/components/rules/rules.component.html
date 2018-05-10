@@ -1,0 +1,184 @@
+<div id="containerdata">
+                      <!-- *************************Nav Bar Tabs-->
+          <div class="rowalignshow">
+                <div class="row fleettyperow">
+                      <div class="nav-content fleetDisNavContent">
+                          <ul class="tabs tabs-transparent">
+                                <li class="tab fleetDisctab">
+                                <a class="OverviewTab" [href]="assetUrl">Overview</a>
+                                </li>
+                                <li class="tab fleetDisctab">
+                                <a class="UtilisationTab" href="#utilisation">Utilization</a>
+                                </li>
+                                <li class="tab fleetDisctab">
+                                <a class="HealthTab" href="#health">Health</a>
+                                </li>
+                                <li class="tab fleetDisctab">
+                                <a class="RulesTab active-nav" href="#rules">Rules</a>
+                                </li>
+                                <li class="tab fleetDisctab">
+                                  <a class="ETATab" href="#eta">ETA</a>
+                                </li>
+                                 <li class="tab fleetDisctab">
+                                  <a class="SOSTab" href="#sos">Nearby Dealer</a>
+                                </li>
+                                 <li class="tab fleetDisctab">
+                                  <a class="RouteReplayTab" href="#routereplay">Route Replay</a>
+                                </li>
+                                <li class="tab fleetDisctab">
+                                <a class="DataTab" href="#data">Data</a>
+                                </li>
+                                <li class="tab fleetDisctab" *ngIf="userType === 'Dealer'">
+                                <a class="ServiceTab" href="#service">Service</a>
+                                </li>
+                          </ul>
+                      </div>
+                </div>
+          </div>
+
+          <!-- ******************************Event Data Tab col 1-->
+<div class="row fleettyperow active" id="utilisation-screen">
+  <div class="row fleettyperow">
+    <div class="col s12 m10 l10 offset-m2 offset-l2">
+      <div class="col s12 m12 l12">
+        <div class="card PreferencesPatternCard">
+          <div class="card-content">
+            <div class="col s12 m12 l12 responsive-table">
+              <div class="row">
+                <div class="col s12 m4 l4 UtilisationPatternTitle">
+                  Preferences
+                </div>
+                 <div class="col l6 push-l4 asset-title">Asset Name - {{assetSerialNo}}</div>
+              </div>
+              <div class="row">
+                <div class="col s12 m12 l12">
+                  <div class="row">
+                    <div class="col s4 m12 l7 push-l1 data-table-header">Event</div>
+                    <div class="col s4 m12 l1 pull-l2 data-table-header">Threshold</div>
+                    <div class="col s4 m12 l2 push-l1 data-table-header">Notifications (SMS / Email)</div>
+                  </div>
+                  <div *ngFor="let ruleSet of rulesObject;
+                            let index =index;
+                            let isOdd=odd;
+                            let isEven=even">
+                    <div *ngFor="let rule of ruleSet">
+                      <div *ngIf="rule.type === 'preferences'">
+                        <div class="row" *ngFor="
+                            let config of rule.result
+                        "
+                         [class.eventdata-table-contents]="isOdd"
+                         [class.eventdata-table-contents1]="isEven"
+                        >
+                          <div class="col s12 m12 l7 push-l1 event-name">
+                            {{config.alias}}
+
+                          </div>
+                          <div class="col s4 m12 l1 pull-l2 threshold-col">
+                            <input [(ngModel)]="config.value" type="text" value="config.value" (blur)= "validationNumber(config.value)">
+                          </div>
+                          <div class="col s4 m12 l2 push-l1 notifications-col">
+                            <input type="checkbox" id="test5" checked="checked" disabled="disabled" />
+                            <label for="test5"></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+              <div class="col s5 m5 l4 push-s7 push-l8">
+              <button class="btn_btncolr" (click)="savePreferencesRule()">Save</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- ****************************** Rules Tab GeoFence Data-->
+<div *ngFor="let ruleSet of rulesObject">
+  <div class="row fleettyperow active rules-tab" id="utilisation-screen" *ngFor="let rule of ruleSet; index as i" >
+  <div *ngIf="rule.type !== 'preferences'">
+    <div class="row fleettyperow">
+        <div class="col s12 m10 offset-m2">
+          <div class="col s12 m12 l12">
+            <ul>
+              <li>
+                <div class="collapsible-header geofence-rule-header">
+                  <div *ngIf="rule.type === 'timeFence'">
+                 <i class="fa fa-compass rules-tab-block-icons"></i>
+                   Time Fence Rule   {{ i + 1 }} :  <span class="aliasName-color">&nbsp;&nbsp;&nbsp;&nbsp;{{rule.name}}</span>
+                        <i 
+                    [ngClass]="rule.isVisible ? 'fa fa-minus-circle' :'fa fa-plus-circle'"
+                    (click)="toggleRuleBlock(rule.name)"
+                    aria-hidden="true"></i>
+                   </div>
+                    <div *ngIf="rule.type === 'geoFence'"> 
+                    <i class="fa fa-location-arrow rules-tab-block-icons"></i>
+                   Geo Fence Rule   {{ i + 1 }} :<span class="aliasName-color"> &nbsp;&nbsp;&nbsp;&nbsp; {{rule.name}}</span>
+                        <i 
+                    [ngClass]="rule.isVisible ? 'fa fa-minus-circle' :'fa fa-plus-circle'"
+                    (click)="toggleRuleBlock(rule.name)"
+                    aria-hidden="true"></i>
+                   </div>
+             
+                </div>
+                <div class="col l12 geofence-contents" *ngIf="rule.isVisible" >
+                    <div class="col l6">
+                      <div class="row"  *ngFor="let config of rule.result">
+                        <div class="col s6 m6 l4 geofence-inputlabel">
+                          {{config.alias}}
+                        </div>
+                        <div class="col s6 m6 l6 push-l1" *ngIf = "!(config.name === 'OncePerDay')">
+                          <input [(ngModel)]="config.value" type="text" value="config.value" step="0.01" required>
+                        </div>
+                        <div class="col s6 m6 l6 push-l1 checkbox-rules-div" *ngIf = "config.name === 'OncePerDay'">
+                       <input type="checkbox" id="{{config.value}}"  [(ngModel)]="config.value"/>
+                        <label for="{{config.value}}"></label>
+                        </div>
+                      
+
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 m6 l4 push-l4 geo-fence-button-div">
+                          <div class="form-group">
+                            <button class="btn btn_btncolr"
+                            (click)="submitServiceConfig(rule.name)">SET</button>
+                          </div>
+                        </div>
+  
+                      </div>
+                    </div>
+                    <div class="col s12 m6 l6" *ngIf="rule.type === 'geoFence' && rule.isMap">
+                      <div class="row">
+                        <div class="col s12 m4 l4 pull-l1 UtilisationPatternTitle">
+                          <span class="">Geo Fence Map</span>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col s12 m12 l12 geofence-col-style">
+                          <div class="col l12">
+                          <div id="geoFence-map-style">
+                            <map [mapdata]="rule.mapData" [centers]="rule.mapCenter" [config]="mapConfig" (updatedLocation) = "onUpdatedLocation($event)" ></map>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+<!-- </div> -->
+

@@ -1,0 +1,17 @@
+<div [hidden]="!loading" class="spin-loader">
+  <app-loader [loading]="!loading"></app-loader>
+</div>
+<div class="col s12 m12 l12">
+  <div class="card hoverable dashoardActiveAlertCard">
+    <div class="card-content">
+      <span class="titleactivealerts ">Alerts by Category</span>
+      <div class="cardrowalign">
+        <stackedbar-chart *ngIf="allAlertsChart"
+        [data]="allAlertsChart"
+        [yAxisLabel]="yLabel"
+        [legend] = "true"
+        ></stackedbar-chart>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,130 @@
+<!-- <div [hidden]="!loading" class="spin-loader">
+  <app-loader [loading]="!loading"></app-loader>
+</div> -->
+<div id="containerdata">
+  <div class="rowalignshow"> 
+    <div class="row fleettyperow">
+      <div class="nav-content fleetDisNavContent">
+        <ul class="tabs tabs-transparent">
+          <li class="tab fleetDisctab">
+            <a class="OverviewTab" [href]="assetUrl">Overview</a>
+          </li>
+          <li class="tab fleetDisctab">
+            <a class="UtilisationTab active-nav" href="#utilisation">Utilization</a>
+          </li>
+          <li class="tab fleetDisctab">
+            <a class="HealthTab" href="#health">Health</a>
+          </li>
+          <li class="tab fleetDisctab">
+            <a class="RulesTab" href="#rules">Rules</a>
+          </li>
+          <li class="tab fleetDisctab">
+            <a class="ETATab" href="#eta">ETA</a>
+          </li>
+          <li class="tab fleetDisctab">
+            <a class="SOSTab" href="#sos">Nearby Dealer</a>
+          </li>
+          <li class="tab fleetDisctab">
+            <a class="RouteReplayTab" href="#routereplay">Route Replay</a>
+          </li>
+          <li class="tab fleetDisctab">
+            <a class="DataTab" href="#data">Data</a>
+          </li>
+          <li class="tab fleetDisctab" *ngIf="userType === 'Dealer'">
+            <a class="ServiceTab" href="#service">Service</a>
+          </li>
+        </ul>
+      </div> 
+    </div>
+  </div>
+  <!-- utilisation start -->
+  <div class="row fleettyperow active" id="utilisation-screen">
+    <div class="row fleettyperow">
+      <div class="col s12 m10 offset-m2">
+        <div class="col s12 m12">
+          <div class="card UtilisationPatternCard">
+            <div class="card-content">
+              <div class="row">
+                <div class="col s12 m4 l4"> 
+                  <span class="UtilisationPatternTitle">Utilization Pattern</span>
+                </div>
+                <div  [hidden]="!loading" class="row spin-loader">
+                  <app-loader [loading]="!loading"></app-loader>
+                </div>
+                <div class="col s6 m5 l6 push-l4 asset-title">Asset Name - {{assetSerialNo}}</div>
+             
+              </div>
+              <div class="col s12 ActiveAlertDiv">
+               <div class="row">
+                <div class="col s12 m5 l4">
+                  <div>
+                    <label>Start Date:</label>
+                    <div [ngClass]="{'invaliddata' : uiErrorStartDate == true}">
+                      <my-date-picker [options]="myDatePickerOptions" (dateChanged)="onDateChanged($event, 'startDate')" [(ngModel)]="startInput"></my-date-picker>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 m5 l4">
+                  <div>
+                    <label>End Date:</label>
+                    <div [ngClass]="{'invaliddata' : uiErrorEndDate == true}">
+                      <my-date-picker [options]="myDatePickerOptions" (dateChanged)="onDateChanged($event, 'endDate')" [(ngModel)]="endInput"></my-date-picker>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 m2 l2 push-s3 push-l1">
+                  <button type="button" class="util-submit" (click)="getUtilizationData()" >Submit</button>
+                  <!--  <button type="button" *ngIf ='!disableSubmit' class="util-submit " (click)="getUtilizationData()">Submit</button> -->
+                </div>
+              </div>
+              <div *ngIf="chartData === undefined || chartData.length == 0" class="error-msg">
+                <p><i class="fa fa-line-chart"></i>&nbsp;&nbsp;Data is not available</p>
+              </div>
+              <bar-chart *ngIf="chartData !== undefined && chartData.length > 0" [data]="chartData" [yAxisLabel]="yLabel"></bar-chart>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- service duel information -->
+<div class="row fleettyperow active" id="utilisation-screen">
+  <div class="row fleettyperow">
+    <div class="col s12 m10 offset-m2">
+      <div class="col s12 m12">
+        <div class="card ServiceDueCard" *ngIf="serviceDue != undefined && serviceDue.length > 0 ">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m4 l4"> 
+                <span class="UtilisationPatternTitle">Service Due Information</span>
+              </div>
+            </div>
+            <div class="col s12 l12 ActiveAlertDiv">
+             <div class="row">
+              <div class="col s12 m12 l12">
+                <div class="row" *ngFor = "let item of serviceDue">
+                  <div class="col s6 m6 l4 currentODOText">{{item.alias}}</div>
+                  <div class="col s6 m6 l8 disabled-txt-color "><input type="text" disabled value = {{item.value}}>
+                  </div>
+                </div>
+              <!--   <div *ngIf="chartData === undefined && !loading" class="error-msg">
+                <p><i class="fa fa-line-chart"></i>&nbsp;&nbsp;Data is not available</p>
+                </div> -->
+                
+                <div class="row">
+                  <div class="col s5 m5 l4 push-s3 push-m3 push-l9">
+                   <button type="button" class="util-submit" (click)="ServiceCompleted()">Services Complete</button>
+                 </div>
+               </div>
+             </div>       
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+<!-- overview ends -->
+</div>
+</div>

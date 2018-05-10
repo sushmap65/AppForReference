@@ -1,0 +1,141 @@
+<div id="containerdata">
+                      <!-- *************************Nav Bar Tabs-->
+  <div class="rowalignshow"> 
+    <div class="row fleettyperow">
+      <div class="nav-content fleetDisNavContent">
+          <ul class="tabs tabs-transparent">
+                <li class="tab fleetDisctab">
+                <a class="OverviewTab" [href]="assetUrl">Overview</a>
+                </li>
+                <li class="tab fleetDisctab">
+                <a class="UtilisationTab" href="#utilisation">Utilization</a>
+                </li>
+                <li class="tab fleetDisctab">
+                <a class="HealthTab" href="#health">Health</a>
+                </li>
+                <li class="tab fleetDisctab">
+                <a class="RulesTab" href="#rules">Rules</a>
+                </li>
+                <li class="tab fleetDisctab">
+                  <a class="ETATab active-nav" href="#eta">ETA</a>
+                </li>
+                 <li class="tab fleetDisctab">
+                  <a class="SOSTab" href="#sos">Nearby Dealer</a>
+                </li>
+                 <li class="tab fleetDisctab">
+                  <a class="RouteReplayTab" href="#routereplay">Route Replay</a>
+                </li>
+                <li class="tab fleetDisctab">
+                <a class="DataTab" href="#data">Data</a>
+                </li>
+                <li class="tab fleetDisctab" *ngIf="userType === 'Dealer'">
+                <a class="ServiceTab" href="#service">Service</a>
+                </li>
+          </ul>
+      </div> 
+    </div>
+  </div>
+
+          <!-- ******************************Event Data Tab col 1-->
+<div class="row fleettyperow active" id="utilisation-screen">
+  <div class="row fleettyperow">
+    <div class="col s12 m10 offset-m2">
+      <div class="col s12 m12">
+          <div class="card PreferencesPatternCard">
+            <div class="card-content">
+              <div class="col s12 m6 l12 responsive-table">
+                <div class="row">
+                  <div class="col s5 m4 l4 UtilisationPatternTitle"> 
+                    Vehicle Navigation
+                  </div>
+                  <div class="col s7 m6 l6 push-m2 push-l2 asset-title">Asset Name - {{assetSerialNo}}</div>
+                </div>
+              <div class="row form-group" style="margin-top: 0%;">
+                <div class="col s12 m12 l12">
+                  <div class="row">
+                    <div class="col s5 m5 l5 last-rep-time-txt" for="disabled1" style="padding-top: 3%;">
+                      <p>Last Reported Time</p>
+                    </div>
+                    <div class="col s7 m7 l7 curr-loc-txt">
+                      <input type="text" id="disabled1"  disabled value={{lastReported}}>
+                    </div>
+                    
+                  </div>
+              <div class="row">
+                <div class=" col s5 m5 l5 curr-loc-txt" for="disabled2" style="padding-top: 3%;">
+                    <p>Current Location</p></div>
+                <div class="col s7 m7 l7 curr-loc-txt">
+                  <input type="text" id="disabled2"  disabled value= {{currentLocation}}>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s5 m5 l5 curr-loc-txt" style="padding-top: 3%;">
+                  <p>Stop 1: Location</p></div>
+                <div class="col s7 m7 l7">
+                  <input type="text" placeholder="location 1" class="form-control" #search1 [formControl]="searchControl">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s5 m5 l5 curr-loc-txt" style="padding-top: 3%;">
+                  <p>Stop 2: Location</p></div>
+                <div class="col s7 m7 l7">
+                  <input type="text" placeholder="location 2" class="form-control" #search2 [formControl]="searchControl">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s5 m5 l5 curr-loc-txt" style="padding-top: 3%;">
+                  <p>Stop 3: Location</p></div>
+              <div class="col s7 m7 l7">
+                <input type="text" placeholder="location 3" class="form-control" #search3 [formControl]="searchControl">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s5 m5 l5 curr-loc-txt" style="padding-top: 3%;">
+                <p>Destination</p></div>
+              <div class="col s7 m7 l7">
+                <input type="text" placeholder="destination" class="form-control" #search4 [formControl]="searchControl">
+              </div>
+            </div>
+            <div class="row">
+              <div *ngIf='estimatedTime' class="col s5 m5 l5 curr-loc-txt" style="padding-top: 3%;"><p>Estimated Time</p></div>
+            <div class="col s7 m7 l7">
+              <input *ngIf='estimatedTime' type="text" value = {{estimatedTime}} [formControl]="searchControl">
+            </div>
+          </div>
+        </div>
+      </div>
+			<div class="row">
+				<div class="col s5 m5 l5 push-s1 push-l5">
+					<button class="btn_btncolr" (click) = "navigate()">Navigate</button>
+			</div>
+			<div class="col s5 m5 l5 push-s2 push-l4">
+				<button class="btn_btncolr" (click) = "ClearPlaces()">Clear</button>
+			</div>
+<!--  </div> -->
+			</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+			<div class="row fleettyperow" *ngIf = 'mapdata !== undefined'>
+				<div class="col s12 m10 offset-m2">
+					<div class="col s12 m12">
+						<div class="card PreferencesPatternCard">
+							<div class="card-content">
+								<div class="col s12 m6 l12">
+									<div class="row">
+										<div class="col s12 m4 l4 card-heading">Map Details</div>
+											<div *ngIf = 'mapdata' id="eta-location-mapContainer" >
+											<map [direction]="mapdata" [mapdata]="mapdata"></map>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div> 
+					</div>
+				</div>
+			</div>
+</div>

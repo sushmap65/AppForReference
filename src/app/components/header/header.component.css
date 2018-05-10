@@ -1,0 +1,365 @@
+.navStyle{
+    background: #ffffff!important;
+   /* height: 10%;*/
+    /*position: fixed;*/
+    z-index: 10;
+    border: solid 0.5px #e7ebf1!important;
+    box-shadow: none!important;
+}
+.brandlogo1{
+    margin-left: 23px;
+    margin-top: 20px;
+    width: 229px;
+    height: 37px;
+}
+.imgCircle {
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    margin-top: -8px;
+    border: 1px solid #a1a1a1;
+}
+.navMobile{
+	width: 20%;
+    margin-top: -7%;
+}
+.userNameStyle{
+    color:  #9b9b9b;
+    padding-top: 7px;
+    margin-left: -25%;
+}
+.userimg{
+    padding-left: 75%;
+}
+.mobile-nav-button i{
+    display: none;
+}
+.mob-leftNav-show{
+    display: none;
+}
+
+/*------------------------------Mobile version*/
+@media only screen and (max-width: 500px) {
+
+    .mobile-nav-hamburger-menu{
+        color: black;
+        margin-left: -5%;
+    }
+    .mobile-nav-button i{
+        display: inline;
+        font-size: 18px;
+    }
+    .mobile-nav-button{
+        margin-top: -21%;
+        padding-left: 0;
+    }
+    .navStyle{
+        height: 12%!important;
+        position: fixed;z-index: 10;
+        border: solid 0.5px #e7ebf1;
+        box-shadow: none;
+    }
+    .userNameStyle{
+        display: none!important;
+    }
+    .userimg{
+        display: none!important;
+    }
+    .mobile-left-nav-hide {
+        display: none;
+    }
+    .mobile-left-nav-show {
+        display: block;
+    }
+    /*-----------------------------------------------------------------new start*/
+    .mobile-sidebarItem.active {
+    border-left: 4px solid #ff8192;  
+    padding-bottom: 8px;
+    margin-top: 12px;
+    background: #fcf0f1;
+    outline: none;
+    }
+    /*---------------------------- dashboard item hover style*/
+    .mobile-sidebarItem:hover {
+    background-color: #fcf0f1;
+    }
+    .mobile-sidebarItem{
+    padding-bottom: 0px;
+    margin-top: 18px;
+    }
+    /*---------------------------- dashboard icon style*/
+    .mobile-dashboardIconStyle{
+    color:#ff8192;
+    font-size:18px;
+    vertical-align: middle;
+    padding-top: 30px;
+    padding-left: 0px;
+    }
+    /*---------------------------- dashboard txt style*/
+    .mobile-dashboardtxt{
+    margin-bottom: 5px;
+    margin-left: 0px;
+    color: #4a4a4a;
+    font-weight: bold;
+    }
+    .mobile-dashboardtxt1{
+    margin-bottom: 5px;
+    margin-left: 0px;
+    color: #4a4a4a;
+    font-weight: bold;
+    }
+    .mobile-dashboardIconStyle1{
+    color:#ff8192;
+    font-size:18px;
+    vertical-align: middle;
+    padding-top: 30px;
+    padding-left: 31px;
+    }
+    .mobile-loginBlock{
+    margin-top: 162%;
+    background: #dde0cc;  
+    }
+   
+}
+  
+    /*-----------------------------------------------------------------galexy phone media uery end*/
+
+
+    /* iPhone 5 ----------- */
+/* ------------------------------iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+
+    .mobile-nav-hamburger-menu{
+        color: black;
+        margin-left: -5%;
+    }
+    .mobile-nav-button i{
+        display: inline;
+        font-size: 18px;
+    }
+    .mobile-nav-button{
+        margin-top: -21%;
+        padding-left: 0;
+    }
+    .navStyle{
+        height: 12%!important;
+        position: fixed;z-index: 10;
+        border: solid 0.5px #e7ebf1;
+        box-shadow: none;
+        
+    }
+    .userNameStyle{
+        display: none!important;
+    }
+    .userimg{
+        display: none!important;
+    }
+    .mobile-left-nav-hide {
+        display: none;
+    }
+    .mobile-left-nav-show {
+        display: block;
+    }
+    /*-----------------------------------------------------------------new start*/
+    .mobile-sidebarItem.active {
+    border-left: 4px solid #ff8192;  
+    padding-bottom: 8px;
+    margin-top: 12px;
+    background: #fcf0f1;
+    outline: none;
+    }
+    /*---------------------------- dashboard item hover style*/
+    .mobile-sidebarItem:hover {
+    background-color: #fcf0f1;
+    }
+    .mobile-sidebarItem{
+    padding-bottom: 0px;
+    margin-top: 18px;
+    }
+    /*---------------------------- dashboard icon style*/
+    .mobile-dashboardIconStyle{
+    color:#ff8192;
+    font-size:18px;
+    vertical-align: middle;
+    padding-top: 30px;
+    padding-left: 0px;
+    }
+    /*---------------------------- dashboard txt style*/
+    .mobile-dashboardtxt{
+    margin-bottom: 5px;
+    margin-left: 0px;
+    color: #4a4a4a;
+    font-weight: bold;
+    }
+    .mobile-dashboardtxt1{
+    margin-bottom: 5px;
+    margin-left: 0px;
+    color: #4a4a4a;
+    font-weight: bold;
+    }
+    .mobile-dashboardIconStyle1{
+    color:#ff8192;
+    font-size:18px;
+    vertical-align: middle;
+    padding-top: 30px;
+    padding-left: 31px;
+    }
+    .mobile-loginBlock{
+    margin-top: 162%;
+    background: #dde0cc;  
+    }
+
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) 
+ and (orientation: landscape){
+      .mobile-nav-button{
+        margin-top: -12%!important;
+        padding-left: 9%!important;
+    }
+    }
+
+
+
+ /* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px){
+    .mobile-nav-hamburger-menu{
+        color: black;
+        margin-left: -5%;
+    }
+    .mobile-nav-button i{
+        display: inline;
+        font-size: 18px;
+    }
+    .mobile-nav-button{
+        margin-top: -21%;
+        padding-left: 0;
+    }
+    .navStyle{
+        height: 12%!important;
+        position: fixed;z-index: 10;
+        border: solid 0.5px #e7ebf1;
+        box-shadow: none;
+    }
+    .userNameStyle{
+        display: none!important;
+    }
+    .userimg{
+        display: none!important;
+    }
+    .mobile-left-nav-hide {
+        display: none;
+    }
+    .mobile-left-nav-show {
+        display: block;
+    }
+    /*-----------------------------------------------------------------new start*/
+    .mobile-sidebarItem.active {
+    border-left: 4px solid #ff8192;  
+    padding-bottom: 8px;
+    margin-top: 12px;
+    background: #fcf0f1;
+    outline: none;
+    }
+    /*---------------------------- dashboard item hover style*/
+    .mobile-sidebarItem:hover {
+    background-color: #fcf0f1;
+    }
+    .mobile-sidebarItem{
+    padding-bottom: 0px;
+    margin-top: 18px;
+    }
+    /*---------------------------- dashboard icon style*/
+    .mobile-dashboardIconStyle{
+    color:#ff8192;
+    font-size:18px;
+    vertical-align: middle;
+    padding-top: 30px;
+    padding-left: 0px;
+    }
+    /*---------------------------- dashboard txt style*/
+    .mobile-dashboardtxt{
+    margin-bottom: 5px;
+    margin-left: 0px;
+    color: #4a4a4a;
+    font-weight: bold;
+    }
+    .mobile-dashboardtxt1{
+    margin-bottom: 5px;
+    margin-left: 0px;
+    color: #4a4a4a;
+    font-weight: bold;
+    }
+    .mobile-dashboardIconStyle1{
+    color:#ff8192;
+    font-size:18px;
+    vertical-align: middle;
+    padding-top: 30px;
+    padding-left: 31px;
+    }
+    .mobile-loginBlock{
+    margin-top: 170%;
+    background: #dde0cc;  
+    }
+
+}  
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px)
+ and (orientation: landscape){
+       .mobile-nav-button{
+        margin-top: -14%!important;
+        padding-left: 9%!important;
+    }
+       .navStyle{
+        height: 24%!important;
+        position: fixed;z-index: 10;
+        border: solid 0.5px #e7ebf1;
+        box-shadow: none;
+    }
+    .dashboard{
+        display: none!important;
+    }
+}
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px){
+ .mobile-nav-button{
+    margin-top: -18%;
+    padding-left: 0;
+}
+ .mobile-loginBlock{
+margin-top: 179%;
+background: #dde0cc;  
+}
+}
+
+/*------------------------------Tab version*/
+ @media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+   /* .navStyle{
+        background-color: red!important;
+    }*/
+    .mobileNaveClass{
+    color: red;
+    background: green;
+    width: 30%;
+    }
+    .navStyle{
+    height: 8%!important;
+    position: fixed;z-index: 10;
+    border: solid 0.5px #e7ebf1;
+    box-shadow: none;
+    }
+    .userNameStyle{
+    display: none!important;
+    }
+    .userimg{
+    display: none!important;
+    }
+    .fleetsidetitle{
+        font-size: 120%!important;
+    }
+  
+}
+
+
+
+
+

@@ -1,0 +1,31 @@
+<div id="containerdata" class="rowalignshow" (click) = "closeModal()">
+	<div class="row fleettyperow">
+		<div class="col s12 m10 offset-m2">
+			<div class="card searchsmallteal">
+				<input type="text!important" autofocus name="searchfleetitems" class="searchfleetdata" id="searchfleetdataId" placeholder="&nbsp;Search here...." #assetSearchTerm (keyup.enter)="searchAssets(assetSearchTerm.value)">
+				<button type="submit" class="searchButton modal-trigger" id="searchcollid" (click)="searchAssets(assetSearchTerm.value)"  href="#modal1">
+					<i class="fa fa-search"></i>
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="row fleettyperow">
+		<div class="col s12 m10 offset-m2">
+			<div class="card large teal">
+				<!-- Fleet Result Start	 -->
+					<!-- Modal Structure -->
+					<div id="modal1" class="modal" *ngIf = "errorData !== undefined && !modalDisplay">
+					<div class="close-mark"><button (click)="closeModal()">X</button></div>
+					<div class="modal-content">
+					<!-- 	<h5 style="text-align:center;">{{errorData}}</h5> -->
+					<p class="modal-msg"><i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;{{errorData}}</p>
+					</div>
+					<!-- <div class="modal-footer">
+					</div> -->
+					</div>
+				<fleet-result *ngIf = " assetList" [data]="assetList"  [alertData]="assetAlertData" (onShowAssetAlert)="showAssetAlert($event)"></fleet-result>
+				<!-- Fleet Result End -->
+			</div>
+		</div>
+	</div>
+</div>

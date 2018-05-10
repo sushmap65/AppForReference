@@ -1,0 +1,98 @@
+/*----------------------------left side nav color ans style*/
+.dashboard {
+    width: 15%;
+    height: 100%;
+    position: fixed;
+    background-color: #ffffff;
+}
+#dashboarddata {
+    padding-top: 10px;
+    padding-right: 0;
+    padding-left: 0;
+}
+/*---------------------------- dashboard txt style*/
+.dashboardtxt{
+    margin-bottom: 5px;
+    margin-left: 0px;
+    color: #4a4a4a;
+    font-weight: bold;
+}
+/*---------------------------- dashboard icon style*/
+.dashboardIconStyle{
+    color:#ff8192;
+    font-size:18px;
+    vertical-align: middle;
+    padding-top: 13px;
+    padding-left: 15px;
+}
+/*---------------------------- dashboard item selected sidebar style*/
+
+.sidebarItem.active {
+    border-left: 4px solid #ff8192;  
+    padding-bottom: 8px;
+    margin-top: 12px;
+    background: #fcf0f1;
+    outline: none;
+}
+/*---------------------------- dashboard item hover style*/
+.sidebarItem:hover {
+    background-color: #dde0cc;
+}
+.sidebarItem{
+	padding-bottom: 0px;
+	margin-top: 18px;
+}
+/*---------------------------- dashboard logout style*/
+.logouttxt {
+    margin-right: 50% !important;
+    color: #d02139!important;
+    padding-left: 60px;
+    font-weight: bold;
+    margin-top: 0;
+}
+.loginBlock {
+    bottom: 1px;
+    position: fixed;
+    width: 15%;
+    background: #dde0cc;
+
+}
+.btn-logout
+{
+    background: #dde0cc!important;
+    color: black;
+    font-weight: bold;
+    box-shadow: none;
+    padding-left: 59%;
+}
+
+
+
+/*------------------------------Mobile version*/
+
+@media only screen and (max-width: 500px) {
+    .dashboard{
+        display: none;
+    }
+}
+/* ------------------------------iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+    .dashboard{
+        display: none;
+    }
+    }
+
+
+/*------------------------------Tab version*/
+  @media (max-width:900px) and (min-width:600px) {
+  /*  .dashboard{
+        margin-top: 4%;
+        width: 17%;
+    }*/
+    .dashboard{
+        display: none;
+    }
+      .loginBlock{
+        width: 17%!important;
+    }
+  }

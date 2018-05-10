@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JCB Project</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://sass-lang.com/documentation/file.SASS_REFERENCE.html">
+    <link rel="stylesheet" type="text/css" href="../css/materialize.min.css">
+    <link rel="stylesheet" href="../icons/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+    <!--===================================header-->
+  <!--   <div id="header">
+        <div class="logo">
+            <a href="#"><img class="brandlogo" src="../images/brand_logo.png"></a>
+        </div>
+        <div class="username">
+            <p>Hi Raphael!</p>
+        </div>
+        <div class="row valign-wrapper">
+            <div class="col s2">
+                <div class="userimg">
+                    <img class="imgCircle" src="../images/userPic1.png">
+                </div>
+            </div>
+        </div>
+    </div> -->
+               <!--==============code using nav for responsive header brandlogo username userimg -->
+            <nav style="background: #f8b004;height: 60px;position: fixed;z-index: 80">
+                 <div class="nav-wrapper">
+                    <!--  <a href="#" class="brand-logo"><img class="brandlogo" src="../images/brand_logo.png"></a> -->
+                      <a href="#" class="brand-logo"><img class="brandlogo1" src="../images/HeaderLogoAsset.png"></a>
+                     <ul id="nav-mobile" class="right hide-on-med-and-down">
+                         <li><p style="color: black;">Hi Raphael!</p></li>
+                         <li class="userimg"><img class="imgCircle" src="../images/userPic1.png" onerror="this.src='../images/userPlaceholder.png';"></li>          
+                    </ul>
+                 </div>
+            </nav>
+    <!--============================container,content,dashboard-->
+    <div id="container">
+        <div class="content">
+            <div class="row">
+                <div class="dashboard hoverable dashboardcollapse" id="dashboardHide">
+                    <div id="dashboarddata" class="col s12 m12 l12">
+                        <!-- <nav id="primary">-->
+                        <ul id="dashboarditems">
+                             <a href="../index.html"><li class="sidebarItem ">
+                                <!--<a href="#"><img class="dashboardicon hoverable sideIcon" src="icons/fill-1.png" style="background-color:white"><span class="dashboardtxt">Dashboard</span></a>-->
+                               <i class="material-icons" style="font-size:18px;">ac_unit</i><span class="dashboardtxt sidebarItemText">Dashboard</span>
+                            </li></a>
+                            <!--<li id="primary_nav_wrap" class="sidebarItem dropdown ">
+                                <a href="#" onclick="myFunction()" class="dropbtn"><i class="material-icons" style="font-size:18px">local_shipping</i><span class="fleettxt sidebarItemText">Fleet</span></a>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="#">Sold</a>
+                                    <a href="#">Unsold</a>
+                                    <a href="#">InTransit</a>
+                                </div>
+                            </li>-->
+                             <a href="../pages/sold.html"><li class="sidebarItem accordion " >
+                                <i class="material-icons">local_shipping</i>
+                                <span class="txt fleetHeading sidebarItemText">Fleet</span>
+                            </li></a>
+
+                             <ul class="panel">
+                                <li class="panelFirstItem sidebarItem active" id="fleetId"><a href="../pages/sold.html"><img src="icons/Group 14.png"><span>Sold</span></a></li>
+                                <li><a href="pages/sold.html"><img src="icons/Group 15.png"><span>Un-Sold</span></li>
+                                <li><a href="pages/sold.html"><img src="icons/Group 16.png"><span>In-Transit</span></li>
+                            </ul>
+
+                            
+                            <a href="../pages/dealerspage.html"><li class="sidebarItem">
+                                <i class="material-icons" style="font-size:18px">group</i><span class="dealerstxt sidebarItemText">Dealers</span>
+                            </li></a>
+                            <a href="../pages/reportspage.html"><li class="sidebarItem">
+                                <!--<a href="#"><img class="reportsicon sideIcon" src="icons/page-1-Copy-27.svg"><span class="reportstxt">Reports</span></a>-->
+                                <i class="fa fa-file-text" style="font-size:18px"></i>
+                                <span class="reportstxt sidebarItemText">Reports</span>
+                            </li></a>
+                             <a href="../pages/notificationpage.html"><li class="sidebarItem">
+                                <!-- <a href="#"><img class="notificationicon sideIcon" src="icons/fill-1-copy-13.svg"><span class="notificationtxt">Notifications</span></a>-->
+                               <i class="material-icons" style="font-size:18px">notifications</i>
+                                <span class="notificationtxt sidebarItemText">Notification</span>
+                            </li></a>
+                              <a href="../pages/helpsupportpage.html"><li class="sidebarItem">
+                              <i class="material-icons" style="font-size:18px">sms</i><span class="helpsupporttxt sidebarItemText">Help&Support</span>
+                            </li></a>
+                             <a href="#"><li class="sidebarItem active ">
+                                <!--<a href="#"><img class="complaintstxt sideIcon" src="icons/page-1.svg"><span class="complaintstxt">Complaints</span></a>-->
+                               <i class="material-icons" style="font-size:18px">feedback</i><span class="complaintstxt sidebarItemText">Complaints</span>
+                            </li></a>
+                             <li class="logoutcol logoutLi ">
+                             <a href="../pages/homepage.html"><i class="fa fa-sign-out fa-1x " id="logouticon" aria-hidden="true"></i><p class="logouttxt">Logout</p></a>
+                             </li>
+                        </ul>
+                        <!--</nav>-->
+                    </div>
+                </div>
+                <!--================================card card1-->
+            </div>
+            <!-- row end -->
+        </div>
+    </div>
+     <div id="containerdata" class="rowalignshow"> 
+        <h6 style="padding-left: 220px;">This is Complaints Page</h6>
+      <!--   <h5 style="padding-left: 220px;">This is Complaints Page</h5>
+        <h4 style="padding-left: 220px;">This is Complaints Page</h4>
+        <h3 style="padding-left: 220px;">This is Complaints Page</h3>
+        <h2 style="padding-left: 220px;">This is Complaints Page</h2>
+        <h2 style="padding-left: 220px;">This is Complaints Page</h2>
+        <h2 style="padding-left: 220px;">This is Complaints Page</h2>
+        <h2 style="padding-left: 220px;">This is Complaints Page</h2> -->
+    </div>
+     <!--================================footer-->   
+     <footer class="page-footer" style="background-color:#f9f9f9!important;">                
+                     <p id="footerid" class="footertxt">2017 Looking Glass . Privacy Policy
+                     <span class="footertxt2">Helpline No: +91 9101234567 | About Us | Contact Us
+                     </span>
+                     </p>                            
+    </footer> 
+    <!--================================footer-->
+    <!--================================material scripts-->
+    <script type="text/javascript " src="../js/jquery.min.js "></script>
+    <script type="text/javascript " src="../js/materialize.min.js "></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="js/barchart1.js"></script>
+    <script type="text/javascript" src="js/dropdown.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="../js/dashboardcollapse.js"></script>
+    <script src="../js/fleetaccordion.js"></script>
+    <script type="text/javascript ">
+    var collapse = "open"
+    $(document).ready(function() {
+        $(".button-collapse ").sideNav();
+        $(".navicon").sideNav();
+        $('.dropdown').dropdown('open');
+        $('.dropdown').dropdown('close');
+        $('.count').each(function() {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 2000,
+                easing: 'swing',
+                step: function(now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+
+        //active dashboard listitems
+        $('ul li a').click(function() {
+            $('ul li a').removeClass("active");
+            $(this).addClass("active");
+        });
+        //double clink event
+        // $('#dashboarddata').on('click', function() {
+        //     if (collapse == 'open') {
+
+        //         $('#dashboardHide').toggleClass('clicked');
+        //         $('span.sidebarItemText').hide();
+        //         console.log("okk click");
+        //         document.getElementById("dashboardHide").style.width = "50px";
+        //         collapse = 'close';
+        //         console.log("okk first" + collapse);
+        //     } else if (collapse == 'close') {
+        //         $('#dashboardHide').toggleClass('clicked');
+        //         $('span.sidebarItemText').show();
+        //         document.getElementById("dashboardHide").style.width = "19  0px";
+        //         collapse = 'open';
+        //         console.log("Okk second" + collapse);
+        //     }
+
+        // });
+
+
+        // $('#dashboardHide').on('click', function() {
+        //     $(this).toggleClass('clicked');
+        //     $('span.sidebarItemText').show();
+        //     document.getElementById("dashboarddata").style.width = "15%";
+        //     console.log("Okk DBclick");
+        // })
+    });
+    </script>
+</body>
+
+</html>

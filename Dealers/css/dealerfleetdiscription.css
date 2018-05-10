@@ -1,0 +1,1072 @@
+.navStyle{
+    background:#ffffff;
+    height: 75px;
+    position: fixed;
+    z-index: 15;
+    border: solid 0.5px #e7ebf1;
+}
+
+.brandlogo1{
+  margin-left: 23px;
+  margin-top: 20px;
+}
+
+.sidebarItem i{
+  font-size: 18px;
+
+}
+
+/*--------------------------------------------------Overview Tab---------------------*/
+.fleetDisNavContent{
+  background: #ffffff;
+  height: 62px;
+  padding-left: 231px;
+  width: 108%;
+}
+.BackloaderCard{
+ /* height: 221px;*/
+  height: 370px;
+  background: #f9f9f9;
+  box-shadow: none;
+}
+.card2{
+  width: auto;
+  height: 587px;
+}
+.card3{
+  margin-top: -216px;
+  height: 202px;
+}
+.card4{
+    width: auto;
+    height: 320px;
+    border-radius: 10px;
+}
+.fleettyperow{
+  background: #f9f9f9;
+}
+.fleetDisCardJcb{
+  width: auto;
+  height: 240px;
+  border-radius: 10px;
+}
+img.responsive-img, video.responsive-video {
+  max-width: 170%;
+}
+img#fleetDisImgCard{
+	width: 470px;
+	height: 233px;
+  
+  margin-left: -20px;
+  margin-top: -15px;
+}
+img#fleetDisMap{
+border-radius: 10px;
+    margin-top: -38px;
+    height: 587px;
+    width: 529px;
+    margin-left: -36px;
+}
+.fleetDisMap1{
+border-radius: 10px;
+    margin-top: -38px;
+    height: 587px;
+    width: 546px;
+    margin-left: -36px;
+}
+.fleetDisCardMap{
+   width: auto;
+  height: 420px;
+  border-radius: 10px;
+}
+.BackloaderJCBDiv{
+	margin-top: -11px;
+	
+}
+.BackloaderJCBDiv2{
+/*  margin-top: 10px;*/
+margin-top: 0px;
+  
+}
+.FleetDisDealerTitle{
+   font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  color: #545454;
+}
+.FleetDisUserTitle{
+   font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  color: #545454;
+}
+.BackloaderJcbImg{
+	height: 215px;
+
+}
+.UserSubData{
+  padding-left: 108px;
+  margin-top: 18px;
+}
+.DealerSubData{
+   padding-left: 111px;
+
+}
+.DealerUserDivider{
+  margin-top: 47px;
+}
+
+.imgCircleDealer{
+    border-radius: 50%!important;
+    width: 65px!important;
+    height: 60px!important;
+    margin-top: 12px;
+   
+}
+.imgCircleUser{
+    border-radius: 50%!important;
+    width: 65px!important;
+    height: 60px!important;
+    margin-top: 12px;
+   
+}
+.DealerDetailsUl{
+      margin-left: 81px;
+    margin-top: -70px;
+}
+.UserDetailsUl{
+      margin-left: 81px;
+    margin-top: -70px;
+}
+.DealerNameLi{
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+  color: #545454;
+}
+.UserNameLi{
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+  color: #545454;
+}
+.DealerDetailsLi{
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  color: #545454;
+  margin-top: 0px;
+}
+.UserDetailsLi{
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  color: #545454;
+  margin-top: 0px;
+}
+.AssetsOwned{
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+  color: #545454;
+  padding-left: 82px;
+  padding-top: 4px;
+}
+.AssetsOwnedNo{
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+  color: #f8b004!important;
+   padding-left: 82px;
+}
+
+/*.card.horizontal .card-image img{
+max-width: 121%;
+}*/
+.fleetDisBklodrData{
+	    float: right;
+    margin-top: -211px;
+}
+.cardStackHeadingMain{
+	font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.3px;
+    color: #545454;
+}
+.cardStackHeadingSub{
+	font-size: 14px;
+    font-weight: bold;
+    letter-spacing: -0.3px;
+    color: #545454;
+}
+.cardStackHeadingSub2{
+	font-size: 10px;
+    letter-spacing: -0.3px;
+    color: #686868;
+    margin-top: 0px;
+}
+.tabs .indicator {
+  width: 79px;
+  height: 2px;
+  background-color: #70c8be!important;
+  margin-left:  18px!important;
+  /*position: absolute;*/
+  bottom: 0;
+ /* will-change: left, right;*/
+}
+/*--------------------------------fleetdiscription nav tab style*/
+.fleetDisctab a{ 
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  color: #545454!important;
+}
+/*.OverviewTab {
+  padding-left: 0!important;
+
+}*/
+.fleetDisMapCard{
+	height: 600px;
+}
+.fleetDisDealrUserCard{
+	margin-top: -350px;
+	height: 336px;
+
+}
+.FleetDisMap{
+	height: 600px!important;
+}
+.activeAlertLi p{
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+  color: #545454!important;
+
+}
+.activeAlertLi span{
+  font-size: 12px;
+  letter-spacing: -0.3px;
+  color: #545454!important;
+
+}
+.activeAlertLi{
+    list-style-type: disc!important;
+     padding-bottom: 31px;
+   
+    color:#ff0000;
+  /*  margin-bottom:0px;
+    margin-top: -3px;*/
+}
+.activeAlertLi2{
+    list-style-type: disc!important;
+   
+    color:#f8b004!important;
+  /*  margin-bottom:0px;
+    margin-top: -3px;*/
+}
+.activeAlertLi2 p{
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+  color: #545454!important;
+
+}
+.activeAlertLi2 span{
+  font-size: 12px;
+  letter-spacing: -0.3px;
+  color: #545454!important;
+}
+.verticalLine {
+  border-left: 2px solid  #cacaca;
+  padding-left: 40px!important;
+
+}
+.activeAlertLiIconMedikit{
+   margin-left: 108px;margin-top: 58px;color: red;
+
+}
+.activeAlertLiIconRecycle1{
+  margin-left: 108px;padding-top: 110px;color:#f8b004;
+
+}
+.activeAlertLiIconRecycle2{
+   margin-left: 167px;margin-top: 58px;color: red;
+
+}
+.activeAlertLiIconUnlock{
+  margin-left: 167px;padding-top: 110px;color:red;
+}
+
+.fleetDisActiveAlerts{
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.3px;   
+    color: #545454;
+}
+.activeAlertcolDiv{
+  padding-top:26px!important;
+}
+
+
+/*--------------------------------------------------Utilisation Tab---------------------*/
+.ActiveUtilisationAlertsCard{
+    width: auto;
+    height: 320px;
+    border-radius: 10px;
+
+}
+.PastUtilisationAlertsCard{
+    width: auto;
+    height: 470px;
+    border-radius: 10px;
+
+}
+.UtilisationPatternCard{
+    width: auto;
+    height: 511px;
+    border-radius: 10px;
+    box-shadow: none;
+    
+
+}
+.UtilisationPatternTitle{
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  color: #4a4a4a!important;
+  float: left;
+}
+.ActiveUtilztnDatePicker{
+  width:76px!important;
+  float: right;
+}
+.UtilisationChartPic{
+  width: 100%;
+  height: 390px!important;
+}
+.fleetDisActiveUtilAlerts{
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.3px;   
+    color: #545454;
+}
+.activeUtiAlertUl1{
+  text-align: center;
+}
+.activeUtiAlertUl2{
+  text-align: center;
+}
+.LowEngineLi1{
+  margin-left: -120px!important;
+}
+.LowCoolentLi2{
+  margin-left: -134px!important;
+}
+.LowCoolentLi3{
+  margin-left: -85px!important;
+}
+.LowCoolentLi4{
+  margin-right: 99px!important;
+}
+.PastUtilztnDatePicker{
+   width:90px!important;
+  float: right;
+
+}
+/*.ActiveUtilisationAlertsTitle{
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  color: #545454!important;
+  float: left;
+}
+.ActiveUtilisationAlertsTitleUl{
+
+}
+.ActiveUtilisationAlertsTitleLi{
+    list-style-type: disc!important;
+    padding-bottom: 31px;
+    color: #ff0000;
+
+}
+.ActiveUtilisationAlertsTitleLi p{
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: -0.3px;
+    color: #545454!important;
+}
+.ActiveUtilisationAlertsTitleLi span{
+    font-size: 12px;
+    letter-spacing: -0.3px;
+    color: #545454!important;
+    }
+    .ActiveUtilisationAlertsTitleLi2 p{
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: -0.3px;
+    color: #545454!important;
+}
+.ActiveUtilisationAlertsTitleLi2 span{
+    font-size: 12px;
+    letter-spacing: -0.3px;
+    color: #545454!important;
+    }
+    .ActiveUtilisationAlertsUl{
+      margin-top: 55px;
+    }
+    .ActiveUtilisationAlertsli{
+       list-style-type: disc!important;
+    padding-bottom: 31px;
+    color: #ff0000;
+
+    }
+    .ActiveUtilisationAlertsli p{
+       font-size: 14px;
+    font-weight: bold;
+    letter-spacing: -0.3px;
+    color: #545454!important;
+      padding-right: 139px;
+    }
+    .ActiveUtilisationAlertsli span{
+       font-size: 12px;
+    letter-spacing: -0.3px;
+    color: #545454!important;
+   
+
+    }
+    .ActiveUtilisationAlertsli span{
+       padding-right: 100px;
+      }
+      .ActiveUtilisationAlertsUl2{
+            padding-top: 18px;
+      }
+      .activeAlertLi p{
+        padding-right: 106px;
+      }
+*/
+.ActiveUtilizDData1{
+  font-size: 12px;
+  letter-spacing: -0.3px;
+  color: #545454;
+  margin-left: -48px;
+}
+
+.ActiveUtilizDData2{
+  font-size: 12px;
+  letter-spacing: -0.3px;
+  color: #545454;
+  margin-left: -41px;
+}
+.ActiveUtilizDData3{
+  font-size: 12px;
+  letter-spacing: -0.3px;
+  color: #545454;
+  margin-left: -77px;
+}
+.ActiveUtilizDData11{
+  font-size: 12px;
+  letter-spacing: -0.3px;
+  color: #545454;
+  margin-right: 14px;
+}
+
+.ActiveUtilizDData12{
+  font-size: 12px;
+  letter-spacing: -0.3px;
+  color: #545454;
+  margin-right: 7px;
+}
+.ActiveUtilizDData13{
+  font-size: 12px;
+  letter-spacing: -0.3px;
+  color: #545454;
+   margin-right: 41px;
+}
+.activeAlertUl{
+  padding-top: 10px;
+}
+/*-------------------------------------*/
+.ActiveUtilizDData21{
+  font-size: 12px;
+  letter-spacing: -0.3px;
+  color: #545454;
+ 
+}
+
+.ActiveUtilizDData22{
+  font-size: 12px;
+  letter-spacing: -0.3px;
+  color: #545454;
+ 
+}
+.ActiveUtilizDData23{
+  font-size: 12px;
+  letter-spacing: -0.3px;
+  color: #545454;
+ 
+}
+.PastUtilzIcons{
+  margin-top: -63px;
+}
+
+/*--------------------------------------- 5 star rating*/
+.StarRating{
+  width: 55px!important;    
+  margin-left: -5px;
+}
+
+/*------date picker-----------*/
+.ActiveUtiliFrom{
+    width: 167px!important;
+    margin-left: 321px!important;
+    margin-top: 6px!important;
+}
+.ActiveUtiliFrom input{
+  border-color: black;
+  border-radius: 3px;
+  border: solid 1px #dedede;
+  height: 29px;
+  width: 100%;
+}
+.ActiveUtiliFrom i{
+  color: black;
+  font-size: 19px!important;
+margin-left: 123px;
+    margin-top: -47px;;
+}
+.ActiveUtiliTo{
+ width: 178px!important;
+    margin-left: 835px!important;
+    margin-top: -50px!important;
+}
+.ActiveUtiliTo input{
+  border: -3px;
+  border-color: black;
+   border-radius: 3px;
+  border: solid 1px #dedede;
+  height: 29px;
+  width: 100%;
+}
+.ActiveUtiliTo i{
+  color: black;
+  font-size: 19px!important;
+  margin-left: 128px;
+  margin-top: -47px;
+}
+
+
+/*----------date---*/
+.ActiveUtiFromDate{
+ width: 100px!important; 
+}
+.ActiveUtiToDate{
+  width: 100px!important;
+}
+
+/*------------------------------------------------------health tab-------------------------------*/
+.EngineHealthCard{
+    width: auto;
+    height: 320px;
+    border-radius: 10px;
+
+}
+.BatteryHealthCard{
+    width: auto;
+    height: 320px;
+    border-radius: 10px;
+
+}
+.HealthIssuesCard{
+    width: auto;
+    height: 320px;
+    border-radius: 10px;
+
+}
+.healthissuechartClass{
+        width: 100%;
+    height: 238px!important;
+}
+.ActiveHealthAlertsCard{
+    width: auto;
+    height: 320px;
+    border-radius: 10px;
+
+}
+.PastHealthAlertsCard{
+    width: auto;
+    height: 470px;
+    border-radius: 10px;
+
+}
+.HealthIssuesTitle{
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  color: #545454;
+  float: left;
+}
+.ActiveHealthAlertsTitle{
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  color: #545454;
+  float: left;
+
+}
+.EngineHealthclass{
+  float: left;font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  color: #545454;
+}
+.BatteryHealthclass
+{
+   float: left;font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  color: #545454;
+
+}
+.EngineHealthDiv{
+  padding-top: 55px;
+}
+.EngineHealthSubTitle1{
+   text-align: left;
+
+}
+.EngineHealthSubTitle{
+  text-align: left;
+ padding-top: 19px;
+ }
+ .EngineOilCircle{
+  color: red;margin-left: 220px!important;
+
+ }
+ .CoolantCircle{
+  color: yellow;margin-left: 209px!important;
+
+ }
+ .WaterFuelCircle{
+  color: green;margin-left: 263px!important;
+
+ }
+ .FuelLevelCircle{
+  color: green;margin-left: 282px!important;
+
+ }
+ .EngineOilSpan{
+  float:right;
+   font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+  color: #545454;
+ }
+ .BatteryStatusSpan{
+  margin-left: 44px;
+  float:right;
+   font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+  color: #545454;
+ }
+ .BatteryStatusCircle{
+  color: red;margin-left: 263px!important;
+
+ }
+ .BatteryHealthCircle{
+  color: yellow;margin-left: 263px!important;
+
+ }
+ .BatteryConnectivityCircle{
+  color: green;margin-left: 225px!important;
+
+ }
+ .BatteryCapacityCircle{
+  color: green;margin-left: 250px!important;
+
+ }
+
+ /*-------------------------- select tab*/
+ .HealthIssuesSelectFrom{
+     width: 136px!important;
+    margin-left: 358px!important;
+    margin-top: 6px!important;
+
+ }
+ .HealthIssuesSelectTo{
+     width: 136px!important;
+    margin-left: 91px!important;
+    margin-top: 6px!important;
+
+ }
+ .calenderIconHealth{
+   padding-right: 134px;
+ }
+ /*-------------------date*/
+ input#datepicker{
+    padding-right: 40px;
+    color: black;  
+   
+}
+input#datepicker2{
+    padding-right: 40px;
+    color: black;  
+   
+}
+.healthFromDate{
+  width: 100px!important;
+
+}
+.healthToDate{
+  width: 100px!important;
+
+}
+/*--------------------------------------------------Servic Tab--------------------*/
+.ExcavatorModelCard{
+    width: auto;
+    height: 170px;
+    border-radius: 10px;
+
+}
+.ServicecostCard{
+    width: auto;
+    height: 405px;
+    border-radius: 10px;
+
+}
+.ServiceCostTitle{
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  color: #545454!important;
+  float: left;
+}
+#datepickerExc{
+
+  width: 290px!important;
+}
+.servicecostImg{
+ width: 100%;
+ height: 238px!important;
+}
+/*--------------------------------------------------Servic inside Tab--------------------*/
+.verticalLineServCoast {
+  border-left: 1px solid  #cacaca;
+  padding-left: 40px!important;
+  height: 100px;
+
+}
+.upcomingPastRow{
+  margin-top: 15px;
+}
+
+.upcomingPastTabs{
+  background:#f9f9f9;
+}
+.upcomingPastTabs li a{
+   font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  color: #545454!important;
+  padding: 0!important;
+}
+.upcomingPastTab{
+  text-align: left!important;
+}
+.upcomingPastTabs .indicator {
+    background-color: #545454!important;
+    margin-left: 0px!important;
+}
+.UpcomingServiceDetailsCard{
+   width: auto;
+   height: 170px;
+   border-radius: 10px;
+   margin-top: 35px;
+}
+/*------------------------------------------Services Details in smll cards Excavator--------------*/
+.ExcavatorDiv{
+ /* margin-left: -344px;*/
+  margin-top: 19px;
+}
+.ExcavatorCalendrDiv{
+  /*margin-left: -162px;*/
+  margin-top: 22px;
+}
+.ExcavatorTimeDiv{
+/*  margin-left: 63px;*/
+  margin-top: 19px
+}
+.ExcavatorArrowDiv{
+/*  margin-left: 86px;*/
+  margin-top: 22px;
+}
+.ExcavatorBtnDiv{
+  /*margin-left: 231px;*/
+  margin-top: 7px;
+}
+.ExcavatorBtnStyle{
+  background-color: #d02139;
+  font-size: 12px;
+  font-weight: 500;
+  color: #000000;
+  font-family: Roboto;-webkit-text-stroke:#979797;
+ /* width: 187px;*/
+}
+/*------------------------------------------Services Details in smll cards col-1--------------*/
+.ServiceCol{
+  margin-top: 10px!important;
+}
+.RecommendedSerCol{
+
+
+}
+.InstallationCol{
+
+}
+.AssStaffCol{
+
+}
+.IconCol{
+  margin-top: 30px;
+
+}
+.IconCol i {
+  color: #d02139!important;
+  }
+.serviceNo{
+  font-family: Roboto;
+  font-size: 29px;
+  letter-spacing: -0.3px;
+   color: #f8b004!important;
+  
+
+}
+.serviceTxt{
+  font-size: 22px;
+  font-weight: 500;
+  color: #676767!important;
+ 
+
+}
+.RecommendedServ{
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+  color: #545454!important;
+
+}
+.RecommendedServDate{
+  font-family: Roboto;
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  color: #545454!important;
+  margin-top: 5px!important;
+
+}
+.RecoServCurrentMachDetails{
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+  color: #545454!important;
+  margin-top: 7px!important;
+
+}
+.RecoServCurrentODO{
+  font-family: Roboto;
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  color: #545454!important;
+  margin-top: 8px!important;
+
+}.RecoServCurrentDate{
+  font-family: Roboto;
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  color: #545454!important;
+
+}
+.RequestedServ{
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+  color: #545454!important;
+  margin-left: -10px!important;
+
+}
+.RequestedServUl{
+    margin-left: 17px;
+    margin-top: 5px;
+}
+
+.RequestedServLi{
+  font-family: Roboto;
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  color: #545454!important;
+  list-style-type: disc!important;
+
+}
+.AdditionalCommtsTitle{
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+  color: #545454!important;
+
+}
+.AdditionalCommts{
+  font-family: Roboto;
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  color: #545454!important;
+  margin-top: 5px!important;
+  margin-left: 10px!important;
+
+}
+.RequestedServRow{
+    margin-left: 175px;
+    padding-top: 25px;
+}
+.serviceTabSmalldevider{
+  width:814px!important;
+  border: solid -0.6px #d5d5d5!important;
+  margin-top: 41px;
+  margin-left: 175px;
+
+
+}
+/*------------------------------------------Services Details in smll cards col-2--------------*/
+.InstalDate{
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+  color: #545454!important;
+
+}
+.InstalCusName{
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+  color: #545454!important;
+  margin-top: 5px!important;
+
+}
+.InstalCusMobile{
+  font-family: Roboto;
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  color: #545454!important;
+  margin-top: 8px!important;
+
+}
+.InstalCusEmail{
+  font-family: Roboto;
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  color: #545454!important;
+
+}
+/*------------------------------------------Services Details in smll cards col-3--------------*/
+.AssStaffName{
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+  color: #545454!important;
+
+}
+.AssStaffMobile{
+  font-family: Roboto;
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  color: #545454!important;
+  margin-top: 5px!important;
+
+}
+.AssStaffEmail{
+  font-family: Roboto;
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  color: #545454!important;
+
+}
+.AssStaffCost{
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+  color: #545454!important;
+  margin-top: 6px!important;
+
+}
+
+
+
+/*-----------------------------------------------pagination on bottom*/
+.serviceagedevider{
+  width:1035px!important;
+  border: solid 0.6px #d5d5d5;
+  /*margin-bottom: 20px;*/
+  margin-bottom: 9px;
+  margin-top: 60px;
+
+
+}
+
+.pagination_type3 .pagination__number
+{
+  border-radius: 50%;
+}
+
+.pagination__number.pagination__number_active
+{
+  background: #f8b002!important;
+}
+
+.pagination
+{
+  text-align: center;  
+}
+.pagination ul li a
+{
+  font-family: Roboto;
+  font-size: 14px;
+  letter-spacing: -0.4px;
+  color: #686868;
+}
+.paginationPageNumber{
+  font-size: 10px;
+  letter-spacing: -0.3px;
+ float: left;
+ padding-top: 12px;
+  color: #686868;
+}
+.paginationPageNumber{
+  margin-left: -151px;
+}
+
+/*-footer---*/
+
+.footertxt {
+    font-size: 12px!important;
+    letter-spacing: -0.1px;
+    color: #485465;
+    margin-left: 24px;
+  }
+
+
+/*--------------------------------------------------Overview Tab media query---------------------*/
+
+@media only screen and (min-width: 320px) and (max-width: 1300px){
+} 
+
+/*.card4
+{
+ height: 700px;
+}*/
+
+/*--------------------------------------------------Overview Tab---------------------*/

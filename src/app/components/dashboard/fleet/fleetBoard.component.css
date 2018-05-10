@@ -1,0 +1,154 @@
+.dashoardFleetCard{
+    width: 100%;
+    height: 296px;
+    border-radius: 10px; 
+}
+.titlefleet {
+    width: 44px;
+    height: 26px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.3px;
+    text-align: left;
+    color: #4a4a4a!important;
+    font-family: Roboto;
+}
+.fleetsidetitle {
+    font-size: 25px;
+    color: #9b9b9b!important;
+    padding-top: 35px;
+    font-family: Roboto;
+}
+.countNo {
+    font-size: 34px;
+    color: #70c8be!important;
+    padding-top: 23px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.fleetcardsubtitle {
+    font-size: 14px;
+    letter-spacing: -0.2px;
+    color: #9b9b9b!important;
+    padding-top: 48px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.countNo:hover{
+    overflow: visible;
+}
+#CountHover:hover + #fleetcardsubtitleHover {
+    opacity: 1;   
+}
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+.fleetsidetitle{
+font-size: 148%;
+}
+.countNo{
+font-size: 170%;
+}
+.fleetcardsubtitle{
+font-size: 85%;
+}
+}
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+.fleetsidetitle{
+font-size: 25px;
+}
+.countNo{
+font-size: 34px;
+}
+.fleetcardsubtitle{
+font-size: 14px;
+}
+}
+/*------------------------------Mobile version*/
+@media only screen and (max-width: 500px) {  
+.dashoardFleetCard{
+margin-top: 15%;
+width: auto;
+border-radius: 10px;
+}
+.countNo{
+padding-top: 24%!important;
+}
+}
+/* ------------------------------iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+.dashoardFleetCard{
+margin-top: 15%;
+width: auto;
+border-radius: 10px;
+}
+.fleetsidetitle{
+font-size: 22px;
+}
+.countNo{
+padding-top: 27%!important;
+font-size: 28px;    
+}
+}
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px){
+.dashoardFleetCard{
+margin-top: 15%;
+width: auto;
+border-radius: 10px;
+}
+.fleetsidetitle{
+font-size: 22px;
+}
+.countNo{
+padding-top: 26%!important;
+font-size: 24px;    
+}
+}
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px){
+.dashoardFleetCard{
+margin-top: 15%;
+width: auto;
+border-radius: 10px;
+}
+.fleetsidetitle{
+font-size: 22px;
+}
+.countNo{
+padding-top: 23%!important;
+font-size: 24px;    
+
+}
+}
+/*------------------------------Tab version*/
+@media (max-width:900px) and (min-width:600px) {
+.dashboard{
+display: none;
+}
+.dashoardFleetCard{
+margin-top: 12%;
+width: auto;
+border-radius: 10px;
+}
+}
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+.fleetsidetitle{
+font-size: 22px;
+}
+.countNo{
+padding-top: 82%!important;
+font-size: 28px;    
+margin-left: 55%!important;
+overflow: visible;
+}
+.fleetcardsubtitle{
+display: none;
+}
+}

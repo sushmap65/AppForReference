@@ -1,0 +1,149 @@
+<div id="containerdata">
+  <div class="rowalignshow">
+    <div class="row fleettyperow">
+      <div class="nav-content fleetDisNavContent">
+        <ul class="tabs tabs-transparent">
+          <li class="tab fleetDisctab">
+            <a class="OverviewTab" [href]="assetUrl">Overview</a>
+          </li>
+          <li class="tab fleetDisctab">
+            <a class="UtilisationTab" href="#utilisation">Utilization</a>
+          </li>
+          <li class="tab fleetDisctab">
+            <a class="HealthTab active-nav" href="#health">Health</a>
+          </li>
+          <li class="tab fleetDisctab">
+            <a class="RulesTab" href="#rules">Rules</a>
+          </li>
+          <li class="tab fleetDisctab">
+            <a class="ETATab" href="#eta">ETA</a>
+          </li>
+          <li class="tab fleetDisctab">
+            <a class="SOSTab" href="#sos">Nearby Dealer</a>
+          </li>
+          <li class="tab fleetDisctab">
+            <a class="RouteReplayTab" href="#routereplay">Route Replay</a>
+          </li>
+          <li class="tab fleetDisctab">
+            <a class="DataTab" href="#data">Data</a>
+          </li>
+          <li class="tab fleetDisctab" *ngIf="userType === 'Dealer'">
+            <a class="ServiceTab" href="#service">Service</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- first row card -->
+  <div class="row fleettyperow active" id="health-screen">
+    <div class="col s12 m10 l10 offset-m2 offset-l2">
+      <div class="col s12 m6 l6">
+        <div class="card EngineHealthCard">
+          <div class="card-content">
+           <div class="BatteryHealthclass">Battery Health</div>
+           <div *ngIf="assetBatteryAlert !== undefined && assetBatteryAlert.length === 0" class="error-msg">
+            <p><i class="fa fa-battery-three-quarters"></i>&nbsp;&nbsp;Data is not available</p>
+            </div>
+           <div style="padding-left: 2%;" *ngIf="assetBatteryAlert !== undefined && assetBatteryAlert.length >0">
+            <div class="row batteryHealthDiv" *ngFor="let event of assetBatteryAlert let i = index" >
+              <div *ngIf="i<7">
+                <div class="col s6 m6 BatteryHealthSub">
+                  <span class="BatteryHealthSubTitle">{{event.name}}</span>
+                </div>
+                <div class="col s2 m3 l3 push-l3 BatteryHealthRound">
+                  <span [ngClass]="{green:'StatusGreen',red:'StatusRed',grey:'StatusGrey'}[event.color]"><i class="fa fa-circle" aria-hidden="true"></i></span>
+                </div>
+                <div class="col s4 m3 l3 push-l1 BatteryHealthValue">
+                  <span class="BatteryStatusSpan" *ngIf="event.stat">{{ event.value}}
+                    {{event.type}}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l6">
+        <div class="card BatteryHealthCard">
+          <div class="card-content">
+            <div class="BatteryHealthclass">Engine Health</div>
+             <div *ngIf="assetEnginAlert !== undefined && assetEnginAlert.length  === 0" class="error-msg">
+            <p><i class="fa fa-cogs"></i>&nbsp;&nbsp;Data is not available</p>
+            </div>
+            <div style="padding-left: 2%;" *ngIf="assetEnginAlert !== undefined && assetEnginAlert.length >0">
+              <div class="row batteryHealthDiv" *ngFor="let event of assetEnginAlert let i = index" >
+                <div *ngIf="i<7">
+                  <div class="col s6 m6 l6">
+                    <span class="BatteryHealthSubTitle">{{event.name}}</span>
+                  </div>
+                  <div class="col s2 m3 l3 push-l3 BatteryHealthRound">
+                    <span [ngClass]="{green:'StatusGreen',red:'StatusRed',grey:'StatusGrey'}[event.color]"><i class="fa fa-circle" aria-hidden="true"></i></span>
+                  </div>
+                  <div class="col s4 m3 l3 push-l1 BatteryHealthValue">
+                    <!-- <span class="BatteryStatusSpan" *ngIf="event.stat">{{event.stat}}</span> -->
+                    <span class="BatteryStatusSpan" *ngIf="event.stat">{{ event.value}}&nbsp;&nbsp;{{event.type}}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- second row card -->
+      <div class="row fleettyperow active" id="health-screen">
+       <div>
+        <div class="col s12 m6 l6">
+          <div class="card EngineHealthCard">
+            <div class="card-content">
+              <div class="BatteryHealthclass">Safety Alert</div>
+               <div *ngIf="safetyAlert !== undefined && safetyAlert.length === 0" class="error-msg">
+            <p><i class="fa fa-wrench"></i>&nbsp;&nbsp;Data is not available</p>
+            </div>
+              <div style="padding-left: 2%;" *ngIf="safetyAlert !== undefined && safetyAlert.length >0">
+                <div class="row batteryHealthDiv" *ngFor="let event of safetyAlert let i = index" >
+                  <div *ngIf="i<7">
+                    <div class="col s6 m6">
+                      <span class="BatteryHealthSubTitle">{{event.name}}</span>
+                    </div>
+                    <div class="col s2 m3 l3 push-l3 BatteryHealthRound">
+                      <span [ngClass]="{green:'StatusGreen',red:'StatusRed',grey:'StatusGrey'}[event.color]"><i class="fa fa-circle" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="col s4 m3 l3 push-l1 BatteryHealthValue">
+                      <!-- <span class="BatteryStatusSpan" *ngIf="event.stat">{{event.stat}}</span> -->
+                      <span class="BatteryStatusSpan" *ngIf="event.value">{{ event.value}}&nbsp;&nbsp;{{event.type}}</span>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l6">
+          <div class="card BatteryHealthCard">
+            <div class="card-content">
+              <div class="BatteryHealthclass">Security Alert</div>
+               <div *ngIf="securityAlert !== undefined && securityAlert.length === 0" class="error-msg">
+            <p><i class="fa fa-bullhorn"></i>&nbsp;&nbsp;Data is not available</p>
+            </div>
+              <div style="padding-left: 2%;" *ngIf="securityAlert !== undefined && securityAlert.length >0">
+                <div class="row batteryHealthDiv" *ngFor="let event of securityAlert let i = index" >
+                  <div *ngIf="i<7">
+                    <div class="col s6 m6 l6" *ngIf = "event.time">
+                      <span class="BatteryHealthSubTitle" >{{event.name}}</span>
+                    </div>
+                    <div class="col s2 m3 l3 push-l3 BatteryHealthRound" *ngIf = "event.time">
+                      <span [ngClass]="{green:'StatusGreen',red:'StatusRed',grey:'StatusGrey'}[event.color]"><i class="fa fa-circle" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="col s4 m3 l3 push-l1 BatteryHealthValue">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+

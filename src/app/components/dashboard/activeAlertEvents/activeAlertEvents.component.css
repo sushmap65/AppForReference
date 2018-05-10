@@ -1,0 +1,39 @@
+.cardrowalign {
+  width: 100%;
+  height: 240px;
+}
+.dashoardActiveAlertCard{
+  width: 100%;
+  height: 325px;
+  border-radius: 10px;
+}
+.titleactivealerts{
+  width: 44px;
+  height: 26px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: #4a4a4a;
+  font-family: Roboto;
+}
+.cardrowalign{
+  /*margin-top: -3%;*/
+}
+/*------------------------------Mobile version*/
+
+@media only screen and (max-width: 500px) {
+.dashoardActiveAlertCard{
+  margin-top: 5%;
+  width: auto;
+  border-radius: 10px;
+}
+}
+/*------------------------------Tab version*/
+@media (max-width:900px) and (min-width:600px) {
+.dashoardActiveAlertCard{
+  margin-top: 12%;
+  width: auto;
+  border-radius: 10px;
+}
+}

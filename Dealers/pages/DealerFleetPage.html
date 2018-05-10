@@ -1,0 +1,765 @@
+                  <!DOCTYPE html>
+                  <html>
+
+                  <head>
+                  <title>JCB Project</title>
+                  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+                  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+                  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+                  <link href="https://sass-lang.com/documentation/file.SASS_REFERENCE.html">
+                  <link rel="stylesheet" type="text/css" href="../css/materialize.min.css">
+                  <link rel="stylesheet" href="../icons/font-awesome-4.7.0/css/font-awesome.min.css">
+                  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+                  <script
+                        src="https://code.jquery.com/jquery-3.1.1.min.js"
+                        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+                        crossorigin="anonymous">                            
+                  </script>
+                  <link rel="stylesheet" type="text/css" href="../css/global.css">
+                  <link rel="stylesheet" type="text/css" href="../css/dealerfleet.css">
+                  <script src="../js/semantic.min.js"></script>
+                  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                  </head>
+
+                  <body>
+                  <!--===================================header-->
+                 <!--<div id="header">
+                        <div class="logo">
+                           <a href="#"><img class="brandlogo" src="../images/brand_logo.png"></a>
+                        </div>
+                        <div class="username">
+                          <p>Hi Raphael!</p>
+                        </div>
+                        <div class="row valign-wrapper">
+                           <div class="col s2">
+                              <div class="userimg">
+                                  <img class="imgCircle" src="../images/userPic1.png">
+                              </div>
+                           </div>
+                        </div>
+                    </div> -->
+                     <!--==============code using nav for responsive header brandlogo username userimg -->
+            <nav class="navStyle">
+                 <div class="nav-wrapper">
+                    <!--  <a href="#" class="brand-logo"><img class="brandlogo" src="../images/brand_logo.png"></a> -->
+                     <a href="#" class="brand-logo"><img class="brandlogo1" src="../images/HeaderLogoFinal.png"></a>
+                     <ul id="nav-mobile" class="right hide-on-med-and-down">
+                         <li><p class="userNameStyle">Hi Raphael!</p></li>
+                         <li class="userimg"><img class="imgCircle" src="../images/userPic1.png" onerror="this.src='../images/userPlaceholder.png';"></li>          
+                    </ul>
+                 </div>
+            </nav>         
+                  <!--============================container,content,dashboard-->
+                  <div id="container">
+                      <div class="content">
+                          <div class="row">
+                              <div class="dashboard hoverable dashboardcollapse" id="dashboardHide">
+                                  <div id="dashboarddata" class="col s12 m12 l12">
+                                      <ul id="dashboarditems">
+                                          <a href="../index.html">
+                                             <li class="sidebarItem">                                            
+                                                <i class="material-icons">ac_unit</i><span class="dashboardtxt sidebarItemText">Dashboard</span>
+                                             </li>
+                                          </a>                                       
+
+                                         <!--  <li class="fleetSidebarItem accordion fleetSidebarItemLi 
+                                              sidebarItem active" id="xxx">
+                                              <a href="#"><i class="material-icons">local_shipping</i>
+                                              <span class="txt fleetHeading sidebarItemText">Fleet</span></a>
+                                          </li>    
+                                            <ul class="panel">
+                                                <li class="panelFirstItem sidebarItem active" id="fleetId"><a href="pages/DealerFleetPage.html"><img src="icons/Group 14.png"><span>Sold</span></a></li>
+                                                <li><a href="pages/sold.html"><img src="icons/Group 15.png"><span>Un-Sold</span></a></li>
+                                                <li><a href="pages/sold.html"><img src="icons/Group 16.png"><span>In-Transit</span></a></li>
+                                            </ul> -->  
+                                              <a href="DealerFleetPage.html"><li class="sidebarItem accordion active " >
+                                                  <i class="material-icons">local_shipping</i>
+                                                  <span class="txt fleetHeading sidebarItemText">Fleet</span>
+                                                  </li>
+                                              </a> 
+                                             <!--  <ul class="panel" id="fleetPanelId">
+                                                  <li class="panelFirstItem sidebarItem active" id="fleetId"><a href="pages/sold.html"><img src="../icons/Group 14.png"><span>Sold</span></a></li>
+                                                  <li><a href="pages/sold.html"><img src="../icons/Group 15.png"><span>Un-Sold</span></li>
+                                                  <li><a href="pages/sold.html"><img src="../icons/Group 16.png"><span>In-Transit</span></li>
+                                              </ul> -->                          
+                                       
+                                          <a href="#">
+                                              <li class="sidebarItem">
+                                              <i class="material-icons">group</i><span class="dealerstxt sidebarItemText">Customers</span>
+                                              </li>
+                                          </a>
+
+                                          <a href="#">
+                                              <li class="sidebarItem">
+                                              <i class="fa fa-file-text"></i>
+                                              <span class="reportstxt sidebarItemText">Reports</span>
+                                              </li>
+                                          </a>
+
+                                          <a href="#">
+                                              <li class="sidebarItem">
+                                              <i class="material-icons">notifications</i>
+                                              <span class="notificationtxt sidebarItemText">Notification</span>
+                                              </li>
+                                          </a>
+
+                                          <a href="#">
+                                              <li class="sidebarItem">
+                                              <i class="material-icons">sms</i><span class="helpsupporttxt sidebarItemText">Demo</span>
+                                               </li>
+                                          </a>
+
+                                          <a href="#">
+                                               <li class="sidebarItem">
+                                               <i class="material-icons">feedback</i><span class="complaintstxt sidebarItemText">Complaints</span>
+                                               </li>
+                                          </a>
+
+                                          <li class="logoutcol logoutLi" id="logoutpadding">
+                                             <a href="DealerLogin.html"><i class="fa fa-sign-out fa-1x " id="logouticon" aria-hidden="true"></i><p class="logouttxt">Logout</p></a>
+                                          </li>
+                                      </ul>
+                                      <!--</nav>-->
+                                  </div><!--dashboarddata end-->
+                              </div>
+                          </div>  <!-- row end -->
+                        
+                              <div id="containerdata" class="rowalignshow"> 
+                         
+                          <!-- ===================================================search fliter========-->
+                           <div class="row">
+                               <div class="col s12 m10 offset-m2" style="margin-top: 26px;">
+                                    <div class="card searchsmallteal">  
+                                           <input type="text!important" name="searchfleetitems" class="searchfleetdata" id="searchfleetdataId" placeholder="&nbsp;Search here....">
+                                           <button type="submit" class="searchButton" id="searchcollid"> <i class="fa fa-search"></i></button> 
+                                    </div>
+                               </div>
+                           </div> 
+                          <!-- ===================================================Asset type========-->
+                        <div class="row fleettyperow">
+                                      <div class="col s12 m10 offset-m2">
+                                          <div class="card small teal">  
+                                            <div class="card card-content card1contentclass">              
+                                              <div class="col custom-col grid-example" id="assettypescroll">
+                                                <div class="titleclassAsset"><p class="cardtitle">Asset Type</p>
+                                                </div>
+
+                                               <div class="row checkboxrow">
+                                                <ul class="Assettypeul">
+                                                  <li class="fleettypeLi" id="chkbackloderId">
+                                                    <input type="checkbox" class="filled-in" id="filled-in-box" name="assetType" value="Backloader" />
+                                                    <label for="filled-in-box" id="lbltxtbackloader" class="chkboxtxt">Backloader</label>
+                                                    <img class="assetTypeImg1" src="../images/jcb1.png">
+                                                  </li>  
+                                                  <li class="fleettypeLi">
+                                                    <input type="checkbox" class="filled-in" id="filled-in-box1" name="assetType" value="Excavator"/>
+                                                    <label for="filled-in-box1" id="lbltxtexcovator" class="chkboxtxt">Excavator</label>
+                                                     <img class="assetTypeImg2" src="../images/jcb2.jpg">
+                                                  </li> 
+                                                  <li class="fleettypeLi">
+                                                    <input type="checkbox" class="filled-in" id="filled-in-box2"
+
+                                                    name="assetType" value="Compactors" />
+                                                    <label for="filled-in-box2"  id="lbltxtCompactors" class="chkboxtxt">Compactors</label>
+                                                     <img class="assetTypeImg3" src="../images/jcb3.png">
+                                                  </li> 
+                                                  <li class="fleettypeLi">
+                                                    <input type="checkbox" class="filled-in" id="filled-in-box3" name="assetType" value="Telkggg" />
+                                                    <label for="filled-in-box3" id="lbltxtTelkggg" class="chkboxtxt">Telkggg</label>
+                                                     <img class="assetTypeImg4" src="../images/jcb1.png">
+                                                  </li>  
+                                                  <li class="fleettypeLi">
+                                                    <input type="checkbox" class="filled-in" id="filled-in-box4" name="assetType" value="Telkgggg" />
+                                                    <label for="filled-in-box4" id="lbltxtTelkgggg" class="chkboxtxt">Telkggga</label>
+                                                     <img class="assetTypeImg4" src="../images/jcb1.png">
+                                                  </li>  
+                                                    <li class="fleettypeLi">
+                                                    <input type="checkbox" class="filled-in" id="filled-in-box4" name="assetType" value="Telkgggg" />
+                                                    <label for="filled-in-box4" id="lbltxtTelkgggg" class="chkboxtxt">Telkggga</label>
+                                                     <img class="assetTypeImg4" src="../images/jcb1.png">
+                                                  </li> 
+                                                    <li class="fleettypeLi">
+                                                    <input type="checkbox" class="filled-in" id="filled-in-box4" name="assetType" value="Telkgggg" />
+                                                    <label for="filled-in-box4" id="lbltxtTelkgggg" class="chkboxtxt">Telkggga</label>
+                                                     <img class="assetTypeImg4" src="../images/jcb1.png">
+                                                  </li> 
+                                                    <li class="fleettypeLi">
+                                                    <input type="checkbox" class="filled-in" id="filled-in-box4" name="assetType" value="Telkgggg" />
+                                                    <label for="filled-in-box4" id="lbltxtTelkgggg" class="chkboxtxt">Telkggga</label>
+                                                     <img class="assetTypeImg4" src="../images/jcb1.png">
+                                                  </li> 
+                                                    <li class="fleettypeLi">
+                                                    <input type="checkbox" class="filled-in" id="filled-in-box4" name="assetType" value="Telkgggg" />
+                                                    <label for="filled-in-box4" id="lbltxtTelkgggg" class="chkboxtxt">Telkggga</label>
+                                                     <img class="assetTypeImg4" src="../images/jcb1.png">
+                                                  </li> 
+                                                    <li class="fleettypeLi">
+                                                    <input type="checkbox" class="filled-in" id="filled-in-box4" name="assetType" value="Telkgggg" />
+                                                    <label for="filled-in-box4" id="lbltxtTelkgggg" class="chkboxtxt">Telkggga</label>
+                                                     <img class="assetTypeImg4" src="../images/jcb1.png">
+                                                  </li> 
+                                                </ul>
+                                              </div>
+                                            </div>
+                                             
+                                             <div class="col custom-col grid-example verticalLine" 
+                                             id="dealernamescroll">
+                                            
+                                              <div class="titleclassDealer"><p class="cardtitle">Dealer Name</p>
+                                              <div class="searchdiv">                                              
+                                              <a href="#"><i class="material-icons searchiconclass" id="iconSearchidDealer">search</i>
+                                              <input id="searchDealer" class="searchbarfleet myClassSearchField" type="search" placeholder="Search Dealer" required></a>
+                                              </div>
+                                              </div>
+
+                                            
+                                              <div class="row checkboxrow">
+                                              
+                                              <ul class="dealertypeul" >                                    
+                                                <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box10" value="R.S Dealer LTD"/>
+                                                  <label for="filled-in-box10" class="chkboxtxt">R.S Dealer LTD</label>
+                                                </li>  
+                                                 <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box11" value="Universal Dealer BLR"/>
+                                                  <label for="filled-in-box11" class="chkboxtxt">Universal Dealer BLR</label>
+                                                </li> 
+                                                 <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box12" value="Impulse Dealers" />
+                                                  <label for="filled-in-box12" class="chkboxtxt">Impulse Dealers</label>
+                                                </li> 
+                                                 <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box13" value="D.Lal & Son Dealers" />
+                                                  <label for="filled-in-box13" class="chkboxtxt">D.Lal & Son Dealers</label>
+                                                </li>  
+                                                  <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box13" value="D.Lal & Son Dealers" />
+                                                  <label for="filled-in-box13" class="chkboxtxt">D.Lal & Son Dealers</label>
+                                                </li>  
+                                                  <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box13" value="D.Lal & Son Dealers" />
+                                                  <label for="filled-in-box13" class="chkboxtxt">D.Lal & Son Dealers</label>
+                                                </li>  
+                                                  <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box13" value="D.Lal & Son Dealers" />
+                                                  <label for="filled-in-box13" class="chkboxtxt">D.Lal & Son Dealers</label>
+                                                </li>  
+                                                  <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box13" value="D.Lal & Son Dealers" />
+                                                  <label for="filled-in-box13" class="chkboxtxt">D.Lal & Son Dealers</label>
+                                                </li>  
+                                                  <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box13" value="D.Lal & Son Dealers" />
+                                                  <label for="filled-in-box13" class="chkboxtxt">D.Lal & Son Dealers</label>
+                                                </li>  
+                                                  <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box13" value="D.Lal & Son Dealers" />
+                                                  <label for="filled-in-box13" class="chkboxtxt">D.Lal & Son Dealers</label>
+                                                </li>  
+                                                </ul>
+                                                
+                                             </div>           
+                                             </div>
+
+
+                                             <div class="col custom-col grid-example verticalLine" id="modelnumberscroll">
+                                             <div class="titleclassModelNo"> <p class="cardtitle">Model Number</p>
+                                             <div class="searchdiv">                                                 
+                                             <a href="#"><i class="material-icons searchiconclass" id="iconSearchidModel">search</i>
+                                            <input id="searchModel" class="searchbarfleet myClassSearchField" type="search" placeholder="Search ModelNo" required></a>
+                                             </div>
+                                             </div>
+                                            
+                                              <div class="row checkboxrow">
+                                             
+                                              <ul class="modelnumbertypeul">
+                                                <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box14" value="#981-123-4556-0" />
+                                                  <label for="filled-in-box14" class="chkboxtxt">#981-123-4556-0</label>
+                                                </li>  
+                                                 <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box15" value="#673-123-4556-0" />
+                                                  <label for="filled-in-box15" class="chkboxtxt">#673-123-4556-0</label>
+                                                </li> 
+                                                 <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box16" value="#764-123-4556-2" />
+                                                  <label for="filled-in-box16" class="chkboxtxt">#764-123-4556-2</label>
+                                                </li> 
+                                                 <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box17" value="#891-123-4559-4" />
+                                                  <label for="filled-in-box" class="chkboxtxt">#891-123-4559-4</label>
+                                                </li>  
+                                                   <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box17" value="#891-123-4559-4" />
+                                                  <label for="filled-in-box" class="chkboxtxt">#891-123-4559-4</label>
+                                                </li> 
+                                                   <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box17" value="#891-123-4559-4" />
+                                                  <label for="filled-in-box" class="chkboxtxt">#891-123-4559-4</label>
+                                                </li> 
+                                                   <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box17" value="#891-123-4559-4" />
+                                                  <label for="filled-in-box" class="chkboxtxt">#891-123-4559-4</label>
+                                                </li> 
+                                                   <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box17" value="#891-123-4559-4" />
+                                                  <label for="filled-in-box" class="chkboxtxt">#891-123-4559-4</label>
+                                                </li> 
+                                                   <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box17" value="#891-123-4559-4" />
+                                                  <label for="filled-in-box" class="chkboxtxt">#891-123-4559-4</label>
+                                                </li> 
+                                                   <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box17" value="#891-123-4559-4" />
+                                                  <label for="filled-in-box" class="chkboxtxt">#891-123-4559-4</label>
+                                                </li> 
+                                                </ul>
+                                                
+                                             </div></div>
+                                             <div class="col custom-col grid-example verticalLine" id="locationscroll">
+                                            <div class="titleclassLocation">  <p class="cardtitle">Location</p>
+                                              <div class="searchdiv">
+                                                  
+                                                  <a href="#"><i class="material-icons searchiconclass" id="iconSearchidLocation">search</i>
+                                                  <input id="searchLocation" class="searchbarfleet myClassSearchField" type="search" placeholder="Search Location" required></a>
+                                              </div>
+                                            </div>
+
+                                              <div class="row checkboxrow">
+                                             
+
+                                               <ul class="locationtypeul">
+                                               <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box18" value="Bangalore" />
+                                                  <label for="filled-in-box18" class="chkboxtxt">Bangalore</label>
+                                                </li>  
+                                                 <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box19" value="New Delhi" />
+                                                  <label for="filled-in-box19" class="chkboxtxt">New Delhi</label>
+                                                </li> 
+                                                 <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box20" value="Mumbai" />
+                                                  <label for="filled-in-box20" class="chkboxtxt">Mumbai</label>
+                                                </li> 
+                                                 <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box21" value="Chennai" />
+                                                  <label for="filled-in-box21" class="chkboxtxt">Chennai</label>
+                                                </li> 
+                                                  <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box21" value="Chennai" />
+                                                  <label for="filled-in-box21" class="chkboxtxt">Chennai</label>
+                                                </li> 
+                                                  <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box21" value="Chennai" />
+                                                  <label for="filled-in-box21" class="chkboxtxt">Chennai</label>
+                                                </li> 
+                                                  <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box21" value="Chennai" />
+                                                  <label for="filled-in-box21" class="chkboxtxt">Chennai</label>
+                                                </li> 
+                                                  <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box21" value="Chennai" />
+                                                  <label for="filled-in-box21" class="chkboxtxt">Chennai</label>
+                                                </li> 
+                                                  <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box21" value="Chennai" />
+                                                  <label for="filled-in-box21" class="chkboxtxt">Chennai</label>
+                                                </li> 
+                                                  <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box21" value="Chennai" />
+                                                  <label for="filled-in-box21" class="chkboxtxt">Chennai</label>
+                                                </li> 
+                                                
+                                                
+                                                </div>
+                                                </div> 
+                                                 <div class="col custom-col grid-example verticalLine" id="makescroll">
+                                                  <div class="titleclassmake">   <p class="cardtitle">Make</p>
+                                                        <div class="searchdiv">
+                                                  
+                                                  <a href="#"><i class="material-icons searchiconclass" id="iconSearchidMake">search</i>
+                                                  <input id="searchMake" class="searchbarfleet myClassSearchField" type="search" placeholder="Search Make" required></a>
+                                              </div>
+                                                  </div>
+                                                
+                                              <div class="row checkboxrow">
+                                               
+
+                                               <ul class="maketypeul">
+                                               <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box22" value="2017" />
+                                                  <label for="filled-in-box22" class="chkboxtxt">2017</label>
+                                                </li>  
+                                                 <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box23" value="2016" />
+                                                  <label for="filled-in-box23" class="chkboxtxt">2016</label>
+                                                </li> 
+                                                 <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box24" value="2014" />
+                                                  <label for="filled-in-box24" class="chkboxtxt">2014</label>
+                                                </li> 
+                                                 <li class="fleettypeLi">
+                                                  <input type="checkbox" class="filled-in" id="filled-in-box25" value="2015" />
+                                                  <label for="filled-in-box25" class="chkboxtxt">2015</label>
+                                                </li> 
+                                                </ul>
+                                                
+                                                </div>
+                                                </div>  
+                                                <a href="#0" class="pagination__number"><i class="material-icons nexticon">chevron_right</i></a>                     
+                                          </div> 
+                                        </div>
+                                    </div>                     
+                                </div> 
+                             <!-- ===================================================Right Side Arrow========-->
+                                                  <!-- <div class="pagination">
+                                                  <a href="#0" class="pagination__number"><i class="material-icons nexticon">chevron_right</i></a>
+                                                  </div>  -->                    
+                                        <!--     </div> 
+                                          </div>
+                                      </div>                     
+                                  </div> --><!--row fleettyperow end-->
+
+                                  <!--======================================seacrh data card list -->
+                                   <div class="row">
+                                      <div class="col s12 m10 offset-m2">
+                                        <div class="card large teal">  
+                                           <div class="card-content">  
+                                              <div  id="testing"></div>
+                                              <!-- <div class="chips-initial" id="chipId"></div>  -->
+                                              <!--  <div class="chips chips-initial" style="background-color: red;"></div> -->
+                                              <div class="pagedetails"><p class="caption1">Fleet<span>(showing 24 of 1028)</span></p>
+                                              </div>
+                                              <div class="divider soldpagedevider1"></div>
+                                               <!-- newly add test-->
+                                              <!--  <div class="divider soldpagedevider"></div> -->
+
+
+    <!--===============================Search Result display using small card-->
+      <div class="container searchdatatcontainer">
+   <!--===============================First Row-->      
+      <div class="row">
+           <div class="col m3 s6">
+                 <div class="card fleetsmallcard">
+                       <a href="DealerFleetDiscription.html">
+                       <p class="searchcarddatatitle">Backloader1</p>
+                      <div class="searchcarddata">
+                           Model-#981-123-456-0<br>
+                           Make -Jan 2016<br>
+                           IMEI -123-456-890<br>
+                           Dealer -Universal Dealer BLR<br>
+                      </div> </a>                                                                                 
+                 </div>
+          </div>
+           <div class="col m3 s6">
+                 <div class="card fleetsmallcard">
+                       <a href="fleetdescriptionpage.html">
+                      <!--  <p class="searchcarddatatitle">Backloader1</p>
+                      <div class="searchcarddata"> -->
+                      <img class="responsive-img" src="../charts/smallChart.png">
+                          <!--  Model-#981-123-456-0<br>
+                           Make -Jan 2016<br>
+                           IMEI -123-456-890<br>
+                           Dealer -Universal Dealer BLR<br> -->
+                     <!--  </div> --> </a>                                                                                 
+                 </div>
+          </div>
+          <div class="col m3 s6">
+             <div class="card fleetsmallcard1">
+                  <p class="searchcarddatatitle">Backloader2</p>
+                        <div class="searchcarddata">
+                        Model-#981-123-456-0<br>
+                        Make -Jan 2016<br>
+                        IMEI -123-456-890<br>
+                        Dealer -Universal Dealer BLR<br>
+                        </div>                                                        
+                  </div>
+          </div>
+          <div class="col m3 s6">
+          <div class="card fleetsmallcard2">
+                  <p class="searchcarddatatitle">Backloader3</p>
+                        <div class="searchcarddata">
+                             Model-#981-123-456-0<br>
+                             Make -Jan 2016<br>
+                             IMEI -123-456-890<br>
+                             Dealer -Universal Dealer BLR<br>
+                        </div>                                           
+                  </div> 
+          </div>
+          <div class="col m3 s6">
+              <div class="card fleetsmallcard3">
+                  <p class="searchcarddatatitle">Backloader4</p>
+                        <div class="searchcarddata">
+                             Model-#981-123-456-0<br>
+                             Make -Jan 2016<br>
+                             IMEI -123-456-890<br>
+                             Dealer -Universal Dealer BLR<br>
+                              <p style="background: #f3f3f3;height: 20px;"><i class="fa fa-cogs">Service Overdue</i></p>
+                        </div>  
+                       <!--  <div class="card-footer smallcardfooter">
+                        <i class="fa fa-cogs smallcardicon"><span>  ServiceOverdue</span></i>
+                        </div>  -->                                                         
+                  </div>
+          </div>
+    
+
+         <!--  </div> -->
+ <!--===============================Second Row-->
+         <!--   <div class="row smallcardSecondRow"> -->
+                 <div class="col m3 s6">
+                    <div class="card fleetsmallcard1">
+                          <a href="fleetdescriptionpage.html">
+                          <p class="searchcarddatatitle">Backloader1</p>
+                          <div class="searchcarddata">
+                               Model-#981-123-456-0<br>
+                               Make -Jan 2016<br>
+                               IMEI -123-456-890<br>
+                               Dealer -Universal Dealer BLR<br>
+                          </div> </a>                                                                                 
+                    </div>
+                </div>
+                <div class="col m3 s6">
+                    <div class="card fleetsmallcard3">
+                          <p class="searchcarddatatitle">Backloader2</p>
+                          <div class="searchcarddata">
+                                Model-#981-123-456-0<br>
+                                Make -Jan 2016<br>
+                                IMEI -123-456-890<br>
+                                Dealer -Universal Dealer BLR<br>
+                          </div>                                                        
+                    </div>
+                </div>
+                <div class="col m3 s6">
+                    <div class="card fleetsmallcard2">
+                    <p class="searchcarddatatitle">Backloader3</p>
+                          <div class="searchcarddata">
+                               Model-#981-123-456-0<br>
+                               Make -Jan 2016<br>
+                               IMEI -123-456-890<br>
+                               Dealer -Universal Dealer BLR<br>
+                          </div>                                           
+                    </div>
+               </div>
+               <div class="col m3 s6">
+                      <div class="card fleetsmallcard">
+                            <p class="searchcarddatatitle">Backloader4</p>
+                            <div class="searchcarddata">
+                                 Model-#981-123-456-0<br>
+                                 Make -Jan 2016<br>
+                                 IMEI -123-456-890<br>
+                                 Dealer -Universal Dealer BLR<br>
+                                 <p style="background: #f3f3f3;height: 20px;"><i class="fa fa-cogs">Service Overdue</i></p>
+                            </div>  
+                           <!--  <div class="card-footer smallcardfooter">
+                            <i class="fa fa-cogs smallcardicon"><span>  ServiceOverdue</span></i>
+                            </div> -->                                                          
+                      </div>
+               </div>
+         <!--  </div> -->
+          <!--===============================Third Row-->
+      <!--      <div class="row smallcardThirdRow"> -->
+                <div class="col m3 s6">
+                      <div class="card fleetsmallcard1">
+                            <a href="fleetdescriptionpage.html">
+                            <p class="searchcarddatatitle">Backloader1</p>
+                            <div class="searchcarddata">
+                                 Model-#981-123-456-0<br>
+                                 Make -Jan 2016<br>
+                                 IMEI -123-456-890<br>
+                                 Dealer -Universal Dealer BLR<br>
+                            </div> </a>                                                                                 
+                      </div>
+              </div>
+              <div class="col m3 s6">
+                    <div class="card fleetsmallcard3">
+                    <p class="searchcarddatatitle">Backloader2</p>
+                          <div class="searchcarddata">
+                          Model-#981-123-456-0<br>
+                          Make -Jan 2016<br>
+                          IMEI -123-456-890<br>
+                          Dealer -Universal Dealer BLR<br>
+                          </div>                                                        
+                    </div>
+              </div>
+              <div class="col m3 s6">
+              <div class="card fleetsmallcard">
+                    <p class="searchcarddatatitle">Backloader3</p>
+                    <div class="searchcarddata">
+                         Model-#981-123-456-0<br>
+                         Make -Jan 2016<br>
+                         IMEI -123-456-890<br>
+                         Dealer -Universal Dealer BLR<br>
+                          <p style="background: #f3f3f3;height: 20px;"><i class="fa fa-cogs">Service Overdue</i></p>
+                    </div>   
+               <!--  <div class="card-footer smallcardfooter">
+                <i class="fa fa-cogs smallcardicon"><span>  ServiceOverdue</span></i>
+                </div>  -->                                       
+             </div>
+             </div>
+            <div class="col m3 s6">
+            <div class="card fleetsmallcard2">
+                <p class="searchcarddatatitle">Backloader4</p>
+                <div class="searchcarddata">
+                     Model-#981-123-456-0<br>
+                     Make -Jan 2016<br>
+                     IMEI -123-456-890<br>
+                     Dealer -Universal Dealer BLR<br>
+                </div>  
+            </div>
+            </div>
+           <!--  </div> -->
+           <!--===============================Fourth Row-->
+          <!--  <div class="row smallcardFourthRow"> -->
+                <div class="col m3 s6">
+                    <div class="card fleetsmallcard">
+                          <a href="fleetdescriptionpage.html">
+                          <p class="searchcarddatatitle">Backloader1</p>
+                          <div class="searchcarddata">
+                               Model-#981-123-456-0<br>
+                               Make -Jan 2016<br>
+                               IMEI -123-456-890<br>
+                               Dealer -Universal Dealer BLR<br>
+                               <p style="background: #f3f3f3;height: 20px;"><i class="fa fa-cogs"><span>Service Overdue</span></i></p>
+                          </div> </a> 
+                          <!--   <div class="card-footer smallcardfooter">
+                          <i class="fa fa-cogs smallcardicon"><span>  ServiceOverdue</span></i>
+                          </div>  -->                                                                               
+                    </div>
+              </div>
+              <div class="col m3 s6">
+                  <div class="card fleetsmallcard1">
+                  <p class="searchcarddatatitle">Backloader2</p>
+                        <div class="searchcarddata">
+                        Model-#981-123-456-0<br>
+                        Make -Jan 2016<br>
+                        IMEI -123-456-890<br>
+                        Dealer -Universal Dealer BLR<br>
+                        </div>                                                        
+                  </div>
+             </div>
+            <div class="col m3 s6">
+                <div class="card fleetsmallcard2">
+                <p class="searchcarddatatitle">Backloader3</p>
+                      <div class="searchcarddata">
+                           Model-#981-123-456-0<br>
+                           Make -Jan 2016<br>
+                           IMEI -123-456-890<br>
+                           Dealer -Universal Dealer BLR<br>
+                      </div>                                           
+                </div>
+            </div>
+           
+          <!-- </div> -->
+  </div>
+          
+                                               
+                                  
+                                              <div class="divider soldpagedevider2"></div>
+
+
+                                          <div class="pagination">
+                                          <ul class="pagination pagination_type3">
+                                         <!--  <li class="pagination__item"><a href="#0" class="pagination__number"><i class="material-icons" style="font-size:36px;color: black;">chevron_left</i></a></li> -->
+                                          <li class="paginationPageNumber">PAGE 1 OF 11</li>
+                                          <li class="pagination__item"><a href="#0" class="pagination__number pagination__number_active">1</a></li>
+                                          <li class="pagination__item"><a href="#0" class="pagination__number">2</a></li>
+                                          <li class="pagination__item"><a href="#0" class="pagination__number">3</a></li>
+                                          <li class="pagination__item"><a href="#0" class="pagination__number">4</a></li>
+                                          <li class="pagination__item"><a href="#0" class="pagination__number">5</a></li>
+                                          <li class="pagination__item"><a href="#0" class="pagination__number">6</a></li>
+                                          <li class="pagination__item"><a href="#0" class="pagination__number">7</a></li>
+                                          <li class="pagination__item"><a href="#0" class="pagination__number">8</a></li>
+                                          <li class="pagination__item"><a href="#0" class="pagination__number">9</a></li>
+                                          <li class="pagination__item"><a href="#0" class="pagination__number">10</a></li>
+                                          <li class="pagination__item"><a href="#0" class="pagination__number"><i class="material-icons" style="font-size:36px;color: black;">chevron_right</i></a></li>
+                                          </ul>
+                                          </div>
+                                              
+                                        </div>
+
+
+
+      <!--===============================Search Result display using small card End-->                                            
+ 
+                                             
+
+
+                                    
+                                              
+                                        </div>
+                                    </div>
+                            </div>
+                      </div>
+              </div>
+      <!--  </div> -->
+
+
+
+                   <!--================================footer-->
+     <!--  <footer class="page-footer" style="background-color:#f9f9f9!important;">                
+                       <p id="footerid" class="footertxt">2017 Looking Glass . Privacy Policy
+                       <span class="footertxt2">Helpline No: +91 9101234567 | About Us | Contact Us
+                       </span>
+                       </p>                            
+      </footer>  --> 
+       <footer class="page-footer" style="background-color:#F9F9F9!important;"> 
+       
+        <!--  <div class="row">
+            <div class="container">
+              <div class="col s7 m5 l5" style="padding-left: 29px;">
+                   <p><img src="../images/LG_Logo.png" style="width: 20px;height: 20px;">Powered by Wipro Looking Glass. Privacy Policy</p>
+              </div>
+            
+              <div class="col s5 m4 l6 push-l4" style="padding-left: 70px;">
+                   <p>Helpline No: +91 9101234567 | About Us | Contact Us</p>
+              </div>
+          </div>
+       </div> -->               
+                         <p id="footerid" class="footertxt"><!-- <img src="../images/LG_Logo.png" style="width: 20px;height: 20px;margin-bottom: -4px;"></img> --><span>&nbsp;&nbsp;Powered by Wipro Looking Glass. <!-- Privacy Policy -->
+                         <!-- <span class="footertxt2">Helpline No: +91 9101234567 | About Us | Contact Us
+                         </span> -->
+                         </p>                            
+        </footer>
+
+                  <!--================================footer-->
+                  <!--================================material scripts-->
+                  <script type="text/javascript " src="../js/jquery.min.js "></script>
+                  <script type="text/javascript " src="../js/materialize.min.js "></script>
+                  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                  <script type="text/javascript" src="js/barchart1.js"></script>
+                  <!--<script type="text/javascript" src="js/dropdown.js"></script>-->
+                  <script src="https://d3js.org/d3.v4.min.js"></script>
+                  <script src="../js/dashboardcollapse.js"></script>
+                  <script src="../js/fleetaccordion.js"></script>
+                   <script src="../js/soldpage.js"></script>
+                    <script src="../js/searchfleetType.js"></script>
+                  <script type="text/javascript ">
+                  var collapse = "open"
+                  $(document).ready(function() {
+                      $(".button-collapse ").sideNav();
+                      $(".navicon").sideNav();
+                      $('.dropdown').dropdown('open');
+                      $('.dropdown').dropdown('close');
+                      $('.count').each(function() {
+                          $(this).prop('Counter', 0).animate({
+                              Counter: $(this).text()
+                          }, {
+                              duration: 2000,
+                              easing: 'swing',
+                              step: function(now) {
+                                  $(this).text(Math.ceil(now));
+                              }
+                          });
+                      });
+
+                      //active dashboard listitems
+                      $('ul li a').click(function() {
+                          $('ul li a').removeClass("active");
+                          $(this).addClass("active");
+                      });
+                      
+                  });
+                  </script>
+                  </body>
+
+                  </html>

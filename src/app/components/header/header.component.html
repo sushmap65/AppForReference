@@ -1,0 +1,23 @@
+<div class="row navbar-fixed">
+  <nav class="navStyle">
+    <div class="nav-wrapper">
+      <a [routerLink]="['home']"><img class="brandlogo1" src="assets/img/HeaderLogoFinal.png"></a>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"></a>
+      <div class="mobile-nav-button">
+        <i (click)="showMobileNav($event)" class="fa fa-bars mobile-nav-hamburger-menu" aria-hidden="true" style="color: black!important;"></i>         
+      </div>
+
+      <ul id="nav-mobile" class="navMobile right hide-on-med-and-down" *ngIf="message">
+        <li *ngIf="message === 'login-success'">
+          <p class="userNameStyle">Hi, {{userName}}</p>
+        </li>
+        <li class="userimg" *ngIf="message === 'login-success'">
+          <img class="imgCircle" [src]="userImage">
+        </li>
+      </ul>
+    </div>  
+  </nav>
+</div>
+<div class="hide-on-large-only">
+  <mobile-nav [mobileNavStatusChanged]="isMobileNavVisible" ></mobile-nav>
+</div>

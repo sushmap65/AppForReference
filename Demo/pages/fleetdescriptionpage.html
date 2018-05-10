@@ -1,0 +1,419 @@
+                  <!DOCTYPE html>
+                  <html>
+
+                  <head>
+                  <title>JCB Project</title>
+                  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+                  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+                  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+                  <link href="https://sass-lang.com/documentation/file.SASS_REFERENCE.html">
+                  <link rel="stylesheet" type="text/css" href="../css/materialize.min.css">
+                  <link rel="stylesheet" href="../icons/font-awesome-4.7.0/css/font-awesome.min.css">
+                  <script
+                        src="https://code.jquery.com/jquery-3.1.1.min.js"
+                        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+                        crossorigin="anonymous">                            
+                  </script>
+                  <link rel="stylesheet" type="text/css" href="../css/global.css">
+                  <link rel="stylesheet" type="text/css" href="../css/fleetDescription.css">
+
+                  </head>
+
+                  <body>
+                  <!--===================================header-->
+                 <!--  <div id="header">
+                      <div class="logo">
+                          <a href="#"><img class="brandlogo" src="../images/brand_logo.png"></a>
+                      </div>
+                      <div class="username">
+                          <p>Hi Raphael!</p>
+                      </div>
+                      <div class="row valign-wrapper">
+                          <div class="col s2">
+                              <div class="userimg">
+                                  <img class="imgCircle" src="../images/userPic1.png">
+                              </div>
+                          </div>
+                      </div>
+                  </div> -->
+                     <!--==============code using nav for responsive header brandlogo username userimg -->
+            <nav style="background: #ffffff;height: 60px;position: fixed;z-index: 10">
+            <div class="nav-wrapper">
+           <!--  <a href="#" class="brand-logo"><img class="brandlogo" src="../images/brand_logo.png"></a> -->
+             <a href="#" class="brand-logo"><img class="brandlogo1" src="../images/AssetManagement powe Copy.png"></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><p class="userNameStyle">Hi Raphael!</p></li>
+            <li class="userimg"><img class="imgCircle" src="../images/userPic1.png" onerror="this.src='../images/userPlaceholder.png';"></li>          
+            </ul>
+            </div>
+            </nav> 
+        
+                  <!--============================container,content,dashboard-->
+                  <div id="container">
+                      <div class="content">
+                          <div class="row">
+                              <div class="dashboard hoverable dashboardcollapse" id="dashboardHide">
+                                  <div id="dashboarddata" class="col s12 m12 l12">
+                                      <!-- <nav id="primary">-->
+                                      <ul id="dashboarditems">
+                                          <a href="../index.html"><li class="sidebarItem">
+                                            <i class="material-icons">ac_unit</i><span class="dashboardtxt sidebarItemText">Dashboard</span>
+                                            </li>
+                                          </a>
+                                         
+
+                                          <a href="sold.html"><li class="fleetSidebarItem accordion               fleetSidebarItemLi sidebarItem active" id="xxx">
+                                          <i class="material-icons">local_shipping</i>
+                                          <span class="txt fleetHeading sidebarItemText">Fleet</span>
+                                          </li> </a>                               
+                                       
+                                          <a href="../pages/dealerspage.html"><li class="sidebarItem">
+                                              <i class="material-icons">group</i><span class="dealerstxt sidebarItemText">Dealers</span>
+                                          </li></a>
+
+                                          <a href="../pages/reportspage.html"><li class="sidebarItem">
+                                              <i class="fa fa-file-text"></i>
+                                              <span class="reportstxt sidebarItemText">Reports</span>
+                                          </li></a>
+
+                                          <a href="../pages/notificationpage.html"><li class="sidebarItem">
+                                              <i class="material-icons">notifications</i>
+                                              <span class="notificationtxt sidebarItemText">Notification</span>
+                                          </li></a>
+
+                                          <a href="../pages/helpsupportpage.html"><li class="sidebarItem">
+                                              <i class="material-icons">sms</i><span class="helpsupporttxt sidebarItemText">Help&Support</span>
+                                          </li></a>
+
+                                           <a href="../pages/complaintspage.html"><li class="sidebarItem">
+                                             <i class="material-icons">feedback</i><span class="complaintstxt sidebarItemText">Complaints</span>
+                                          </li></a>
+
+                                          <li class="logoutcol logoutLi" id="logoutpadding">
+                                          <a href="../pages/homepage.html"><i class="fa fa-sign-out fa-1x " id="logouticon" aria-hidden="true"></i><p class="logouttxt">Logout</p></a>
+                                          </li>
+
+                                      </ul>
+                                      <!--</nav>-->
+                                  </div><!--dashboarddata end-->
+                              </div>
+                          </div>  <!-- row end -->
+                        <div id="containerdata">
+                                                            
+                              <!-- ===================================================3 Tabs ========-->
+                              <div class="rowalignshow"> 
+                                     <div class="row fleettyperow">                         
+                                          <div class="nav-content fleetDisNavContent">
+                                            <ul class="tabs tabs-transparent">
+                                                    <li class="tab fleetDisctab">
+                                                    <a class="OverviewTab" href="#Overview">Overview</a></li>
+                                                    <li class="tab fleetDisctab"><a class="UtilisationTab" href="#Utilisation">Utilization</a></li>
+                                                    <li class="tab fleetDisctab"><a class="HealthTab" href="#Health">Health</a></li>
+                                            </ul>
+                                          </div> 
+                                     </div>
+                             </div> 
+                               <!-- ==================================Backloader Details with Img ========--> 
+
+<div class="row fleettyperow" id=Overview>
+     <div class="col s12 m10 offset-m2"> 
+          <div class="col s12 m6">
+          <div class="row">
+               <div class="card BackloaderCard">
+                   <div class="card-content">
+                   <div class="col s12 m5 l7">
+                      <img  class="responsive-img" id="fleetDisImgCard" src="../images/jcb1.png" onerror="this.src='../images/JCBPlaceholderImg.png';">
+                   </div>
+                   <div class="col s12 m5 l5" style="padding-left: 81px;
+    margin-top: -17px;">                                            
+                            <p class="cardStackHeadingMain">Backloader</p>
+                            <p class="cardStackHeadingSub">KA-01-1234</p><br>
+                            <ul>
+                                  <li class="cardStackHeadingSub2">Model - #981-123-1</li>
+                                  <li class="cardStackHeadingSub2"> IMEI - 123 - 456 - 8</li>
+                                  <li class="cardStackHeadingSub2">Dealer - Universal</li>
+                            </ul>                                                                            
+                  </div>
+                  </div>
+              </div>
+              </div>
+         </div> 
+           <!-- =================================================== Card Having Google Map ========-->
+         <div class="col s12 m6">
+              <div class="card card2">
+                   <div class="card-content">
+                       <div class="col s12 cardrowalign">
+                             <iframe class="fleetDisMap1" src=https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15989.496528504267!2d10.766447308276039!3d59.93733468265508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1500531081690"   
+                             frameborder="0"
+                             style="border:0"
+                             allowfullscreen>
+                             </iframe>
+                       </div>
+                  </div>
+             </div>
+        </div> 
+          <!-- ===================================================User Dealer Card ========-->
+        <div class="col s12 m6">
+             <div class="card card3">
+                  <div class="card-content">
+                       <div class="card-image BackloaderJCBDiv">                    
+                        <p class="FleetDisDealerTitle">Dealer</p>
+                        <img class="imgCircleDealer" src="../images/Dealer_Image.png" onerror="this.src='../images/userPlaceholder.png';">
+                              <ul class="DealerDetailsUl">
+                              <li class="DealerNameLi">Jonnathan Trait</li>
+                              <li class="DealerDetailsLi"><img class="StarRating" src="../images/5startpic.png"></li>
+                              <li class="DealerDetailsLi">Location : Electronic City, Bangalore</li>
+                              <li class="DealerDetailsLi">Mobile : +91 9876543210</li>
+                              <li class="DealerDetailsLi">Email : jonnathan.traot@example.com</li>
+                              </ul>
+                       </div>
+                   <div class="divider DealerUserDivider"></div>
+                   <div class="card-image BackloaderJCBDiv2">                    
+                        <p class="FleetDisUserTitle">User</p>
+                        <img class="imgCircleUser" src="../images/User_Image.png" onerror="this.src='../images/userPlaceholder.png';">
+                        <ul class="UserDetailsUl">
+                        <li class="UserNameLi">Matt Prior</li>
+                          <li class="DealerDetailsLi"><img class="StarRating" src="../images/5startpic.png"></li>
+                        <li class="UserDetailsLi">Location : Electronic City, Bangalore</li>
+                        <li class="UserDetailsLi">Mobile : +91 9876543210</li>
+                        <li class="UserDetailsLi">Email : jonnathan.traot@example.com</li>
+                        </ul>
+                    </div>                     
+                 </div>
+          </div>
+       </div>
+  </div>
+<!-- </div> -->
+<!-- </div>
+</div> -->
+  <!-- ===================================================Active Alert Card ========-->
+<div class="row fleettyperow">
+     <div class="col s12 m10 offset-m2"> 
+        <div class="col s12 m12">
+           <div class="card card4">
+                 <div class="card-content">
+                      <div class="col s12 m3 ActiveAlertDiv">
+                            <span class="fleetDisActiveAlerts">Active Alerts</span>
+                            <ul class="activeAlertUl">
+                            <li class="activeAlertLi"><p>Low Engine Oil</p><span class="">Engine Oil is very low, continued<br>
+                            usage may lead to engine failure!<br></span>
+                            <span><b>07:45 AM</b>, 10th May 2017</span></li>
+                            <li class="activeAlertLi2"><p>Low Battery </p><span class="">Battery level is low, check<br>
+                            before further use!<br></span>
+                            <span><b>09:00 AM</b>, 11th May 2017</span></li>
+                            </ul>   
+                      </div>
+                      <div class="col s12 m3">
+                            <ul class="activeAlertUl">
+                            <li><i class="fa fa-medkit activeAlertLiIconMedikit" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-recycle activeAlertLiIconRecycle1" aria-hidden="true"></i></li>
+                            </ul>  
+                      </div>
+                      <div class="col s12 m3 activeAlertcolDiv verticalLine">
+                            <ul class="activeAlertUl">
+                            <li class="activeAlertLi"><p>Over Heating</p><span class="">Engine is overheated which would<br>
+                            lead to engine failure!<br></span>
+                            <span><b>07:45 AM</b>, 10th May 2017</span></li>
+                            <li class="activeAlertLi"><p>Theft Alert</p><span class="">Machine is outside the alloted<br>
+                            area, please check!<br></span>
+                            <span><b>09:00 AM</b>, 11th May 2017</span></li>
+                            </ul>                
+                      </div>
+                      <div class="col s12 m3">
+                            <ul class="activeAlertUl">
+                            <li><i class="fa fa-recycle activeAlertLiIconRecycle2" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-unlock-alt activeAlertLiIconUnlock" aria-hidden="true"></i></li>
+                            </ul> 
+                      </div> 
+                </div>
+           </div>
+        </div> 
+   </div>
+</div>
+</div>
+<!-- ===================================================Utilisation Tab====================-->
+ <div class="row fleettyperow" id="Utilisation">
+   <div class="row fleettyperow">
+          <div class="col s12 m10 offset-m2"> 
+            <div class="col s12 m12">
+              <!-- ===================================================Active Utili Card ========-->
+               <div class="card UtilisationPatternCard">
+                     <div class="card-content">                      
+                        <div class="row">
+                              <div class="col s4 m4 l4"> 
+                                    <span class="UtilisationPatternTitle">Utilization Pattern</span>
+                              </div>  
+                              <div class="col s4 m2 l2 push-l4 ActiveUtiFromDate">    
+                                    <input type="text" id="datepicker" class="RevenueGuideDatePickrFrom" placeholder="From">
+                              </div>
+                              <div class="col s1 m2 l2 push-l4">
+                                    <i class="fa fa-calendar prefix" aria-hidden="true"></i>  
+                              </div> 
+                              <div class="col s4 m2 l2 push-l3 ActiveUtiToDate">            
+                                    <input type="text" id="datepicker2" class="RevenueGuideDatePickrTo" placeholder="To">
+                              </div>
+                              <div class="col s1 m2 l2 push-l3"> 
+                                    <i class="fa fa-calendar prefix" aria-hidden="true"></i>
+                              </div>
+                        </div>
+                       <!--  </div> -->
+                        <div class="col s12 ActiveAlertDiv">
+                            <img  class="responsive-img UtilisationChartPic" src="../charts/UtilisationChartNew.png">
+                        </div>                        
+                     </div>
+                </div>
+             </div>
+           </div>
+    </div>          
+ </div>
+ <!-- ===================================================Health Tab====================-->
+ <div class="row fleettyperow" id="Health" style="text-align: center;">
+  <div class="row fleettyperow">
+     <div class="col s12 m12 offset-m2"> 
+       <!-- ===================================================Engine Health Card ========-->
+        <div class="col s12 m5">
+           <div class="card EngineHealthCard">
+                 <div class="card-content">
+                     <span class="EngineHealthclass">Engine Health</span>
+                           <div class="EngineHealthDiv">                   
+                                <ul>
+                                  <li class="EngineHealthSubTitle1">Engine Oil Pressure
+                                     <span class="EngineOilCircle"> &#9679;</span>
+                                     <span class="EngineOilSpan">Low</span></li>
+
+                                  <li class="EngineHealthSubTitle">Coolant Temperature
+                                     <span class="CoolantCircle"> &#9679;</span>
+                                     <span class="EngineOilSpan">100 C</span></li>
+
+                                  <li class="EngineHealthSubTitle">Water in Fuel
+                                     <span class="WaterFuelCircle"> &#9679;</span>
+                                     <span  class="EngineOilSpan">Low</span></li>
+
+                                  <li class="EngineHealthSubTitle"> Fuel Level
+                                     <span class="FuelLevelCircle"> &#9679;</span>
+                                     <span class="EngineOilSpan">Full</span></li>
+                                </ul>
+                           </div>                             
+                  </div>
+             </div>
+        </div>
+          <!-- ===================================================Battery Health Card ========-->
+        <div class="col s12 m5">
+           <div class="card BatteryHealthCard">
+                 <div class="card-content">
+                      <span class="BatteryHealthclass">Battery Health</span>
+                        <div class="EngineHealthDiv"> 
+                               <ul>
+                                  <li class="EngineHealthSubTitle1">Battery Status
+                                    <span class="BatteryStatusCircle"> &#9679;</span>
+                                    <span class="BatteryStatusSpan">Low</span></li>
+
+                                  <li class="EngineHealthSubTitle">Battery Health
+                                    <span class="BatteryHealthCircle"> &#9679;</span>
+                                    <span class="BatteryStatusSpan">Low</span></li>
+
+                                  <li  class="EngineHealthSubTitle">Battery Connectivity
+                                    <span class="BatteryConnectivityCircle"> &#9679;</span>
+                                    <span class="BatteryStatusSpan">Low</span></li>
+                                         
+                                  <li  class="EngineHealthSubTitle">Battery Capacity
+                                    <span class="BatteryCapacityCircle"> &#9679;</span>
+                                    <span class="BatteryStatusSpan">Low</span></li>
+                              </ul>
+                        </div>
+                 </div>
+          </div>
+        </div>
+    </div>
+  </div>
+    <!-- ===================================================Health Issue Card ========-->
+  <div class="row fleettyperow">
+     <div class="col s12 m10 offset-m2"> 
+        <div class="col s12 m12">
+           <div class="card HealthIssuesCard">
+                 <div class="card-content">
+                   <div class="row">
+                          <div class="col s4 m4 l4"> 
+                               <span class="HealthIssuesTitle">Health Issues</span>
+                          </div>  
+                          <div class="col s4 m2 l2 push-l4 healthFromDate">    
+                                <input type="text" id="datepicker" class="RevenueGuideDatePickrFrom" placeholder="From">
+                          </div>
+                          <div class="col s1 m2 l2 push-l4">
+                                <i class="fa fa-calendar prefix calenderIconHealth" aria-hidden="true"></i>  
+                          </div> 
+                          <div class="col s4 m2 l2 push-l3 healthToDate">            
+                                <input type="text" id="datepicker2" class="RevenueGuideDatePickrTo" placeholder="To">
+                          </div>
+                          <div class="col s1 m2 l2 push-l3"> 
+                                <i class="fa fa-calendar prefix calenderIconHealth" aria-hidden="true"></i>
+                          </div>
+                    </div>
+                   <div class="col s12">
+                        <img  class="responsive-img healthissuechartClass" src="../charts/healthissuechart.png">
+                   </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+  </div>
+ </div>
+ </div>
+                                       
+                   <!-- ================================footer-->
+    <!--   <footer class="page-footer" style="background-color:#f9f9f9!important;">                
+                       <p id="footerid" class="footertxt">2017 Looking Glass . Privacy Policy
+                       <span class="footertxt2">Helpline No: +91 9101234567 | About Us | Contact Us
+                       </span>
+                       </p>                            
+      </footer>  --> 
+        <footer class="page-footer" style="background-color:#e7ebf1!important;">                
+                         <p id="footerid" class="footertxt"><!-- <img src="../images/LG_Logo.png" style="width: 20px;height: 20px;margin-bottom: -4px;"></img> --><span>&nbsp;&nbsp;Powered by Wipro Looking Glass. <!-- Privacy Policy -->
+                        <!--  <span class="footertxt2">Helpline No: +91 9101234567 | About Us | Contact Us
+                         </span> -->
+                         </p>                            
+        </footer> 
+
+                  <!--================================footer-->
+                  <!--================================material scripts-->
+                  <script type="text/javascript " src="../js/jquery.min.js "></script>
+                  <script type="text/javascript " src="../js/materialize.min.js "></script>
+                  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                  <script type="text/javascript" src="js/barchart1.js"></script>
+                  <!--<script type="text/javascript" src="js/dropdown.js"></script>-->
+                  <script src="https://d3js.org/d3.v4.min.js"></script>
+                  <script src="../js/dashboardcollapse.js"></script>
+                  <script src="../js/fleetaccordion.js"></script>
+                  <script src="../js/soldpage.js"></script>
+                  <script src="../js/fleetDiscrption.js"></script>
+                  <script src="../js/searchfleetType.js"></script>
+                  <script type="text/javascript ">
+                  var collapse = "open"
+                  $(document).ready(function() {
+                      $(".button-collapse ").sideNav();
+                      $(".navicon").sideNav();
+                      $('.dropdown').dropdown('open');
+                      $('.dropdown').dropdown('close');
+                      $('.count').each(function() {
+                          $(this).prop('Counter', 0).animate({
+                              Counter: $(this).text()
+                          }, {
+                              duration: 2000,
+                              easing: 'swing',
+                              step: function(now) {
+                                  $(this).text(Math.ceil(now));
+                              }
+                          });
+                      });
+
+                      //active dashboard listitems
+                      $('ul li a').click(function() {
+                          $('ul li a').removeClass("active");
+                          $(this).addClass("active");
+                      });
+                      
+                  });
+                  </script>
+                  </body>
+
+                  </html>

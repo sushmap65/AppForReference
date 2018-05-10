@@ -1,0 +1,87 @@
+.navClass{
+	background: #f8b004!important;
+	height: 60px;
+	position: fixed;
+	z-index: 10;
+	}
+
+.loginModal{
+	max-height: 90%!important;
+	height: 423px!important;
+}
+
+.modalContentDiv p{
+	color: black!important;
+    font-size: 26px;
+    text-align: center;
+}
+
+.modalContentDiv span{
+	color:#85C1E9;
+	}
+
+.facebooktn{
+	 color: white!important;
+	 background: #3b5998!important;
+	 margin-left: 269px;
+}	
+
+.dividerAfterFBtn{
+	margin-top: 10px;
+}
+
+.LoginUserLogo{
+	text-align: center;
+	padding-top: 10px;
+}
+
+.TxtboxEmailID{
+	margin-top: -31px;
+}
+
+.TxtboxEmailID input{
+	margin-left: 235px;
+}
+
+.TxtboxPassword{
+	margin-top: -56px;
+}
+
+.TxtboxPassword input{
+	margin-left: 235px;
+}
+
+.forgotPassword{
+	color: red;
+	margin-left: 325px;
+
+}
+
+.loginBtnDiv{
+	text-align: center;
+}
+
+.loginBtnDiv a{
+    background-color:#5DADE2!important;
+}
+.homefooter{
+	position:fixed;
+   left:0px;
+   bottom:0px;
+   height:45px;
+   width:100%;
+   background:#f9f9f9;
+
+
+}
+.LookingGlassLogo{
+	width: 20px;
+	height: 20px;
+	margin-bottom: -4px;
+}
+.LookingGlassTxtDiv{
+	margin-left: 20px;
+
+}
+
+

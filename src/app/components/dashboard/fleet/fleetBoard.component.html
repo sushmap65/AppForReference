@@ -1,0 +1,26 @@
+<div class="col s12 m12 l12">
+  <div class="card hoverable dashoardFleetCard " id="color">
+    <div class="card-content white-text">
+      <div class="row " *ngIf="fleetData">
+       <div class="titlefleet">Fleet</div> 
+       <div class="row">
+        <div class="col s6 m4 l4">
+          <p class="fleetsidetitle">Sold</p>
+          <p class="fleetsidetitle">Warehouses</p>
+          <p class="fleetsidetitle">In Transit</p>  
+        </div>
+        <div class="col s6 m3 l3 push-l1 push-m1 push-s2" id="CountHover">
+          <p class="countNo fleetCountNo fleetCountNo1">{{fleetData.assetSoldCount}}</p>
+          <p class="countNo fleetCountNo">{{fleetData.assetInWarehouseCount}}</p>
+          <p class="countNo fleetCountNo">{{fleetData.assetInTransitCount}}</p>  
+        </div>
+        <div class="col s4 m5 l4 push-l1 push-m1 hide-on-small-only" id="fleetcardsubtitleHover">
+         <p class="fleetcardsubtitle fleetCountNo">Units Till Date</p>
+         <p class="fleetcardsubtitle fleetCountNo">All Locations</p>
+         <p class="fleetcardsubtitle fleetCountNo">In Multiple Shipments</p>          
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+</div>

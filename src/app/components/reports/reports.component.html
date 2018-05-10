@@ -1,0 +1,66 @@
+<div id="containerdata">
+	<div class="row fleettyperow active" id="utilisation-screen">
+		<div class="row fleettyperow">
+			<div class="col s12 m10 l10 offset-l2 offset-m2">
+				<div class="col s12 m12 l12">
+					<div class="card PreferencesPatternCard">
+						<div class="card-content">
+							<div class="col s12 m6 l12 responsive-table">
+								<div class="row">
+									<div class="col s12 m4 l4 UtilisationPatternTitle">Reports
+									</div>
+								</div>
+								<div [hidden]="!loading" class="row spin-loader">
+								<app-loader [loading]="!loading"></app-loader>
+								</div>
+								<div class="row">
+									<div class="col s6 m6 l4 push-l1">
+										<div>
+											<label>Start Date:</label>
+											<div [ngClass]="{'invaliddata' : uiErrorStartDate == true}">
+												<my-date-picker [options]="myDatePickerOptions" (dateChanged)="onDateChanged($event, 'startDate')"></my-date-picker>
+											</div>
+										</div>
+									</div>
+									<div class="col s6 m6 l4 push-l2">
+										<div>
+											<label>End Date:</label>
+											<div [ngClass]="{'invaliddata' : uiErrorEndDate == true}">
+												<my-date-picker [options]="myDatePickerOptions" (dateChanged)="onDateChanged($event, 'endDate')"></my-date-picker>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s12 m12 l12 checkbox-search-div">
+										<div class="col s1 m2 l2 push-l1 pull-s1 checkbox-vin-div">
+											<!-- <input type="checkbox" [(ngModel)]="isVINchecked"  value='{{isVINchecked}}' id="test5" /> -->
+											<label for="test5">VIN</label>
+										</div>
+										<div class="col s10 m10 l8 push-m2 push-s1 card searchsmallteal" id="vin-parent">
+											<input
+											type="text!important"  name="searchfleetitems" class="searchfleetdata" id="searchByVin" placeholder="&nbsp;Please provide full vin number" #assetSearchTerm (keyup.enter)="searchAssets(assetSearchTerm.value)">
+											<button type="submit" class="searchButton" id="searchcollid" (click)="searchAssets( assetSearchTerm.value)">
+												<i class="fa fa-search"></i></button>
+											</div>
+										</div>
+									</div>
+									<div class="row reports-main-row">
+										<div class="col s12 m12 l12 push-l1 reports-main-div" *ngFor="let report of reportListType">
+											<input type="checkbox" id='{{report.type}}' [(ngModel)]="report.checked"  value='{{report.type}}'/>
+											<label for='{{report.type}}' class="reports-label">{{report.name}}</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col s6 m6 l6 push-s4 push-m4 push-l4 reports-main-div">
+											<button class="btn_btncolr" (click)="downloadReports()">Download</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>

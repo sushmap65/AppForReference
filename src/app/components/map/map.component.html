@@ -1,0 +1,48 @@
+<div class="assetlists-container" *ngIf="mapdata !== undefined">
+  <sebm-google-map class="fleetDisMap1" [latitude]="lat" [longitude]="lng"
+  [zoom]="zoom" [radius]="mapradius">
+  <div *ngFor="let m of mapdata">
+    <sebm-google-map-marker
+    [latitude]="m.lat"
+    [longitude]="m.lng"
+    [zoom] = "m.zoom"
+    [iconUrl]="m.iconUrl"
+    [radius] = "m.radius"
+    [markerDraggable] = "m.draggable"
+    (dragEnd)="markerDragEnd(m, $event)"
+    [zIndex] = "m.zindex"
+    >
+      <sebm-google-map-info-window [disableAutoPan]="true" [maxWidth]="600">
+        <div style="color: black" *ngIf = 'm.IMEI'> <b>IMEI :</b> {{m.IMEI}} </div>
+        <div style="color: black" *ngIf = 'm.location'> <b>Location :</b> {{m.location}} </div>
+        <div style="color: black" *ngIf = 'm.dealerName'> <b>DealerName :</b> {{m.dealerName}} </div>
+        <div style="color: black" *ngIf = 'm.IgnitionStatus'> <b>Ignition Status :</b> {{m.IgnitionStatus}}</div>
+        <div style="color: black" *ngIf = 'm.LastUpdatedStatus'> <b>Last Updated Time : </b>{{m.LastUpdatedStatus}}</div>
+        <div *ngIf="m.name === 'DI'">
+          <div style="color: black"> <b>Time :</b> {{m.time}} </div>
+          <div style="color: black"> <b>Oil Pressure :</b> {{m.op}}</div>
+          <div style="color: black"> <b>Coolant Temperature: </b>{{m.ct}}</div>
+          <div style="color: black"> <b>External Battery Voltage: </b>{{m.eb}}</div>
+          <div style="color: black"> <b>Speed: </b>{{m.speed}}</div>
+        </div>
+        <div *ngIf="m.name === 'EVENTS'">
+          <div style="color: black"> <b>Event Name :</b> {{m.eventName}}</div>
+          <div style="color: black"> <b>Value :</b> {{m.eventValue}} </div>
+          <div style="color: black"> <b>Time :</b> {{m.time}} </div>
+
+        </div>
+      </sebm-google-map-info-window>
+  </sebm-google-map-marker>
+  <sebm-google-map-circle
+          [latitude]="m.lat"
+          [longitude]="m.lng"
+          [radius]="m.radius"
+          [zoom] = "m.zoom"
+          [fillColor]="m.fillColor"
+    ></sebm-google-map-circle>
+</div>
+<div *ngIf='direction !== undefined && direction.length >= 2'>
+  <sebm-google-map-directions [origin]="origin" [destination]="destination" [waypoints]="waypoints"></sebm-google-map-directions>
+</div>
+</sebm-google-map>
+</div>

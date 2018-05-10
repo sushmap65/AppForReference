@@ -1,0 +1,169 @@
+<div id="containerdata" (click) = "closeModal()">
+
+ <!-- *************************Nav Bar Tabs-->
+ <div class="rowalignshow"> 
+  <div class="row fleettyperow">
+    <div class="nav-content fleetDisNavContent">
+      <ul class="tabs tabs-transparent">
+        <li class="tab fleetDisctab">
+          <a class="OverviewTab" [href]="assetUrl">Overview</a>
+        </li>
+        <li class="tab fleetDisctab">
+          <a class="UtilisationTab" href="#utilisation">Utilization</a>
+        </li>
+        <li class="tab fleetDisctab">
+          <a class="HealthTab" href="#health">Health</a>
+        </li>
+        <li class="tab fleetDisctab">
+          <a class="RulesTab" href="#rules">Rules</a>
+        </li>
+        <li class="tab fleetDisctab">
+          <a class="ETATab" href="#eta">ETA</a>
+        </li>
+        <li class="tab fleetDisctab">
+          <a class="SOSTab" href="#sos">Nearby Dealer</a>
+        </li>
+        <li class="tab fleetDisctab">
+          <a class="RouteReplayTab" href="#routereplay">Route Replay</a>
+        </li>
+        <li class="tab fleetDisctab">
+          <a class="DataTab active-nav" href="#data">Data</a>
+        </li>
+        <li class="tab fleetDisctab" *ngIf="userType === 'Dealer'">
+          <a class="ServiceTab" href="#service">Service</a>
+        </li>
+      </ul>
+    </div> 
+  </div>
+</div>
+<div class="row fleettyperow active" id="utilisation-screen">
+  <div class="row fleettyperow">
+    <div class="col s12 m10 l10 offset-m2 offset-l2">
+      <div class="col s12 m12 l12">
+        <div class="card UtilisationPatternCard">
+          <div class="card-content">
+            <!-- ****************************** Data Tab View Data col 1-->
+            <div class="col s12 m6 l6">
+              <div class="row">
+                <div class="col s12 m4 l4"> 
+                 <span class="UtilisationPatternTitle">View Data</span>
+                 <label *ngIf="page.childrens.length > 3"> Restricted to 4 DataItems / Events Selection </label>
+               </div>
+             </div>
+            <div [hidden]="!loading" class="row spin-loader">
+            <app-loader [loading]="!loading"></app-loader>
+            </div> 
+             <!-- Modal Structure -->
+             <div class="row">
+              <div class="col l5">
+                <div id="modal1" class="modal" *ngIf = "dataItems.length < 1 && !modalDisplay && !loading">
+                <div class="close-mark"><button (click)="closeModal()">X</button></div>
+                  <div class="modal-content">
+
+                   <p class="modal-msg"><i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;No records found</p>
+                  </div>
+                <!--   <div class="modal-footer">
+                    <button type="button" class="btn btn_btncolr"(click)="closeModal()">Close</button>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col l6 push-l3  data-tab-norecord-msg" *ngIf = "dataItems.length < 1">No Records Found</div> -->
+            <div class="row">
+              <div class="col s12 l6 event-table-scroll">
+                <div class="table-scroll">
+                  <div class="col s12 m12 l12">
+                    <div class="row">
+                      <div class="col s4 m4 l4 data-table-header">Data Items</div>
+                      <div class="col s4 m4 l4 data-table-header">Values</div>
+                      <div class="col s4 m4 l4 data-table-header">Last Updates</div>
+                    </div>
+                    <div class="row data-table-contents" *ngFor = "let item of dataItems">
+                     <div *ngIf="item.valueType === 'number'">
+                      <div class="col s4 m4 l6" *ngIf="item.name !== undefined">
+                        <input type="checkbox" class="checkbox-Color" id="{{item.guid}}" value="{{item.guid}}" [disabled]="item.valueType !== 'number'" [(ngModel)]="item.checked" (click)="drawChartForDataItem($event.target.checked, item.itemName, item.guid)">
+                        <label for="{{item.guid}}"></label>
+                        <span>{{item.name}}</span></div>
+                        <div class="col s4 m4 l2 pull-l1 dataitems-table-values">{{item.val}}</div>
+                        <div class="col s4 m4 l4"> {{item.time}}</div>
+                        <hr>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+          <!-- ****************************** Data Tab View Data col 2-->
+          <div class="col s12 m6 l6">
+            <div class="row">
+              <div class="col s12 m2 l2 UtilisationPatternTitleIcon">
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+              </div>
+              <div class="col s10 m4 l4 pull-l1 UtilisationPatternTitle"> 
+                <span class="">Graph</span>
+              </div>
+              <div class="col s12 m2 l3 data-raw-radiobtn">
+                <input class="with-gap" name="group3" type="radio" id="raw" checked (change)="onSelectionChange('raw')"/>
+                <label for="raw" class="data-dropdown-header">Raw</label>
+              </div>
+              <div class="col s12 m4 l3 data-raw-radiobtn"> 
+                <input class="with-gap" name="group3" type="radio" id="aggregated" (change)="onSelectionChange('aggregated')"/>
+                <label for="aggregated" class="data-dropdown-header">Aggregated</label>
+              </div>
+            </div>
+            <div class="row" *ngIf='aggregatedData'>
+              <div class="col s12 m4 l6">
+                <label>Query Start Date:</label>
+                <div [ngClass]="{'invaliddata' : uiErrorStartDate == true}"> 
+                  <my-date-picker [options]="myDatePickerOptions" (dateChanged)="onDateChanged($event, 'startDate')"></my-date-picker>
+                </div>
+              </div>
+              <div class="col s12 m4 l6">
+                <label>Query End Date:</label>
+                <div [ngClass]="{'invaliddata' : uiErrorEndDate == true}">
+                  <my-date-picker [options]="myDatePickerOptions" (dateChanged)="onDateChanged($event, 'endDate')"></my-date-picker>
+                </div>
+              </div>
+            </div>
+            <div class="row" *ngIf='aggregatedData'>
+              <div  class="col s6 m6 l3 data-dropdown-label">
+                <p class="data-dropdown-header">Functions </p> 
+              </div>
+              <div class="col s6 m6 l3">     
+                <select class="select createnode-dropdown" [ngClass]="{'invalid-select ' : uiErrorFunction == true}" [(ngModel)]="selectedFunction" (ngModelChange)="aggregatedFilterChanged()">
+                  <option *ngFor="let level of functions" [ngValue]="level.code">{{level.name}}</option>
+                </select>
+              </div>  
+              <div  class="col s6 m6 l3 data-dropdown-label" *ngIf='aggregatedData'>
+                <p class="data-dropdown-header">Resolutions </p> 
+              </div>
+              <div class="col s6 m6 l3" *ngIf='aggregatedData'>     
+                <select class="select createnode-dropdown" [ngClass]="{'invalid-select ' : uiErrorResolution == true}"  [(ngModel)]="selectedresolutions" (ngModelChange)="aggregatedFilterChanged()">
+                  <option *ngFor="let level of resolutions" [ngValue]="level.code">{{level.name}}</option>
+                </select>
+              </div> 
+            </div>
+            <div class="tabbed" *ngFor="let child of page.childrens; let i=index">
+              <input name="tabbed" id="tabbed{{i}}" type="radio" checked>
+              <section>
+                <h1>
+                  <label for="tabbed{{i}}" data-toggle="tooltip" title="{{child.itemName}}" id="{{child.itemName}}" (click)="setSelectedChartDetails(child.itemGuid, child.itemName)">
+                    {{child.itemName | slice:0:12 }}
+                    <span (click)="removeChart($event, child.itemGuid)">x</span>
+                  </label>
+                </h1>
+                <div class="chart-wrapper" *ngIf="child.chartData !== undefined">
+                  <line-chart [data]="child.chartData" [itemName]="child.itemName"></line-chart>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>

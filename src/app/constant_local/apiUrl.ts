@@ -1,0 +1,10 @@
+export const FleetData = 'http://localhost:8087/fleet';
+export const RevenueData = 'http://localhost:8087/revenue';
+export const PrivateLogin = 'http://localhost:8087/login';
+export const FindAsset = 'http://localhost:8087/findAsset';
+export const AssetStatus = 'http://localhost:8087/assetStatus';
+export const AllEvents = 'http://localhost:8087/allEvents';
+export const GetAssetByClass = 'http://localhost:8087/getAssetByClass';
+export const GetOrgByAssetIdAndType = 'http://localhost:8087/getOrgByAssetIdAndType';
+export const GetEventHistory = 'http://localhost:8087/history';
+export const GetHealthAlertByIds = 'http://localhost:8087/healthIssue';

@@ -1,0 +1,167 @@
+.spin-loader {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.fleettyperow{
+  background: #f9f9f9;
+}
+.fleetDisNavContent{
+  background: #ffffff;
+  height: 62px;
+  padding-left: 231px;
+  width: 108%;
+}
+.fleetDisctab a{ 
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  color: #545454!important;
+}
+.PreferencesPatternCard{
+    width: auto;
+    height: 540px;
+    border-radius: 10px;
+    background: whitesmoke!important;
+}
+.card .card-content {
+    padding: 0;
+    border-radius: 0 0 2px 2px;
+}
+.UtilisationPatternTitle{
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  color: #545454!important;
+/*  float: left;*/
+    font-family: Roboto;
+/*  padding-left: 24px;*/
+    padding-top: 13px;
+}
+ .btn_btncolr{
+  background:#70c8be!important;
+  width: 100px!important;
+  height: 36px!important;
+  border-radius: 8px;
+  color: white;
+  border-style: none;
+  float: right;
+  margin-top: 2%;
+}
+.active-nav {
+  border-bottom: 2px solid #70c8be;
+}
+.sos-current-txt{
+  font-weight: bold;margin-top: 5%;
+}
+.util-submit {
+  background: #70c8be!important;
+  width: 150px!important;
+  height: 38px!important;
+  border-radius: 8px;
+  color: white;
+  border-style: none;
+  margin-top: 20px;
+}
+.searchfleetdata{
+    width: 91%;
+    height: 43px;
+    background-color: #fff;
+    box-shadow: none;
+    border: solid 1px white;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-left: 15px;
+    border-radius: 10px;
+    outline: none;
+}
+.searchButton{
+    position: absolute;  
+    right: 0px;
+    width: 56px;
+    height: 40px;
+    border: 2px solid white;
+    background: white;
+    text-align: center;
+    color: #70c8be;
+    border-radius: 35px!important;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 0px;
+}
+.searchsmallteal{
+    height:50px;
+    background:  #ffffff!important;
+    border-radius: 8px;
+
+}
+.checkbox-search-div{
+   margin-top: 2%;
+}
+.checkbox-vin-div{
+  font-weight: bold;margin-top: 2%;
+}
+.reports-main-row{
+  margin-top: 3%;margin-left: 1%;
+}
+.reports-main-div{
+  padding-top: 1%;
+}
+.reports-label{
+  font-size: 17px;color: black;
+}
+
+/*--------------------------------------------------Overview Tab---------------------*/
+
+
+
+/*.tabs .indicator {
+  width: 79px;
+  height: 2px;
+  background-color: #70c8be!important;
+  margin-left:  18px!important;
+  bottom: 0;
+}
+*/
+
+/*------------------------------Mobile version*/
+
+@media only screen and (max-width: 500px) {
+  .fleetDisNavContent{
+    margin-top: 15%!important;
+    padding-left: 0%;
+    width: 100%;
+  }
+  .UtilisationPatternCard{
+    margin-top: 5%;
+    height: 405px;
+  }
+  .fleetDisctab a{
+    font-size: 13px;
+  }
+}
+
+/*------------------------------Tab version*/
+  @media (max-width:900px) and (min-width:600px) {
+    .fleetDisNavContent{
+    margin-top: 4%;
+    margin-left: -6%;
+  }
+   .UtilisationPatternCard{
+    margin-top: 4%;
+    height: 405px;
+  }
+}
+
+/* ------------------------------iPhone 5 ----------- lanscape mode */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px)
+ and (orientation: landscape){
+.fleetDisNavContent{
+  padding-left: 0px;
+  margin-top: 9%;
+}
+ 
+}
+

@@ -1,0 +1,113 @@
+<div id="containerdata" (click) = "closeModal()">
+  <!-- *************************Nav Bar Tabs-->
+  <div class="rowalignshow"> 
+    <div class="row fleettyperow">
+      <div class="nav-content fleetDisNavContent">
+        <ul class="tabs tabs-transparent">
+          <li class="tab fleetDisctab">
+            <a class="OverviewTab" [href]="assetUrl">Overview</a>
+          </li>
+          <li class="tab fleetDisctab">
+            <a class="UtilisationTab" href="#utilisation">Utilization</a>
+          </li>
+          <li class="tab fleetDisctab">
+            <a class="HealthTab" href="#health">Health</a>
+          </li>
+          <li class="tab fleetDisctab">
+            <a class="RulesTab" href="#rules">Rules</a>
+          </li>
+          <li class="tab fleetDisctab">
+            <a class="ETATab" href="#eta">ETA</a>
+          </li>
+          <li class="tab fleetDisctab">
+            <a class="SOSTab active-nav" href="#sos">Nearby Dealer</a>
+          </li>
+          <li class="tab fleetDisctab">
+            <a class="RouteReplayTab" href="#routereplay">Route Replay</a>
+          </li>
+          <li class="tab fleetDisctab">
+            <a class="DataTab" href="#data">Data</a>
+          </li>
+          <li class="tab fleetDisctab" *ngIf="userType === 'Dealer'">
+            <a class="ServiceTab" href="#service">Service</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- ******************************Event Data Tab col 1-->
+  <div class="row fleettyperow active" id="utilisation-screen">
+    <div class="row fleettyperow">
+      <div class="col s12 m10 l10 offset-m2 offset-l2">
+        <div class="col s12 m12 l12">
+          <div class="card PreferencesPatternCard">
+            <div class="card-content">
+              <div class="col s12 m12 l12">
+                <div class="row">
+                  <div class="col s12 m4 l4 UtilisationPatternTitle"> 
+                   Dealer Information
+                 </div>
+                 <div class="col l6 push-l2 asset-title">Asset Name - {{assetSerialNo}}</div>
+               </div>
+               <div class="row">
+                <div class="col s12 m6 l6">
+                  <div class="row">
+                    <div class="col s12 m12 l4 sos-current-txt" for="disabled1">
+                      Asset's Current Location
+                    </div>
+                    <div class="col s12 m12 l8 disabled-txt-color">
+                      <input type='text' id="disabled1"  disabled value={{currentLocation}}> 
+                    </div>
+                    <div class="col s12 m12 l4 sos-current-txt" for="disabled1">
+                      Radius
+                    </div>
+                    <div class="col s12 m12 l8 disabled-txt-color">
+                      <input type='text' [(ngModel)] = 'radius' value = {{radius}}> 
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col l6 push-l1">
+                      <button class="btn_btncolr" (click)="searchLocation()">Show
+                      </button>
+                    </div>
+                  </div>
+                  <div class="row icon-row">
+                      <div class="col l5 icon-col"><img src="http://maps.google.com/mapfiles/kml/pal5/icon51l.png">&nbsp;&nbsp;Dealers</div>
+                  </div>
+                    <!-- Modal Structure -->
+                  <div class="row">
+                    <div class="col l5">
+                      <div id="modal1" class="modal" *ngIf ="dealerData !== undefined && dealerData.length < 1  && !modalDisplay ">
+                       <div class="close-mark"><button (click)="closeModal()">X</button></div>
+                        <div class="modal-content">
+                          <p class="modal-msg"><i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;No dealers available</p>
+                       </div>
+                    </div>
+                    <div id="modal1" class="modal" *ngIf ="errorData !== undefined && !modalDisplay ">
+                     <div class="close-mark"><button (click)="closeModal()">X</button></div>
+                      <div class="modal-content">
+                        <p class="modal-msg"><i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;No Dealers available</p>
+                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6 l6">
+              <div class="row" *ngIf = 'mapData'>
+                <div id="nearbydealer-location-mapContainer">
+                  <map [mapdata]="mapData" [config]="config" (updatedLocation) = "onUpdatedLocation($event)"> </map>
+                </div>
+              </div>
+            </div>
+          </div>
+                  </div>
+                   
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- </div>
+</div> -->

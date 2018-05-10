@@ -1,0 +1,1316 @@
+{
+  "activealertsall": {"status":"success","result":{"0_d40ecd40-e676-4a67-a42d-baf12f16893b":{"0_4217d39c-bd20-43ad-aa6e-0f0ad38cb60d":{"events":{"error":"Looks like some columns values are missing or no such columns exist","columns":["time","name","COUNT"],"values":[["1970-01-01T00:00:00Z","OverSpeed",15.0],["1970-01-01T00:00:00Z","LowInternalbattery",8.0],["1970-01-01T00:00:00Z","DeviceRemovalFromVehicle",10.0],["1970-01-01T00:00:00Z","LowVehicleBattery",6.0],["1970-01-01T00:00:00Z","HighCoolantTemperature",6.0],["1970-01-01T00:00:00Z","LowOilPressure",3.0],["1970-01-01T00:00:00Z","IgnitionON",17.0],["1970-01-01T00:00:00Z","PowerON",2.0],["1970-01-01T00:00:00Z","IgnitionOFF",8.0],["1970-01-01T00:00:00Z","NormalOilPressure",5.0],["1970-01-01T00:00:00Z","NormalCoolantTemperature",3.0],["1970-01-01T00:00:00Z","NormalVehicleBattery",8.0],["1970-01-01T00:00:00Z","DeviceConnectedToVehicle",4.0],["1970-01-01T00:00:00Z","NormalSpeed",4.0],["1970-01-01T00:00:00Z","EngineON",10.0],["1970-01-01T00:00:00Z","EngineOFF",3.0],["1970-01-01T00:00:00Z","AMWServiceDue_OEMAMW_1519792944767",3.0],["1970-01-01T00:00:00Z","AMWGeoFence_OEMAMW_1521107203816",225.0],["1970-01-01T00:00:00Z","EngineCoolentTemperatureAlert_OEMAMW_1518604044230",58.0],["1970-01-01T00:00:00Z","InternalBatteryChargeAlert_OEMAMW_1518604049612",26.0],["1970-01-01T00:00:00Z","ExternalBatteryVoltageAlert_OEMAMW_1518604044428",58.0],["1970-01-01T00:00:00Z","SpeedAlert_OEMAMW_1518604049825",47.0],["1970-01-01T00:00:00Z","OilPressureAlert_OEMAMW_1518604039038",23.0]]},"types":{"events":[{"name":"OverSpeed","category":100.0,"guid":"0_be382b48-c57f-4988-ad58-7e7bcb4e3563"},{"name":"LowInternalbattery","category":101.0,"guid":"0_2243fd61-7f37-4847-a447-b6c01f418c38"},{"name":"DeviceRemovalFromVehicle","category":102.0,"guid":"0_23473941-e6e6-4b5c-97e3-62d1dddb03e6"},{"name":"LowVehicleBattery","category":101.0,"guid":"0_e66fee69-fb09-4a0d-bffb-198588eb38e0"},{"name":"HighCoolantTemperature","category":103.0,"guid":"0_91dd573e-4983-4cc6-a0c9-49651f924c21"},{"name":"LowOilPressure","category":103.0,"guid":"0_d7d06f0e-3441-4afe-b374-0c1b66341aaf"},{"name":"IgnitionON","guid":"0_4f855d1e-c16a-4997-b62b-b6b5dcacca13"},{"name":"PowerON","guid":"0_0470fb5f-5351-4e81-a4d6-6b54c33c26d9"},{"name":"IgnitionOFF","guid":"0_515c85f0-71b8-4293-89ec-9fb422d60c8e"},{"name":"NormalOilPressure","category":203.0,"guid":"0_a09e3349-4d56-41cf-acbd-7d7445cc855e"},{"name":"NormalCoolantTemperature","category":203.0,"guid":"0_ad9913ea-0ba3-40c5-bfb8-d3e7f95f2e4d"},{"name":"NormalVehicleBattery","category":203.0,"guid":"0_4ff03cab-981d-4d84-8127-612b623c8a27"},{"name":"DeviceConnectedToVehicle","category":202.0,"guid":"0_bb8721fe-9f7a-4500-8192-f752ed79c4a2"},{"name":"NormalSpeed","category":200.0,"guid":"0_71194ab4-d664-4569-8815-41d1fffbf007"},{"name":"EngineON","guid":"0_aa92ab54-7a03-4a32-b100-6a7786c2a935"},{"name":"EngineOFF","guid":"0_66cad643-2aa6-49fd-b2a8-08966b1206b6"},{"name":"AMWServiceDue_OEMAMW_1519792944767","guid":"fd5829a7-46e8-4f37-97b2-74a565947f04"},{"name":"AMWGeoFence_OEMAMW_1521107203816","guid":"f01cf96a-911e-4f51-b3c4-1dc7efd70304"},{"name":"AMWGeoFence_OEMAMW_1519020818294","guid":"d4b57403-b36f-4447-b762-f68458608a3b"},{"name":"AMWGeoFence_OEMAMW_1519211417582","guid":"7fcb2882-be66-4532-8abf-7a07961005e2"},{"name":"EngineCoolentTemperatureAlert_OEMAMW_1518604044230","guid":"ef61ddfb-6f79-472e-9412-f84947e45a3b"},{"name":"InternalBatteryChargeAlert_OEMAMW_1518604049612","guid":"52477280-77bb-4a03-b58e-b6adeb5e4393"},{"name":"ExternalBatteryVoltageAlert_OEMAMW_1518604044428","guid":"3c9ef0ea-ec18-42c6-8095-e2da151aeaa7"},{"name":"SpeedAlert_OEMAMW_1518604049825","guid":"e142fb35-4ef6-426f-8124-1288e3ac9774"},{"name":"OilPressureAlert_OEMAMW_1518604039038","guid":"99e3d80f-788e-41d9-b79c-c773405ccfe9"}]}},"0_b03cf96d-8da0-4c7a-a397-66cb12927a53":{"events":{"error":"Looks like some columns values are missing or no such columns exist"},"types":{"events":[{"name":"OverSpeed","category":100.0,"guid":"0_be382b48-c57f-4988-ad58-7e7bcb4e3563"},{"name":"LowInternalbattery","category":101.0,"guid":"0_2243fd61-7f37-4847-a447-b6c01f418c38"},{"name":"DeviceRemovalFromVehicle","category":102.0,"guid":"0_23473941-e6e6-4b5c-97e3-62d1dddb03e6"},{"name":"LowVehicleBattery","category":101.0,"guid":"0_e66fee69-fb09-4a0d-bffb-198588eb38e0"},{"name":"HighCoolantTemperature","category":103.0,"guid":"0_91dd573e-4983-4cc6-a0c9-49651f924c21"},{"name":"LowOilPressure","category":103.0,"guid":"0_d7d06f0e-3441-4afe-b374-0c1b66341aaf"},{"name":"IgnitionON","guid":"0_4f855d1e-c16a-4997-b62b-b6b5dcacca13"},{"name":"PowerON","guid":"0_0470fb5f-5351-4e81-a4d6-6b54c33c26d9"},{"name":"IgnitionOFF","guid":"0_515c85f0-71b8-4293-89ec-9fb422d60c8e"},{"name":"NormalOilPressure","category":203.0,"guid":"0_a09e3349-4d56-41cf-acbd-7d7445cc855e"},{"name":"NormalCoolantTemperature","category":203.0,"guid":"0_ad9913ea-0ba3-40c5-bfb8-d3e7f95f2e4d"},{"name":"NormalVehicleBattery","category":203.0,"guid":"0_4ff03cab-981d-4d84-8127-612b623c8a27"},{"name":"DeviceConnectedToVehicle","category":202.0,"guid":"0_bb8721fe-9f7a-4500-8192-f752ed79c4a2"},{"name":"NormalSpeed","category":200.0,"guid":"0_71194ab4-d664-4569-8815-41d1fffbf007"},{"name":"EngineON","guid":"0_aa92ab54-7a03-4a32-b100-6a7786c2a935"},{"name":"EngineOFF","guid":"0_66cad643-2aa6-49fd-b2a8-08966b1206b6"},{"name":"AMWServiceDue_OEMAMW_1519792944767","guid":"fd5829a7-46e8-4f37-97b2-74a565947f04"},{"name":"AMWGeoFence_OEMAMW_1521107203816","guid":"f01cf96a-911e-4f51-b3c4-1dc7efd70304"},{"name":"AMWGeoFence_OEMAMW_1519020818294","guid":"d4b57403-b36f-4447-b762-f68458608a3b"},{"name":"AMWGeoFence_OEMAMW_1519211417582","guid":"7fcb2882-be66-4532-8abf-7a07961005e2"},{"name":"EngineCoolentTemperatureAlert_OEMAMW_1518604044230","guid":"ef61ddfb-6f79-472e-9412-f84947e45a3b"},{"name":"InternalBatteryChargeAlert_OEMAMW_1518604049612","guid":"52477280-77bb-4a03-b58e-b6adeb5e4393"},{"name":"ExternalBatteryVoltageAlert_OEMAMW_1518604044428","guid":"3c9ef0ea-ec18-42c6-8095-e2da151aeaa7"},{"name":"SpeedAlert_OEMAMW_1518604049825","guid":"e142fb35-4ef6-426f-8124-1288e3ac9774"},{"name":"OilPressureAlert_OEMAMW_1518604039038","guid":"99e3d80f-788e-41d9-b79c-c773405ccfe9"}]}},"0_c3b198c7-46ac-4175-b999-9654dab72545":{"events":{"error":"Looks like some columns values are missing or no such columns exist","columns":["time","name","COUNT"],"values":[["1970-01-01T00:00:00Z","OverSpeed",18420.0],["1970-01-01T00:00:00Z","DeviceRemovalFromVehicle",31.0],["1970-01-01T00:00:00Z","IgnitionON",1.0],["1970-01-01T00:00:00Z","NormalOilPressure",11509.0],["1970-01-01T00:00:00Z","AMWServiceDue_OEMAMW_1519792944767",3.0]]},"types":{"events":[{"name":"OverSpeed","category":100.0,"guid":"0_be382b48-c57f-4988-ad58-7e7bcb4e3563"},{"name":"LowInternalbattery","category":101.0,"guid":"0_2243fd61-7f37-4847-a447-b6c01f418c38"},{"name":"DeviceRemovalFromVehicle","category":102.0,"guid":"0_23473941-e6e6-4b5c-97e3-62d1dddb03e6"},{"name":"LowVehicleBattery","category":101.0,"guid":"0_e66fee69-fb09-4a0d-bffb-198588eb38e0"},{"name":"HighCoolantTemperature","category":103.0,"guid":"0_91dd573e-4983-4cc6-a0c9-49651f924c21"},{"name":"LowOilPressure","category":103.0,"guid":"0_d7d06f0e-3441-4afe-b374-0c1b66341aaf"},{"name":"IgnitionON","guid":"0_4f855d1e-c16a-4997-b62b-b6b5dcacca13"},{"name":"PowerON","guid":"0_0470fb5f-5351-4e81-a4d6-6b54c33c26d9"},{"name":"IgnitionOFF","guid":"0_515c85f0-71b8-4293-89ec-9fb422d60c8e"},{"name":"NormalOilPressure","category":203.0,"guid":"0_a09e3349-4d56-41cf-acbd-7d7445cc855e"},{"name":"NormalCoolantTemperature","category":203.0,"guid":"0_ad9913ea-0ba3-40c5-bfb8-d3e7f95f2e4d"},{"name":"NormalVehicleBattery","category":203.0,"guid":"0_4ff03cab-981d-4d84-8127-612b623c8a27"},{"name":"DeviceConnectedToVehicle","category":202.0,"guid":"0_bb8721fe-9f7a-4500-8192-f752ed79c4a2"},{"name":"NormalSpeed","category":200.0,"guid":"0_71194ab4-d664-4569-8815-41d1fffbf007"},{"name":"EngineON","guid":"0_aa92ab54-7a03-4a32-b100-6a7786c2a935"},{"name":"EngineOFF","guid":"0_66cad643-2aa6-49fd-b2a8-08966b1206b6"},{"name":"AMWServiceDue_OEMAMW_1519792944767","guid":"fd5829a7-46e8-4f37-97b2-74a565947f04"},{"name":"AMWGeoFence_OEMAMW_1521107203816","guid":"f01cf96a-911e-4f51-b3c4-1dc7efd70304"},{"name":"AMWGeoFence_OEMAMW_1519020818294","guid":"d4b57403-b36f-4447-b762-f68458608a3b"},{"name":"AMWGeoFence_OEMAMW_1519211417582","guid":"7fcb2882-be66-4532-8abf-7a07961005e2"},{"name":"EngineCoolentTemperatureAlert_OEMAMW_1518604044230","guid":"ef61ddfb-6f79-472e-9412-f84947e45a3b"},{"name":"InternalBatteryChargeAlert_OEMAMW_1518604049612","guid":"52477280-77bb-4a03-b58e-b6adeb5e4393"},{"name":"ExternalBatteryVoltageAlert_OEMAMW_1518604044428","guid":"3c9ef0ea-ec18-42c6-8095-e2da151aeaa7"},{"name":"SpeedAlert_OEMAMW_1518604049825","guid":"e142fb35-4ef6-426f-8124-1288e3ac9774"},{"name":"OilPressureAlert_OEMAMW_1518604039038","guid":"99e3d80f-788e-41d9-b79c-c773405ccfe9"}]}},"0_1aedb65e-f10e-406e-af36-20eb451989fb":{"events":{"error":"Looks like some columns values are missing or no such columns exist"},"types":{"events":[{"name":"OverSpeed","category":100.0,"guid":"0_be382b48-c57f-4988-ad58-7e7bcb4e3563"},{"name":"LowInternalbattery","category":101.0,"guid":"0_2243fd61-7f37-4847-a447-b6c01f418c38"},{"name":"DeviceRemovalFromVehicle","category":102.0,"guid":"0_23473941-e6e6-4b5c-97e3-62d1dddb03e6"},{"name":"LowVehicleBattery","category":101.0,"guid":"0_e66fee69-fb09-4a0d-bffb-198588eb38e0"},{"name":"HighCoolantTemperature","category":103.0,"guid":"0_91dd573e-4983-4cc6-a0c9-49651f924c21"},{"name":"LowOilPressure","category":103.0,"guid":"0_d7d06f0e-3441-4afe-b374-0c1b66341aaf"},{"name":"IgnitionON","guid":"0_4f855d1e-c16a-4997-b62b-b6b5dcacca13"},{"name":"PowerON","guid":"0_0470fb5f-5351-4e81-a4d6-6b54c33c26d9"},{"name":"IgnitionOFF","guid":"0_515c85f0-71b8-4293-89ec-9fb422d60c8e"},{"name":"NormalOilPressure","category":203.0,"guid":"0_a09e3349-4d56-41cf-acbd-7d7445cc855e"},{"name":"NormalCoolantTemperature","category":203.0,"guid":"0_ad9913ea-0ba3-40c5-bfb8-d3e7f95f2e4d"},{"name":"NormalVehicleBattery","category":203.0,"guid":"0_4ff03cab-981d-4d84-8127-612b623c8a27"},{"name":"DeviceConnectedToVehicle","category":202.0,"guid":"0_bb8721fe-9f7a-4500-8192-f752ed79c4a2"},{"name":"NormalSpeed","category":200.0,"guid":"0_71194ab4-d664-4569-8815-41d1fffbf007"},{"name":"EngineON","guid":"0_aa92ab54-7a03-4a32-b100-6a7786c2a935"},{"name":"EngineOFF","guid":"0_66cad643-2aa6-49fd-b2a8-08966b1206b6"},{"name":"AMWServiceDue_OEMAMW_1519792944767","guid":"fd5829a7-46e8-4f37-97b2-74a565947f04"},{"name":"AMWGeoFence_OEMAMW_1521107203816","guid":"f01cf96a-911e-4f51-b3c4-1dc7efd70304"},{"name":"AMWGeoFence_OEMAMW_1519020818294","guid":"d4b57403-b36f-4447-b762-f68458608a3b"},{"name":"AMWGeoFence_OEMAMW_1519211417582","guid":"7fcb2882-be66-4532-8abf-7a07961005e2"},{"name":"EngineCoolentTemperatureAlert_OEMAMW_1518604044230","guid":"ef61ddfb-6f79-472e-9412-f84947e45a3b"},{"name":"InternalBatteryChargeAlert_OEMAMW_1518604049612","guid":"52477280-77bb-4a03-b58e-b6adeb5e4393"},{"name":"ExternalBatteryVoltageAlert_OEMAMW_1518604044428","guid":"3c9ef0ea-ec18-42c6-8095-e2da151aeaa7"},{"name":"SpeedAlert_OEMAMW_1518604049825","guid":"e142fb35-4ef6-426f-8124-1288e3ac9774"},{"name":"OilPressureAlert_OEMAMW_1518604039038","guid":"99e3d80f-788e-41d9-b79c-c773405ccfe9"}]}},"0_4d5d538d-a910-4e75-9758-0dcb58a4c191":{"events":{"error":"Looks like some columns values are missing or no such columns exist"},"types":{"events":[{"name":"OverSpeed","category":100.0,"guid":"0_be382b48-c57f-4988-ad58-7e7bcb4e3563"},{"name":"LowInternalbattery","category":101.0,"guid":"0_2243fd61-7f37-4847-a447-b6c01f418c38"},{"name":"DeviceRemovalFromVehicle","category":102.0,"guid":"0_23473941-e6e6-4b5c-97e3-62d1dddb03e6"},{"name":"LowVehicleBattery","category":101.0,"guid":"0_e66fee69-fb09-4a0d-bffb-198588eb38e0"},{"name":"HighCoolantTemperature","category":103.0,"guid":"0_91dd573e-4983-4cc6-a0c9-49651f924c21"},{"name":"LowOilPressure","category":103.0,"guid":"0_d7d06f0e-3441-4afe-b374-0c1b66341aaf"},{"name":"IgnitionON","guid":"0_4f855d1e-c16a-4997-b62b-b6b5dcacca13"},{"name":"PowerON","guid":"0_0470fb5f-5351-4e81-a4d6-6b54c33c26d9"},{"name":"IgnitionOFF","guid":"0_515c85f0-71b8-4293-89ec-9fb422d60c8e"},{"name":"NormalOilPressure","category":203.0,"guid":"0_a09e3349-4d56-41cf-acbd-7d7445cc855e"},{"name":"NormalCoolantTemperature","category":203.0,"guid":"0_ad9913ea-0ba3-40c5-bfb8-d3e7f95f2e4d"},{"name":"NormalVehicleBattery","category":203.0,"guid":"0_4ff03cab-981d-4d84-8127-612b623c8a27"},{"name":"DeviceConnectedToVehicle","category":202.0,"guid":"0_bb8721fe-9f7a-4500-8192-f752ed79c4a2"},{"name":"NormalSpeed","category":200.0,"guid":"0_71194ab4-d664-4569-8815-41d1fffbf007"},{"name":"EngineON","guid":"0_aa92ab54-7a03-4a32-b100-6a7786c2a935"},{"name":"EngineOFF","guid":"0_66cad643-2aa6-49fd-b2a8-08966b1206b6"},{"name":"AMWServiceDue_OEMAMW_1519792944767","guid":"fd5829a7-46e8-4f37-97b2-74a565947f04"},{"name":"AMWGeoFence_OEMAMW_1521107203816","guid":"f01cf96a-911e-4f51-b3c4-1dc7efd70304"},{"name":"AMWGeoFence_OEMAMW_1519020818294","guid":"d4b57403-b36f-4447-b762-f68458608a3b"},{"name":"AMWGeoFence_OEMAMW_1519211417582","guid":"7fcb2882-be66-4532-8abf-7a07961005e2"},{"name":"EngineCoolentTemperatureAlert_OEMAMW_1518604044230","guid":"ef61ddfb-6f79-472e-9412-f84947e45a3b"},{"name":"InternalBatteryChargeAlert_OEMAMW_1518604049612","guid":"52477280-77bb-4a03-b58e-b6adeb5e4393"},{"name":"ExternalBatteryVoltageAlert_OEMAMW_1518604044428","guid":"3c9ef0ea-ec18-42c6-8095-e2da151aeaa7"},{"name":"SpeedAlert_OEMAMW_1518604049825","guid":"e142fb35-4ef6-426f-8124-1288e3ac9774"},{"name":"OilPressureAlert_OEMAMW_1518604039038","guid":"99e3d80f-788e-41d9-b79c-c773405ccfe9"}]}},"0_a61c6bd5-a254-49ff-8642-b23489e67aec":{"events":{"error":"Looks like some columns values are missing or no such columns exist","columns":["time","name","COUNT"],"values":[["1970-01-01T00:00:00Z","OverSpeed",1.0],["1970-01-01T00:00:00Z","LowVehicleBattery",1.0],["1970-01-01T00:00:00Z","IgnitionOFF",2.0],["1970-01-01T00:00:00Z","EngineON",1.0],["1970-01-01T00:00:00Z","EngineOFF",5.0],["1970-01-01T00:00:00Z","OilPressureAlert_OEMAMW_1518604039038",1.0]]},"types":{"events":[{"name":"OverSpeed","category":100.0,"guid":"0_be382b48-c57f-4988-ad58-7e7bcb4e3563"},{"name":"LowInternalbattery","category":101.0,"guid":"0_2243fd61-7f37-4847-a447-b6c01f418c38"},{"name":"DeviceRemovalFromVehicle","category":102.0,"guid":"0_23473941-e6e6-4b5c-97e3-62d1dddb03e6"},{"name":"LowVehicleBattery","category":101.0,"guid":"0_e66fee69-fb09-4a0d-bffb-198588eb38e0"},{"name":"HighCoolantTemperature","category":103.0,"guid":"0_91dd573e-4983-4cc6-a0c9-49651f924c21"},{"name":"LowOilPressure","category":103.0,"guid":"0_d7d06f0e-3441-4afe-b374-0c1b66341aaf"},{"name":"IgnitionON","guid":"0_4f855d1e-c16a-4997-b62b-b6b5dcacca13"},{"name":"PowerON","guid":"0_0470fb5f-5351-4e81-a4d6-6b54c33c26d9"},{"name":"IgnitionOFF","guid":"0_515c85f0-71b8-4293-89ec-9fb422d60c8e"},{"name":"NormalOilPressure","category":203.0,"guid":"0_a09e3349-4d56-41cf-acbd-7d7445cc855e"},{"name":"NormalCoolantTemperature","category":203.0,"guid":"0_ad9913ea-0ba3-40c5-bfb8-d3e7f95f2e4d"},{"name":"NormalVehicleBattery","category":203.0,"guid":"0_4ff03cab-981d-4d84-8127-612b623c8a27"},{"name":"DeviceConnectedToVehicle","category":202.0,"guid":"0_bb8721fe-9f7a-4500-8192-f752ed79c4a2"},{"name":"NormalSpeed","category":200.0,"guid":"0_71194ab4-d664-4569-8815-41d1fffbf007"},{"name":"EngineON","guid":"0_aa92ab54-7a03-4a32-b100-6a7786c2a935"},{"name":"EngineOFF","guid":"0_66cad643-2aa6-49fd-b2a8-08966b1206b6"},{"name":"AMWServiceDue_OEMAMW_1519792944767","guid":"fd5829a7-46e8-4f37-97b2-74a565947f04"},{"name":"AMWGeoFence_OEMAMW_1521107203816","guid":"f01cf96a-911e-4f51-b3c4-1dc7efd70304"},{"name":"AMWGeoFence_OEMAMW_1519020818294","guid":"d4b57403-b36f-4447-b762-f68458608a3b"},{"name":"AMWGeoFence_OEMAMW_1519211417582","guid":"7fcb2882-be66-4532-8abf-7a07961005e2"},{"name":"EngineCoolentTemperatureAlert_OEMAMW_1518604044230","guid":"ef61ddfb-6f79-472e-9412-f84947e45a3b"},{"name":"InternalBatteryChargeAlert_OEMAMW_1518604049612","guid":"52477280-77bb-4a03-b58e-b6adeb5e4393"},{"name":"ExternalBatteryVoltageAlert_OEMAMW_1518604044428","guid":"3c9ef0ea-ec18-42c6-8095-e2da151aeaa7"},{"name":"SpeedAlert_OEMAMW_1518604049825","guid":"e142fb35-4ef6-426f-8124-1288e3ac9774"},{"name":"OilPressureAlert_OEMAMW_1518604039038","guid":"99e3d80f-788e-41d9-b79c-c773405ccfe9"}]}},"0_4f0d15ec-e604-4c56-a82b-174f9d6d5c5f":{"events":{"error":"Looks like some columns values are missing or no such columns exist","columns":["time","name","COUNT"],"values":[["1970-01-01T00:00:00Z","OverSpeed",18437.0],["1970-01-01T00:00:00Z","DeviceRemovalFromVehicle",31.0],["1970-01-01T00:00:00Z","NormalOilPressure",11510.0],["1970-01-01T00:00:00Z","AMWServiceDue_OEMAMW_1519792944767",2.0]]},"types":{"events":[{"name":"OverSpeed","category":100.0,"guid":"0_be382b48-c57f-4988-ad58-7e7bcb4e3563"},{"name":"LowInternalbattery","category":101.0,"guid":"0_2243fd61-7f37-4847-a447-b6c01f418c38"},{"name":"DeviceRemovalFromVehicle","category":102.0,"guid":"0_23473941-e6e6-4b5c-97e3-62d1dddb03e6"},{"name":"LowVehicleBattery","category":101.0,"guid":"0_e66fee69-fb09-4a0d-bffb-198588eb38e0"},{"name":"HighCoolantTemperature","category":103.0,"guid":"0_91dd573e-4983-4cc6-a0c9-49651f924c21"},{"name":"LowOilPressure","category":103.0,"guid":"0_d7d06f0e-3441-4afe-b374-0c1b66341aaf"},{"name":"IgnitionON","guid":"0_4f855d1e-c16a-4997-b62b-b6b5dcacca13"},{"name":"PowerON","guid":"0_0470fb5f-5351-4e81-a4d6-6b54c33c26d9"},{"name":"IgnitionOFF","guid":"0_515c85f0-71b8-4293-89ec-9fb422d60c8e"},{"name":"NormalOilPressure","category":203.0,"guid":"0_a09e3349-4d56-41cf-acbd-7d7445cc855e"},{"name":"NormalCoolantTemperature","category":203.0,"guid":"0_ad9913ea-0ba3-40c5-bfb8-d3e7f95f2e4d"},{"name":"NormalVehicleBattery","category":203.0,"guid":"0_4ff03cab-981d-4d84-8127-612b623c8a27"},{"name":"DeviceConnectedToVehicle","category":202.0,"guid":"0_bb8721fe-9f7a-4500-8192-f752ed79c4a2"},{"name":"NormalSpeed","category":200.0,"guid":"0_71194ab4-d664-4569-8815-41d1fffbf007"},{"name":"EngineON","guid":"0_aa92ab54-7a03-4a32-b100-6a7786c2a935"},{"name":"EngineOFF","guid":"0_66cad643-2aa6-49fd-b2a8-08966b1206b6"},{"name":"AMWServiceDue_OEMAMW_1519792944767","guid":"fd5829a7-46e8-4f37-97b2-74a565947f04"},{"name":"AMWGeoFence_OEMAMW_1521107203816","guid":"f01cf96a-911e-4f51-b3c4-1dc7efd70304"},{"name":"AMWGeoFence_OEMAMW_1519020818294","guid":"d4b57403-b36f-4447-b762-f68458608a3b"},{"name":"AMWGeoFence_OEMAMW_1519211417582","guid":"7fcb2882-be66-4532-8abf-7a07961005e2"},{"name":"EngineCoolentTemperatureAlert_OEMAMW_1518604044230","guid":"ef61ddfb-6f79-472e-9412-f84947e45a3b"},{"name":"InternalBatteryChargeAlert_OEMAMW_1518604049612","guid":"52477280-77bb-4a03-b58e-b6adeb5e4393"},{"name":"ExternalBatteryVoltageAlert_OEMAMW_1518604044428","guid":"3c9ef0ea-ec18-42c6-8095-e2da151aeaa7"},{"name":"SpeedAlert_OEMAMW_1518604049825","guid":"e142fb35-4ef6-426f-8124-1288e3ac9774"},{"name":"OilPressureAlert_OEMAMW_1518604039038","guid":"99e3d80f-788e-41d9-b79c-c773405ccfe9"}]}},"0_f134f450-608f-4dbf-afbb-0a31662488ac":{"events":{"error":"Looks like some columns values are missing or no such columns exist"},"types":{"events":[{"name":"OverSpeed","category":100.0,"guid":"0_be382b48-c57f-4988-ad58-7e7bcb4e3563"},{"name":"LowInternalbattery","category":101.0,"guid":"0_2243fd61-7f37-4847-a447-b6c01f418c38"},{"name":"DeviceRemovalFromVehicle","category":102.0,"guid":"0_23473941-e6e6-4b5c-97e3-62d1dddb03e6"},{"name":"LowVehicleBattery","category":101.0,"guid":"0_e66fee69-fb09-4a0d-bffb-198588eb38e0"},{"name":"HighCoolantTemperature","category":103.0,"guid":"0_91dd573e-4983-4cc6-a0c9-49651f924c21"},{"name":"LowOilPressure","category":103.0,"guid":"0_d7d06f0e-3441-4afe-b374-0c1b66341aaf"},{"name":"IgnitionON","guid":"0_4f855d1e-c16a-4997-b62b-b6b5dcacca13"},{"name":"PowerON","guid":"0_0470fb5f-5351-4e81-a4d6-6b54c33c26d9"},{"name":"IgnitionOFF","guid":"0_515c85f0-71b8-4293-89ec-9fb422d60c8e"},{"name":"NormalOilPressure","category":203.0,"guid":"0_a09e3349-4d56-41cf-acbd-7d7445cc855e"},{"name":"NormalCoolantTemperature","category":203.0,"guid":"0_ad9913ea-0ba3-40c5-bfb8-d3e7f95f2e4d"},{"name":"NormalVehicleBattery","category":203.0,"guid":"0_4ff03cab-981d-4d84-8127-612b623c8a27"},{"name":"DeviceConnectedToVehicle","category":202.0,"guid":"0_bb8721fe-9f7a-4500-8192-f752ed79c4a2"},{"name":"NormalSpeed","category":200.0,"guid":"0_71194ab4-d664-4569-8815-41d1fffbf007"},{"name":"EngineON","guid":"0_aa92ab54-7a03-4a32-b100-6a7786c2a935"},{"name":"EngineOFF","guid":"0_66cad643-2aa6-49fd-b2a8-08966b1206b6"},{"name":"AMWServiceDue_OEMAMW_1519792944767","guid":"fd5829a7-46e8-4f37-97b2-74a565947f04"},{"name":"AMWGeoFence_OEMAMW_1521107203816","guid":"f01cf96a-911e-4f51-b3c4-1dc7efd70304"},{"name":"AMWGeoFence_OEMAMW_1519020818294","guid":"d4b57403-b36f-4447-b762-f68458608a3b"},{"name":"AMWGeoFence_OEMAMW_1519211417582","guid":"7fcb2882-be66-4532-8abf-7a07961005e2"},{"name":"EngineCoolentTemperatureAlert_OEMAMW_1518604044230","guid":"ef61ddfb-6f79-472e-9412-f84947e45a3b"},{"name":"InternalBatteryChargeAlert_OEMAMW_1518604049612","guid":"52477280-77bb-4a03-b58e-b6adeb5e4393"},{"name":"ExternalBatteryVoltageAlert_OEMAMW_1518604044428","guid":"3c9ef0ea-ec18-42c6-8095-e2da151aeaa7"},{"name":"SpeedAlert_OEMAMW_1518604049825","guid":"e142fb35-4ef6-426f-8124-1288e3ac9774"},{"name":"OilPressureAlert_OEMAMW_1518604039038","guid":"99e3d80f-788e-41d9-b79c-c773405ccfe9"}]}},"0_e28a3510-6b18-4a0d-beb0-dd07b8edabae":{"events":{"error":"Looks like some columns values are missing or no such columns exist","columns":["time","name","COUNT"],"values":[["1970-01-01T00:00:00Z","OverSpeed",8.0],["1970-01-01T00:00:00Z","DeviceRemovalFromVehicle",1.0],["1970-01-01T00:00:00Z","HighCoolantTemperature",1.0],["1970-01-01T00:00:00Z","LowOilPressure",1.0],["1970-01-01T00:00:00Z","IgnitionON",23.0],["1970-01-01T00:00:00Z","IgnitionOFF",6.0],["1970-01-01T00:00:00Z","NormalOilPressure",1.0],["1970-01-01T00:00:00Z","NormalCoolantTemperature",2.0],["1970-01-01T00:00:00Z","DeviceConnectedToVehicle",2.0],["1970-01-01T00:00:00Z","EngineON",3.0],["1970-01-01T00:00:00Z","AMWServiceDue_OEMAMW_1519792944767",7.0],["1970-01-01T00:00:00Z","EngineCoolentTemperatureAlert_OEMAMW_1518604044230",4.0],["1970-01-01T00:00:00Z","InternalBatteryChargeAlert_OEMAMW_1518604049612",5.0],["1970-01-01T00:00:00Z","ExternalBatteryVoltageAlert_OEMAMW_1518604044428",1.0],["1970-01-01T00:00:00Z","SpeedAlert_OEMAMW_1518604049825",23.0],["1970-01-01T00:00:00Z","OilPressureAlert_OEMAMW_1518604039038",5.0]]},"types":{"events":[{"name":"OverSpeed","category":100.0,"guid":"0_be382b48-c57f-4988-ad58-7e7bcb4e3563"},{"name":"LowInternalbattery","category":101.0,"guid":"0_2243fd61-7f37-4847-a447-b6c01f418c38"},{"name":"DeviceRemovalFromVehicle","category":102.0,"guid":"0_23473941-e6e6-4b5c-97e3-62d1dddb03e6"},{"name":"LowVehicleBattery","category":101.0,"guid":"0_e66fee69-fb09-4a0d-bffb-198588eb38e0"},{"name":"HighCoolantTemperature","category":103.0,"guid":"0_91dd573e-4983-4cc6-a0c9-49651f924c21"},{"name":"LowOilPressure","category":103.0,"guid":"0_d7d06f0e-3441-4afe-b374-0c1b66341aaf"},{"name":"IgnitionON","guid":"0_4f855d1e-c16a-4997-b62b-b6b5dcacca13"},{"name":"PowerON","guid":"0_0470fb5f-5351-4e81-a4d6-6b54c33c26d9"},{"name":"IgnitionOFF","guid":"0_515c85f0-71b8-4293-89ec-9fb422d60c8e"},{"name":"NormalOilPressure","category":203.0,"guid":"0_a09e3349-4d56-41cf-acbd-7d7445cc855e"},{"name":"NormalCoolantTemperature","category":203.0,"guid":"0_ad9913ea-0ba3-40c5-bfb8-d3e7f95f2e4d"},{"name":"NormalVehicleBattery","category":203.0,"guid":"0_4ff03cab-981d-4d84-8127-612b623c8a27"},{"name":"DeviceConnectedToVehicle","category":202.0,"guid":"0_bb8721fe-9f7a-4500-8192-f752ed79c4a2"},{"name":"NormalSpeed","category":200.0,"guid":"0_71194ab4-d664-4569-8815-41d1fffbf007"},{"name":"EngineON","guid":"0_aa92ab54-7a03-4a32-b100-6a7786c2a935"},{"name":"EngineOFF","guid":"0_66cad643-2aa6-49fd-b2a8-08966b1206b6"},{"name":"AMWServiceDue_OEMAMW_1519792944767","guid":"fd5829a7-46e8-4f37-97b2-74a565947f04"},{"name":"AMWGeoFence_OEMAMW_1521107203816","guid":"f01cf96a-911e-4f51-b3c4-1dc7efd70304"},{"name":"AMWGeoFence_OEMAMW_1519020818294","guid":"d4b57403-b36f-4447-b762-f68458608a3b"},{"name":"AMWGeoFence_OEMAMW_1519211417582","guid":"7fcb2882-be66-4532-8abf-7a07961005e2"},{"name":"EngineCoolentTemperatureAlert_OEMAMW_1518604044230","guid":"ef61ddfb-6f79-472e-9412-f84947e45a3b"},{"name":"InternalBatteryChargeAlert_OEMAMW_1518604049612","guid":"52477280-77bb-4a03-b58e-b6adeb5e4393"},{"name":"ExternalBatteryVoltageAlert_OEMAMW_1518604044428","guid":"3c9ef0ea-ec18-42c6-8095-e2da151aeaa7"},{"name":"SpeedAlert_OEMAMW_1518604049825","guid":"e142fb35-4ef6-426f-8124-1288e3ac9774"},{"name":"OilPressureAlert_OEMAMW_1518604039038","guid":"99e3d80f-788e-41d9-b79c-c773405ccfe9"}]}},"0_993ba728-6006-4384-8968-dcd350ad1c6e":{"events":{"error":"Looks like some columns values are missing or no such columns exist","columns":["time","name","COUNT"],"values":[["1970-01-01T00:00:00Z","IgnitionON",3.0],["1970-01-01T00:00:00Z","IgnitionOFF",2.0],["1970-01-01T00:00:00Z","EngineON",2.0],["1970-01-01T00:00:00Z","EngineOFF",2.0],["1970-01-01T00:00:00Z","EngineCoolentTemperatureAlert_OEMAMW_1518604044230",1.0],["1970-01-01T00:00:00Z","InternalBatteryChargeAlert_OEMAMW_1518604049612",1.0]]},"types":{"events":[{"name":"OverSpeed","category":100.0,"guid":"0_be382b48-c57f-4988-ad58-7e7bcb4e3563"},{"name":"LowInternalbattery","category":101.0,"guid":"0_2243fd61-7f37-4847-a447-b6c01f418c38"},{"name":"DeviceRemovalFromVehicle","category":102.0,"guid":"0_23473941-e6e6-4b5c-97e3-62d1dddb03e6"},{"name":"LowVehicleBattery","category":101.0,"guid":"0_e66fee69-fb09-4a0d-bffb-198588eb38e0"},{"name":"HighCoolantTemperature","category":103.0,"guid":"0_91dd573e-4983-4cc6-a0c9-49651f924c21"},{"name":"LowOilPressure","category":103.0,"guid":"0_d7d06f0e-3441-4afe-b374-0c1b66341aaf"},{"name":"IgnitionON","guid":"0_4f855d1e-c16a-4997-b62b-b6b5dcacca13"},{"name":"PowerON","guid":"0_0470fb5f-5351-4e81-a4d6-6b54c33c26d9"},{"name":"IgnitionOFF","guid":"0_515c85f0-71b8-4293-89ec-9fb422d60c8e"},{"name":"NormalOilPressure","category":203.0,"guid":"0_a09e3349-4d56-41cf-acbd-7d7445cc855e"},{"name":"NormalCoolantTemperature","category":203.0,"guid":"0_ad9913ea-0ba3-40c5-bfb8-d3e7f95f2e4d"},{"name":"NormalVehicleBattery","category":203.0,"guid":"0_4ff03cab-981d-4d84-8127-612b623c8a27"},{"name":"DeviceConnectedToVehicle","category":202.0,"guid":"0_bb8721fe-9f7a-4500-8192-f752ed79c4a2"},{"name":"NormalSpeed","category":200.0,"guid":"0_71194ab4-d664-4569-8815-41d1fffbf007"},{"name":"EngineON","guid":"0_aa92ab54-7a03-4a32-b100-6a7786c2a935"},{"name":"EngineOFF","guid":"0_66cad643-2aa6-49fd-b2a8-08966b1206b6"},{"name":"AMWServiceDue_OEMAMW_1519792944767","guid":"fd5829a7-46e8-4f37-97b2-74a565947f04"},{"name":"AMWGeoFence_OEMAMW_1521107203816","guid":"f01cf96a-911e-4f51-b3c4-1dc7efd70304"},{"name":"AMWGeoFence_OEMAMW_1519020818294","guid":"d4b57403-b36f-4447-b762-f68458608a3b"},{"name":"AMWGeoFence_OEMAMW_1519211417582","guid":"7fcb2882-be66-4532-8abf-7a07961005e2"},{"name":"EngineCoolentTemperatureAlert_OEMAMW_1518604044230","guid":"ef61ddfb-6f79-472e-9412-f84947e45a3b"},{"name":"InternalBatteryChargeAlert_OEMAMW_1518604049612","guid":"52477280-77bb-4a03-b58e-b6adeb5e4393"},{"name":"ExternalBatteryVoltageAlert_OEMAMW_1518604044428","guid":"3c9ef0ea-ec18-42c6-8095-e2da151aeaa7"},{"name":"SpeedAlert_OEMAMW_1518604049825","guid":"e142fb35-4ef6-426f-8124-1288e3ac9774"},{"name":"OilPressureAlert_OEMAMW_1518604039038","guid":"99e3d80f-788e-41d9-b79c-c773405ccfe9"}]}},"0_ca998040-34b8-46a9-b728-d788fa5ff617":{"events":{"error":"Looks like some columns values are missing or no such columns exist","columns":["time","name","COUNT"],"values":[["1970-01-01T00:00:00Z","OverSpeed",15.0],["1970-01-01T00:00:00Z","DeviceRemovalFromVehicle",1.0],["1970-01-01T00:00:00Z","LowVehicleBattery",1.0],["1970-01-01T00:00:00Z","EngineON",1.0],["1970-01-01T00:00:00Z","AMWServiceDue_OEMAMW_1519792944767",1.0],["1970-01-01T00:00:00Z","InternalBatteryChargeAlert_OEMAMW_1518604049612",1.0],["1970-01-01T00:00:00Z","SpeedAlert_OEMAMW_1518604049825",30.0],["1970-01-01T00:00:00Z","OilPressureAlert_OEMAMW_1518604039038",1.0]]},"types":{"events":[{"name":"OverSpeed","category":100.0,"guid":"0_be382b48-c57f-4988-ad58-7e7bcb4e3563"},{"name":"LowInternalbattery","category":101.0,"guid":"0_2243fd61-7f37-4847-a447-b6c01f418c38"},{"name":"DeviceRemovalFromVehicle","category":102.0,"guid":"0_23473941-e6e6-4b5c-97e3-62d1dddb03e6"},{"name":"LowVehicleBattery","category":101.0,"guid":"0_e66fee69-fb09-4a0d-bffb-198588eb38e0"},{"name":"HighCoolantTemperature","category":103.0,"guid":"0_91dd573e-4983-4cc6-a0c9-49651f924c21"},{"name":"LowOilPressure","category":103.0,"guid":"0_d7d06f0e-3441-4afe-b374-0c1b66341aaf"},{"name":"IgnitionON","guid":"0_4f855d1e-c16a-4997-b62b-b6b5dcacca13"},{"name":"PowerON","guid":"0_0470fb5f-5351-4e81-a4d6-6b54c33c26d9"},{"name":"IgnitionOFF","guid":"0_515c85f0-71b8-4293-89ec-9fb422d60c8e"},{"name":"NormalOilPressure","category":203.0,"guid":"0_a09e3349-4d56-41cf-acbd-7d7445cc855e"},{"name":"NormalCoolantTemperature","category":203.0,"guid":"0_ad9913ea-0ba3-40c5-bfb8-d3e7f95f2e4d"},{"name":"NormalVehicleBattery","category":203.0,"guid":"0_4ff03cab-981d-4d84-8127-612b623c8a27"},{"name":"DeviceConnectedToVehicle","category":202.0,"guid":"0_bb8721fe-9f7a-4500-8192-f752ed79c4a2"},{"name":"NormalSpeed","category":200.0,"guid":"0_71194ab4-d664-4569-8815-41d1fffbf007"},{"name":"EngineON","guid":"0_aa92ab54-7a03-4a32-b100-6a7786c2a935"},{"name":"EngineOFF","guid":"0_66cad643-2aa6-49fd-b2a8-08966b1206b6"},{"name":"AMWServiceDue_OEMAMW_1519792944767","guid":"fd5829a7-46e8-4f37-97b2-74a565947f04"},{"name":"AMWGeoFence_OEMAMW_1521107203816","guid":"f01cf96a-911e-4f51-b3c4-1dc7efd70304"},{"name":"AMWGeoFence_OEMAMW_1519020818294","guid":"d4b57403-b36f-4447-b762-f68458608a3b"},{"name":"AMWGeoFence_OEMAMW_1519211417582","guid":"7fcb2882-be66-4532-8abf-7a07961005e2"},{"name":"EngineCoolentTemperatureAlert_OEMAMW_1518604044230","guid":"ef61ddfb-6f79-472e-9412-f84947e45a3b"},{"name":"InternalBatteryChargeAlert_OEMAMW_1518604049612","guid":"52477280-77bb-4a03-b58e-b6adeb5e4393"},{"name":"ExternalBatteryVoltageAlert_OEMAMW_1518604044428","guid":"3c9ef0ea-ec18-42c6-8095-e2da151aeaa7"},{"name":"SpeedAlert_OEMAMW_1518604049825","guid":"e142fb35-4ef6-426f-8124-1288e3ac9774"},{"name":"OilPressureAlert_OEMAMW_1518604039038","guid":"99e3d80f-788e-41d9-b79c-c773405ccfe9"}]}},"0_fac1f0b1-a751-412c-a2f0-529a94fbe43d":{"events":{"error":"Looks like some columns values are missing or no such columns exist","columns":["time","name","COUNT"],"values":[["1970-01-01T00:00:00Z","IgnitionON",1.0]]},"types":{"events":[{"name":"OverSpeed","category":100.0,"guid":"0_be382b48-c57f-4988-ad58-7e7bcb4e3563"},{"name":"LowInternalbattery","category":101.0,"guid":"0_2243fd61-7f37-4847-a447-b6c01f418c38"},{"name":"DeviceRemovalFromVehicle","category":102.0,"guid":"0_23473941-e6e6-4b5c-97e3-62d1dddb03e6"},{"name":"LowVehicleBattery","category":101.0,"guid":"0_e66fee69-fb09-4a0d-bffb-198588eb38e0"},{"name":"HighCoolantTemperature","category":103.0,"guid":"0_91dd573e-4983-4cc6-a0c9-49651f924c21"},{"name":"LowOilPressure","category":103.0,"guid":"0_d7d06f0e-3441-4afe-b374-0c1b66341aaf"},{"name":"IgnitionON","guid":"0_4f855d1e-c16a-4997-b62b-b6b5dcacca13"},{"name":"PowerON","guid":"0_0470fb5f-5351-4e81-a4d6-6b54c33c26d9"},{"name":"IgnitionOFF","guid":"0_515c85f0-71b8-4293-89ec-9fb422d60c8e"},{"name":"NormalOilPressure","category":203.0,"guid":"0_a09e3349-4d56-41cf-acbd-7d7445cc855e"},{"name":"NormalCoolantTemperature","category":203.0,"guid":"0_ad9913ea-0ba3-40c5-bfb8-d3e7f95f2e4d"},{"name":"NormalVehicleBattery","category":203.0,"guid":"0_4ff03cab-981d-4d84-8127-612b623c8a27"},{"name":"DeviceConnectedToVehicle","category":202.0,"guid":"0_bb8721fe-9f7a-4500-8192-f752ed79c4a2"},{"name":"NormalSpeed","category":200.0,"guid":"0_71194ab4-d664-4569-8815-41d1fffbf007"},{"name":"EngineON","guid":"0_aa92ab54-7a03-4a32-b100-6a7786c2a935"},{"name":"EngineOFF","guid":"0_66cad643-2aa6-49fd-b2a8-08966b1206b6"},{"name":"AMWServiceDue_OEMAMW_1519792944767","guid":"fd5829a7-46e8-4f37-97b2-74a565947f04"},{"name":"AMWGeoFence_OEMAMW_1521107203816","guid":"f01cf96a-911e-4f51-b3c4-1dc7efd70304"},{"name":"AMWGeoFence_OEMAMW_1519020818294","guid":"d4b57403-b36f-4447-b762-f68458608a3b"},{"name":"AMWGeoFence_OEMAMW_1519211417582","guid":"7fcb2882-be66-4532-8abf-7a07961005e2"},{"name":"EngineCoolentTemperatureAlert_OEMAMW_1518604044230","guid":"ef61ddfb-6f79-472e-9412-f84947e45a3b"},{"name":"InternalBatteryChargeAlert_OEMAMW_1518604049612","guid":"52477280-77bb-4a03-b58e-b6adeb5e4393"},{"name":"ExternalBatteryVoltageAlert_OEMAMW_1518604044428","guid":"3c9ef0ea-ec18-42c6-8095-e2da151aeaa7"},{"name":"SpeedAlert_OEMAMW_1518604049825","guid":"e142fb35-4ef6-426f-8124-1288e3ac9774"},{"name":"OilPressureAlert_OEMAMW_1518604039038","guid":"99e3d80f-788e-41d9-b79c-c773405ccfe9"}]}},"0_ca24c766-bba2-4d0e-a740-4084ecd997ac":{"events":{"error":"Looks like some columns values are missing or no such columns exist","columns":["time","name","COUNT"],"values":[["1970-01-01T00:00:00Z","NormalOilPressure",1.0],["1970-01-01T00:00:00Z","NormalCoolantTemperature",1.0],["1970-01-01T00:00:00Z","AMWServiceDue_OEMAMW_1519792944767",1.0]]},"types":{"events":[{"name":"OverSpeed","category":100.0,"guid":"0_be382b48-c57f-4988-ad58-7e7bcb4e3563"},{"name":"LowInternalbattery","category":101.0,"guid":"0_2243fd61-7f37-4847-a447-b6c01f418c38"},{"name":"DeviceRemovalFromVehicle","category":102.0,"guid":"0_23473941-e6e6-4b5c-97e3-62d1dddb03e6"},{"name":"LowVehicleBattery","category":101.0,"guid":"0_e66fee69-fb09-4a0d-bffb-198588eb38e0"},{"name":"HighCoolantTemperature","category":103.0,"guid":"0_91dd573e-4983-4cc6-a0c9-49651f924c21"},{"name":"LowOilPressure","category":103.0,"guid":"0_d7d06f0e-3441-4afe-b374-0c1b66341aaf"},{"name":"IgnitionON","guid":"0_4f855d1e-c16a-4997-b62b-b6b5dcacca13"},{"name":"PowerON","guid":"0_0470fb5f-5351-4e81-a4d6-6b54c33c26d9"},{"name":"IgnitionOFF","guid":"0_515c85f0-71b8-4293-89ec-9fb422d60c8e"},{"name":"NormalOilPressure","category":203.0,"guid":"0_a09e3349-4d56-41cf-acbd-7d7445cc855e"},{"name":"NormalCoolantTemperature","category":203.0,"guid":"0_ad9913ea-0ba3-40c5-bfb8-d3e7f95f2e4d"},{"name":"NormalVehicleBattery","category":203.0,"guid":"0_4ff03cab-981d-4d84-8127-612b623c8a27"},{"name":"DeviceConnectedToVehicle","category":202.0,"guid":"0_bb8721fe-9f7a-4500-8192-f752ed79c4a2"},{"name":"NormalSpeed","category":200.0,"guid":"0_71194ab4-d664-4569-8815-41d1fffbf007"},{"name":"EngineON","guid":"0_aa92ab54-7a03-4a32-b100-6a7786c2a935"},{"name":"EngineOFF","guid":"0_66cad643-2aa6-49fd-b2a8-08966b1206b6"},{"name":"AMWServiceDue_OEMAMW_1519792944767","guid":"fd5829a7-46e8-4f37-97b2-74a565947f04"},{"name":"AMWGeoFence_OEMAMW_1521107203816","guid":"f01cf96a-911e-4f51-b3c4-1dc7efd70304"},{"name":"AMWGeoFence_OEMAMW_1519020818294","guid":"d4b57403-b36f-4447-b762-f68458608a3b"},{"name":"AMWGeoFence_OEMAMW_1519211417582","guid":"7fcb2882-be66-4532-8abf-7a07961005e2"},{"name":"EngineCoolentTemperatureAlert_OEMAMW_1518604044230","guid":"ef61ddfb-6f79-472e-9412-f84947e45a3b"},{"name":"InternalBatteryChargeAlert_OEMAMW_1518604049612","guid":"52477280-77bb-4a03-b58e-b6adeb5e4393"},{"name":"ExternalBatteryVoltageAlert_OEMAMW_1518604044428","guid":"3c9ef0ea-ec18-42c6-8095-e2da151aeaa7"},{"name":"SpeedAlert_OEMAMW_1518604049825","guid":"e142fb35-4ef6-426f-8124-1288e3ac9774"},{"name":"OilPressureAlert_OEMAMW_1518604039038","guid":"99e3d80f-788e-41d9-b79c-c773405ccfe9"}]}}}}},
+  "serViceCost": {
+    "status": "success",
+    "result": {
+      "assetSerialNumber": "VINHAR3DXSSL01888137",
+      "data": [
+        {
+          "month": 3,
+          "actualServiceCost": 2502.2,
+          "estimatedServiceCost": 2002.7
+        },
+        {
+          "month": 4,
+          "actualServiceCost": 2503,
+          "estimatedServiceCost": 2003.89
+        },
+        {
+          "month": 5,
+          "actualServiceCost": 2504.42,
+          "estimatedServiceCost": 2004.71
+        },
+        {
+          "month": 6,
+          "actualServiceCost": 2505.65,
+          "estimatedServiceCost": 2005.87
+        },
+        {
+          "month": 7,
+          "actualServiceCost": 2506.06,
+          "estimatedServiceCost": 2006
+        },
+        {
+          "month": 8,
+          "actualServiceCost": 2507,
+          "estimatedServiceCost": 2007.11
+        },
+        {
+          "month": 9,
+          "actualServiceCost": 2508.42,
+          "estimatedServiceCost": 2008.09
+        }
+      ]
+    }
+  },
+  "getScriptConfigInfo":{
+  "status": "success",
+  "result": {
+    "config": [
+      {
+        "label": "config_item",
+        "name": "OncePerDay",
+        "guid": "ca9476be-922d-4a03-9c55-497272esa297",
+        "value": "false"
+      },
+      {
+        "label": "config_item",
+        "name": "Lat",
+        "guid": "c7aa94a7-1912-4fff-898d-e6df3da60b29",
+        "value": "12.839096"
+      },
+      {
+        "label": "config_item",
+        "name": "Long",
+        "guid": "fb5f99bb-545e-46b5-8534-667364c9707b",
+        "value": "77.659283"
+      },
+      {
+        "label": "config_item",
+        "name": "radius",
+        "guid": "ed006963-4d9f-40ca-9250-9cdf2a036e15",
+        "value": "60"
+      }
+    ],
+    "asset": [
+      {
+        "label": "asset",
+        "name": "123456789012346",
+        "guid": "0_81abb3ef-dead-42b2-948b-4034eb5c0513",
+        "serialNumber": "123456789012346"
+      },
+      {
+        "label": "asset",
+        "name": "123456789012348",
+        "guid": "0_322262a1-f577-4be2-baab-ec2215baeaa6",
+        "serialNumber": "123456789012348"
+      }
+    ]
+  }
+},
+  "getServiceInfo":{"status":"success","result":{"subscribedServices":[{"guid":"173e2ac8-8730-4394-81e1-c7da1c868af9","name":"AMWTimefence_OEMAMW_1521108241658"},{"guid":"fd52df4d-b219-4505-94f6-c5f6c414d502","name":"AMWTimefence_OEMAMW_1521108078017"},{"guid":"6337ffc9-3593-493c-a541-619af73c6dfc","name":"AMWTimefence_OEMAMW_1521108009400"},{"guid":"5a85ba2b-f7c5-4f39-bb59-2eed6f2fe1ae","name":"AMWTimefence_OEMAMW_1521107962914"},{"guid":"3ce2c76f-342d-44cf-88fd-dcff83fa8b58","name":"AMWTimefence_OEMAMW_1521107871083"},{"guid":"cf2b976a-475e-4d6c-959b-f44136cdd5f5","name":"AMWTimefence_OEMAMW_1521107623562"},{"guid":"80eecb3a-3d6a-4479-b899-6262812fbbc6","name":"AMWGeoFence_OEMAMW_1521107203816"},{"guid":"e35f616a-324c-4c1c-a770-4ac37327c9d0","name":"AMWGeoFence_OEMAMW_1521107156096"},{"guid":"5adbd2d8-023b-4212-b42a-214608684c41","name":"AMWGeoFence_OEMAMW_1521106839152"},{"guid":"f75bef5d-9423-4fac-aaae-636dfa960713","name":"AMWGeoFence_OEMAMW_1521106558955"},{"guid":"5a4b9452-3d12-493d-a196-d48b901e821b","name":"AMWGeoFence_OEMAMW_1521106244763"},{"guid":"e9684dde-0414-49e7-94a1-c27dfef1e839","name":"AMWGeoFence_OEMAMW_1521099802931"},{"guid":"34e784ba-3795-46f0-8123-9af6b2082768","name":"AMWServiceDue_OEMAMW_1519792944767"},{"guid":"43c703d1-e28f-4ce8-86ae-d00b4a7dfcc7","name":"EngineCoolentTemperatureAlert_OEMAMW_1518604044230"},{"guid":"282dc9ce-58b0-4e99-862d-633ab22f2281","name":"AMWGeoFence_OEMAMW_1519211417582"},{"guid":"c9a18c8b-9c17-47bf-a371-fb1eb1ba6043","name":"AMWGeoFence_OEMAMW_1519020818294"},{"guid":"90b391d3-6319-4266-9425-4cfe35478ef5","name":"AMWTimefence_OEMAMW_1518856049777"},{"guid":"a4f8c66e-6c90-4c83-b715-9797cb5822c0","name":"AMWTimefence_OEMAMW_1518847968724"},{"guid":"3b0b866e-462b-476e-91c6-9a4e132f5fcc","name":"AMWGeoFence_OEMAMW_1518783983722"},{"guid":"14f0e150-7ff2-4dd5-85ab-6abf6c4c0e8e","name":"AMWTimefence_OEMAMW_1518771669667"},{"guid":"3db261d7-d968-4362-b661-ab25186fb2a5","name":"SpeedAlert_OEMAMW_1518604049825"},{"guid":"41749f30-9ec4-476a-a066-f0dcb73fc034","name":"InternalBatteryChargeAlert_OEMAMW_1518604049612"},{"guid":"b28054a8-70c5-4de6-8c42-92bf5a5896df","name":"ExternalBatteryVoltageAlert_OEMAMW_1518604044428"},{"guid":"27d6e4b4-f775-4985-83f3-cbc260d246cc","name":"OilPressureAlert_OEMAMW_1518604039038"}],"availableServices":[{"guid":"a57fb29a-4cfa-430f-b1e5-0175ae657749","name":"AMWServiceDue"},{"guid":"055b8202-5ae5-4267-a1b1-7d6478b4bab8","name":"OilPressureAlert"},{"guid":"33864aa9-dc53-4f09-9c2a-8cfd9df33ec3","name":"ExternalBatteryVoltageAlert"},{"guid":"1aef2310-2a35-43f5-8996-b27bfb6c57e9","name":"InternalBatteryChargeAlert"},{"guid":"9a472cfe-e1fc-4cf9-957d-de8a6269b67b","name":"SpeedAlert"},{"guid":"0f055776-6958-4b8d-a090-ebb6cd74aa27","name":"AMWGeoFence"},{"guid":"74f43d99-e25d-4f58-8e3a-fe4728e0bba6","name":"AMWTimefence"}]}},
+    "getNearDealers": {"status":"success","result":[{"service_station_name":"chrome motors","latitude":12.976,"longitude":77.537},{"service_station_name":"trident trucking","latitude":12.9860392,"longitude":77.3757656}]},
+  "getAssetByUser": {"status":"success","result":[{"serialNumber":"Truck1","name":"Truck1","guid":"0_b6f4745a-4b20-42c3-ba8e-06eca0b3c2ea","location":"Bangalore","label":"asset","activationDate":1517917338767,"type":"AMWTRUCK_PRODUCTCLASS"},{"serialNumber":"123456789012345","registrationDate":1518170390603,"name":"123456789012345","guid":"0_322262a1-f577-4be2-baab-ec2215baeaa6","location":"Bangalore","label":"asset","activationDate":1518169560872,"type":"AMWTRUCK_PRODUCTCLASS"},{"serialNumber":"123456789012346","registrationDate":1518496610278,"name":"123456789012346","guid":"0_81abb3ef-dead-42b2-948b-4034eb5c0513","location":"Bangalore","label":"asset","activationDate":1517917339099,"type":"AMWTRUCK_PRODUCTCLASS"},{"serialNumber":"123456789012347","registrationDate":1518496610275,"name":"123456789012347","guid":"0_400582b9-176a-49fb-b2f8-374d2f60ed28","location":"Bangalore","label":"asset","activationDate":1517917338963,"type":"AMWTRUCK_PRODUCTCLASS"},{"serialNumber":"123456789012348","registrationDate":1518691347676,"name":"123456789012348","guid":"0_4217d39c-bd20-43ad-aa6e-0f0ad38cb60d","location":"Bangalore","label":"asset","activationDate":1518683722373,"type":"AMWTRUCK_PRODUCTCLASS"},{"serialNumber":"123456789012349","registrationDate":1518792538953,"name":"123456789012349","guid":"0_efab650d-67ef-46b4-b830-1b11ffca3701","location":"Bangalore","label":"asset","activationDate":1518791028844,"type":"AMWTRUCK_PRODUCTCLASS"},{"serialNumber":"123456789012350","registrationDate":1518792538948,"name":"123456789012350","guid":"0_941d47a9-628b-49ec-a28c-b7fc82f82fd5","location":"Bangalore","label":"asset","activationDate":1518791979911,"type":"AMWTRUCK_PRODUCTCLASS"},{"serialNumber":"123456789012351","registrationDate":1519032190403,"name":"123456789012351","guid":"0_6e26dee8-0d8a-4f58-abe7-3c4692bb6a55","location":"Bangalore","label":"asset","activationDate":1519021015711,"type":"AMWTRUCK_PRODUCTCLASS"}],"pageOffset":"-1"},
+  "getParent": {
+    "status": "success",
+    "result": {
+      "class": [
+        {
+          "name": "OEMAMW_classes",
+          "guid": "0_14c81f22-b9da-46ac-85ee-68a4e17bc10e"
+        }
+      ],
+      "org": [
+        {
+          "name": "OEMAMW_org_0_34cd442b-3a74-4bc2-9d3b-8cb7454a6b1f",
+          "guid": "0_3297d9c6-0b09-47f4-b007-cfc2b7ec10b2"
+        }
+      ]
+    }
+  },
+  "getAssetsByOrg": {
+    "status": "success",
+    "result": [
+      {
+        "serialNumber": "Truck1",
+        "name": "Truck1",
+        "guid": "0_b6f4745a-4b20-42c3-ba8e-06eca0b3c2ea",
+        "location": "Bangalore",
+        "label": "asset",
+        "activationDate": 1517917338767,
+        "type": [
+          
+        ]
+      },
+      {
+        "serialNumber": "Truck2",
+        "name": "Truck2",
+        "guid": "0_400582b9-176a-49fb-b2f8-374d2f60ed28",
+        "location": "Bangalore",
+        "label": "asset",
+        "activationDate": 1517917338963,
+        "type": [
+          
+        ]
+      },
+      {
+        "serialNumber": "Truck3",
+        "name": "Truck3",
+        "guid": "0_81abb3ef-dead-42b2-948b-4034eb5c0513",
+        "location": "Bangalore",
+        "label": "asset",
+        "activationDate": 1517917339099,
+        "type": [
+          
+        ]
+      }
+    ],
+    "pageOffset": "3"
+  },
+  "getOrgByType": {
+    "status": "success",
+    "result": [
+      {
+        "delearName": "KRISHNA AUTOMOBILES",
+        "delearEmailId": "KRISHNA_AUTOMOBILES@gmail.com",
+        "mobile": "+91-9949648754",
+        "name": "KRISHNA AUTOMOBILES",
+        "guid": "0_39e59d4e-7567-4ff7-bab5-68ad6a534ffb",
+        "location": "Bangalore",
+        "type": "DealerOrg",
+        "bootStrapKey": "Ig5ndTIx+DxEdofJbDrrvg=="
+      }
+    ],
+    "pageOffset": "-1"
+  },
+  "login": {"status":"success","result":{"userid":"oemamw@gmail.com"}},
+  "logout": {
+    "status": "success",
+    "result": "logout"
+  },
+  "fleet": {
+    "status": "success",
+    "result": {
+      "userName": "JCBindialookingglass@gmail.com",
+      "timestamp": 1502668800000,
+      "assetSoldCount": 41224,
+      "assetInWarehouseCount": 866,
+      "assetInTransitCount": 444
+    }
+  },
+  "mttr": {
+    "status": "success",
+    "result": {
+      "orgName": "shivam.kumardelear@gmail.com",
+      "keys": {
+        "value": "mttr"
+      },
+      "data": [
+        {
+          "month": 3,
+          "value": 32
+        },
+        {
+          "month": 4,
+          "value": 33
+        },
+        {
+          "month": 5,
+          "value": 34
+        },
+        {
+          "month": 6,
+          "value": 35
+        },
+        {
+          "month": 7,
+          "value": 36
+        },
+        {
+          "month": 8,
+          "value": 37
+        },
+        {
+          "month": 9,
+          "value": 38
+        }
+      ]
+    }
+  },
+  "upcomingService": {
+    "status": "success",
+    "result": {
+      "orgName": "shivam.kumardelear@gmail.com",
+      "keys": {
+        "value": "upcomingServices"
+      },
+      "data": [
+        {
+          "month": 3,
+          "value": 17
+        },
+        {
+          "month": 4,
+          "value": 18
+        },
+        {
+          "month": 5,
+          "value": 19
+        },
+        {
+          "month": 6,
+          "value": 20
+        },
+        {
+          "month": 7,
+          "value": 21
+        },
+        {
+          "month": 8,
+          "value": 22
+        },
+        {
+          "month": 9,
+          "value": 23
+        }
+      ]
+    }
+  },
+  "serviceRealization": {
+    "status": "success",
+    "result": {
+      "orgName": "shivam.kumardelear@gmail.com",
+      "keys": {
+        "value2": "assetsServiceDone",
+        "value1": "assetsServiceDue"
+      },
+      "data": [
+        {
+          "month": 3,
+          "value2": 12,
+          "value1": 7
+        },
+        {
+          "month": 4,
+          "value2": 13,
+          "value1": 8
+        },
+        {
+          "month": 5,
+          "value2": 14,
+          "value1": 9
+        },
+        {
+          "month": 6,
+          "value2": 15,
+          "value1": 10
+        },
+        {
+          "month": 7,
+          "value2": 16,
+          "value1": 11
+        },
+        {
+          "month": 8,
+          "value2": 17,
+          "value1": 12
+        },
+        {
+          "month": 9,
+          "value2": 18,
+          "value1": 13
+        }
+      ]
+    }
+  },
+  "serviceCost": {
+    "status": "success",
+    "result": {
+      "assetSerialNumber": "VINHAR3DXSSL01888137",
+      "data": [
+        {
+          "month": 3,
+          "actualServiceCost": 2502,
+          "estimatedServiceCost": 2002
+        },
+        {
+          "month": 4,
+          "actualServiceCost": 2503,
+          "estimatedServiceCost": 2003
+        },
+        {
+          "month": 5,
+          "actualServiceCost": 2504,
+          "estimatedServiceCost": 2004
+        },
+        {
+          "month": 6,
+          "actualServiceCost": 2505,
+          "estimatedServiceCost": 2005
+        },
+        {
+          "month": 7,
+          "actualServiceCost": 2506,
+          "estimatedServiceCost": 2006
+        },
+        {
+          "month": 8,
+          "actualServiceCost": 2507,
+          "estimatedServiceCost": 2007
+        },
+        {
+          "month": 9,
+          "actualServiceCost": 2508,
+          "estimatedServiceCost": 2008
+        }
+      ]
+    }
+  },
+  "assetAlertCount": {
+    "status": "success",
+    "result": {
+      "0_61adfbe3-8334-4751-9407-dceb1d7d5ac0": {
+        "0_858dfeb3-2e1b-4806-8959-c80c7e10eb34": {
+          "events": {
+            "error": "Looks like some columns values are missing or no such columns exist",
+            "columns": [
+              "time",
+              "name",
+              "COUNT"
+            ],
+            "values": [
+              [
+                "2017-03-02T11:43:22Z",
+                "ENGINE_ON",
+                23
+              ],
+              [
+                "2017-03-02T11:43:22Z",
+                "IGNITION_ON",
+                38
+              ]
+            ]
+          },
+          "types": {
+            "events": [
+              {
+                "name": "LOW_FUEL",
+                "guid": "0_f2402071-82c5-452b-9e30-d363107d52ec"
+              },
+              {
+                "name": "OVERLOAD",
+                "guid": "0_4cc552e9-84a9-4379-9578-911a8eb7c1ac"
+              },
+              {
+                "name": "EXTERNAL_BATTERY_REMOVED",
+                "guid": "0_95c1df0d-4d2d-4f34-8bb6-4f867dc8e464"
+              },
+              {
+                "name": "ACCELEROMETER_TATUS_AT_OVER_THRESHOLD",
+                "guid": "0_6589ce90-c55e-4d1d-9c88-485f5d38c243"
+              },
+              {
+                "name": "MACHINE_BATTERY_HIGH",
+                "guid": "0_abcf558e-b1dd-45e8-82bb-a614826d60c8"
+              },
+              {
+                "name": "LOW_ENGINE_OIL_LEVEL",
+                "category": 101,
+                "guid": "0_b92966f3-6c34-4999-a3cd-177da660effd"
+              },
+              {
+                "name": "HIGH_HYDRAULIC_OIL_TEMP",
+                "guid": "0_42b83d10-8349-482e-b3e2-4693f3389e0d"
+              },
+              {
+                "name": "HELLO",
+                "guid": "0_14f3558f-9cb2-405c-aa6c-4230d06baaeb"
+              },
+              {
+                "name": "LOW_BRAKE_AIR_PRESSURE",
+                "guid": "0_acc16d98-b99f-448f-a605-82cf23d036b1"
+              },
+              {
+                "name": "CLOGGED_HYDRAULIC_OIL_FILTER",
+                "guid": "0_0ce8fd1a-d59b-4c83-9546-ed0da47cc963"
+              },
+              {
+                "name": "LOW_COOLANT_LEVEL",
+                "guid": "0_a652bbc7-2f5c-44e0-9d34-d7e666193242"
+              },
+              {
+                "name": "TRANSMISSION_OIL_PRESSURE",
+                "guid": "0_737d2934-15f9-4f4b-a2fa-cfaf45855d77"
+              },
+              {
+                "name": "HIGH_TRANSMISSION_OIL_TEMPERATURE",
+                "guid": "0_aa72fe0f-9fb4-45e4-ba3a-793b94fb212e"
+              },
+              {
+                "name": "BLOCKED_AIR_FILTER",
+                "guid": "0_c48b6a13-f048-4437-a9d2-5015586959c8"
+              },
+              {
+                "name": "WATER_IN_FUEL",
+                "guid": "0_bf7d587a-7943-408e-8f8f-8c322e232341"
+              },
+              {
+                "name": "HIGH_COOLANT_TEMPERATURE",
+                "guid": "0_8273f94c-0397-4d03-bce7-75c2eaf629ca"
+              },
+              {
+                "name": "LOW_ENGINE_OIL_PRESSURE",
+                "category": 101,
+                "guid": "0_1d59001c-5231-4af6-9b26-913b689b0cc5"
+              },
+              {
+                "name": "ENGINE_ON",
+                "category": 100,
+                "guid": "0_2ba086ae-7f56-4e53-9a3c-4cbfe8bc8c19"
+              },
+              {
+                "name": "MACHINE BATTERY NOT CHARGING",
+                "guid": "0_2d648507-61bd-449f-947b-8743055d351f"
+              },
+              {
+                "name": "MACHINE_BATTERY_LOW",
+                "guid": "0_9cd7396f-beae-48cc-82eb-3999a05627d9"
+              },
+              {
+                "name": "IGNITION_ON",
+                "category": 100,
+                "guid": "0_f6269193-e8ad-4434-bf01-31f2d33b3b69"
+              },
+              {
+                "name": "AssetUtilizationJCBindiaLG",
+                "guid": "d8afb5e5-d968-4a17-bc68-4ac613a32f24"
+              },
+              {
+                "name": "AssetUtilizationAlertJCBindiaLG",
+                "guid": "371ec728-5afd-4036-b8eb-7b888967eff7"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  
+  "revenue": {
+    "status": "success",
+    "result": {
+      "userName": "JCBindialookingglass@gmail.com",
+      "revenue": [
+        {
+          "parts": 4198293,
+          "consumables": 37705346,
+          "wearItems": 25212768,
+          "listItems": 11444937,
+          "forYear": 2017,
+          "forMonth": 3
+        },
+        {
+          "parts": 4688189,
+          "consumables": 31576061,
+          "wearItems": 26086508,
+          "listItems": 9979414,
+          "forYear": 2017,
+          "forMonth": 4
+        },
+        {
+          "parts": 3968769,
+          "consumables": 28713346,
+          "wearItems": 29912424,
+          "listItems": 8987384,
+          "forYear": 2017,
+          "forMonth": 5
+        },
+        {
+          "parts": 4478063,
+          "consumables": 30891059,
+          "wearItems": 32395767,
+          "listItems": 9922510,
+          "forYear": 2017,
+          "forMonth": 6
+        },
+        {
+          "parts": 6620573,
+          "consumables": 37499891,
+          "wearItems": 28172768,
+          "listItems": 9902269,
+          "forYear": 2017,
+          "forMonth": 7
+        },
+        {
+          "parts": 4490793,
+          "consumables": 31559938,
+          "wearItems": 36630312,
+          "listItems": 12517966,
+          "forYear": 2017,
+          "forMonth": 8
+        }
+      ]
+    }
+  },
+  "assetStatus":{
+  "status": "success",
+  "result": {
+    "0_d40ecd40-e676-4a67-a42d-baf12f16893b": {
+      "0_81abb3ef-dead-42b2-948b-4034eb5c0513": {
+        "data": {
+          "asset": {
+            "error": "Looks like some columns values are missing or no such columns exist",
+            "columns": [
+              "time",
+              "SignalStrength",
+              "time",
+              "GPSFix",
+              "time",
+              "Latitude",
+              "time",
+              "Longitude",
+              "time",
+              "Altitude",
+              "time",
+              "OilPressure",
+              "time",
+              "ExternalBatteryVoltage",
+              "time",
+              "InternalBatteryCharge",
+              "time",
+              "VehicleSpeedGPS",
+              "time",
+              "VehicleSpeedCAN",
+              "time",
+              "ODOMeter",
+              "time",
+              "EngineCoolentTemperature",
+              "time",
+              "DTC1_OCC",
+              "time",
+              "DTC1_FMI",
+              "time",
+              "DTC1_SPN",
+              "time",
+              "DTC2_OCC",
+              "time",
+              "DTC2_FMI",
+              "time",
+              "DTC2_SPN",
+              "time",
+              "Total_ODO",
+              "time",
+              "Last_Service_Date",
+              "time",
+              "Last_Service_Odo",
+              "time",
+              "Next_Service_Odo",
+              "time",
+              "Next_Service_Date",
+              "time",
+              "EngineRPM",
+              "time",
+              "EngineHours",
+              "time",
+              "Last_Updated_Timestamp"
+            ],
+            "values": [
+              [
+                "2018-04-09T12:38:03Z",
+                29,
+                "2018-04-09T12:38:03Z",
+                true,
+                "2018-04-09T12:38:03Z",
+                12.870376,
+                "2018-04-09T12:38:03Z",
+                77.501743,
+                "2018-04-09T12:38:03Z",
+                907,
+                "2018-04-09T12:38:03Z",
+                808,
+                "2018-04-09T12:38:03Z",
+                11,
+                "2018-04-09T12:38:03Z",
+                74,
+                "2018-04-09T12:38:03Z",
+                62,
+                "2018-04-09T12:38:03Z",
+                61,
+                "2018-04-09T12:38:03Z",
+                31,
+                "2018-04-09T12:38:03Z",
+                47,
+                "2018-04-09T12:38:03Z",
+                901,
+                "2018-04-09T12:38:03Z",
+                95,
+                "2018-04-09T12:38:03Z",
+                912581,
+                "2018-04-09T12:38:03Z",
+                489,
+                "2018-04-09T12:38:03Z",
+                56,
+                "2018-04-09T12:38:03Z",
+                590325,
+                "2018-04-09T12:38:03Z",
+                11118,
+                "2018-04-09T12:38:03Z",
+                1523277317000,
+                "2018-04-09T12:38:03Z",
+                11115,
+                "2018-04-09T12:38:03Z",
+                11215,
+                "2018-04-09T12:38:03Z",
+                1523882117000,
+                "2018-04-09T12:38:03Z",
+                3873,
+                "2018-04-09T12:38:03Z",
+                0.4,
+                "2018-04-09T12:38:03Z",
+                "1523277483000"
+              ]
+            ]
+          }
+        },
+        "types": {
+          "events": [
+            {
+              "name": "OverSpeed",
+              "category": 100,
+              "guid": "0_be382b48-c57f-4988-ad58-7e7bcb4e3563"
+            },
+            {
+              "name": "LowInternalbattery",
+              "category": 101,
+              "guid": "0_2243fd61-7f37-4847-a447-b6c01f418c38"
+            },
+            {
+              "name": "DeviceRemovalFromVehicle",
+              "category": 102,
+              "guid": "0_23473941-e6e6-4b5c-97e3-62d1dddb03e6"
+            },
+            {
+              "name": "LowVehicleBattery",
+              "category": 101,
+              "guid": "0_e66fee69-fb09-4a0d-bffb-198588eb38e0"
+            },
+            {
+              "name": "HighCoolantTemperature",
+              "category": 103,
+              "guid": "0_91dd573e-4983-4cc6-a0c9-49651f924c21"
+            },
+            {
+              "name": "LowOilPressure",
+              "category": 103,
+              "guid": "0_d7d06f0e-3441-4afe-b374-0c1b66341aaf"
+            },
+            {
+              "name": "IgnitionON",
+              "guid": "0_4f855d1e-c16a-4997-b62b-b6b5dcacca13"
+            },
+            {
+              "name": "PowerON",
+              "guid": "0_0470fb5f-5351-4e81-a4d6-6b54c33c26d9"
+            },
+            {
+              "name": "IgnitionOFF",
+              "guid": "0_515c85f0-71b8-4293-89ec-9fb422d60c8e"
+            },
+            {
+              "name": "NormalOilPressure",
+              "category": 203,
+              "guid": "0_a09e3349-4d56-41cf-acbd-7d7445cc855e"
+            },
+            {
+              "name": "NormalCoolantTemperature",
+              "category": 203,
+              "guid": "0_ad9913ea-0ba3-40c5-bfb8-d3e7f95f2e4d"
+            },
+            {
+              "name": "NormalVehicleBattery",
+              "category": 203,
+              "guid": "0_4ff03cab-981d-4d84-8127-612b623c8a27"
+            },
+            {
+              "name": "DeviceConnectedToVehicle",
+              "category": 202,
+              "guid": "0_bb8721fe-9f7a-4500-8192-f752ed79c4a2"
+            },
+            {
+              "name": "NormalSpeed",
+              "category": 200,
+              "guid": "0_71194ab4-d664-4569-8815-41d1fffbf007"
+            },
+            {
+              "name": "EngineON",
+              "guid": "0_aa92ab54-7a03-4a32-b100-6a7786c2a935"
+            },
+            {
+              "name": "EngineOFF",
+              "guid": "0_66cad643-2aa6-49fd-b2a8-08966b1206b6"
+            },
+            {
+              "name": "AMWServiceDue_OEMAMW_1522943602701",
+              "guid": "4539c9ea-2b76-4c54-b74a-3b6d1575e6e3"
+            },
+            {
+              "name": "AMWTimefence_OEMAMW_1521107962914",
+              "guid": "c236fef5-a6f8-431e-b295-a3115e10a68f"
+            },
+            {
+              "name": "AMWTimefence_OEMAMW_1521107871083",
+              "guid": "4d8e5231-8c53-48b4-8905-6f97772a3058"
+            },
+            {
+              "name": "AMWTimefence_OEMAMW_1521107623562",
+              "guid": "23a6efc4-5130-446a-a1b9-1743272a79c2"
+            },
+            {
+              "name": "AMWGeoFence_OEMAMW_1521106558955",
+              "guid": "c991eb15-71b2-48f7-b237-729390eae1c1"
+            },
+            {
+              "name": "AMWGeoFence_OEMAMW_1521106244763",
+              "guid": "5ae1bde8-891d-4e48-9852-8cd39bd2012d"
+            },
+            {
+              "name": "AMWGeoFence_OEMAMW_1521099802931",
+              "guid": "ecd070fd-b18e-452b-b0f5-da21e577ac6c"
+            },
+            {
+              "name": "EngineCoolentTemperatureAlert_OEMAMW_1518604044230",
+              "guid": "ef61ddfb-6f79-472e-9412-f84947e45a3b"
+            },
+            {
+              "name": "ExternalBatteryVoltageAlert_OEMAMW_1518604044428",
+              "guid": "3c9ef0ea-ec18-42c6-8095-e2da151aeaa7"
+            },
+            {
+              "name": "OilPressureAlert_OEMAMW_1518604039038",
+              "guid": "99e3d80f-788e-41d9-b79c-c773405ccfe9"
+            },
+            {
+              "name": "SpeedAlert_OEMAMW_1518604049825",
+              "guid": "e142fb35-4ef6-426f-8124-1288e3ac9774"
+            },
+            {
+              "name": "InternalBatteryChargeAlert_OEMAMW_1518604049612",
+              "guid": "52477280-77bb-4a03-b58e-b6adeb5e4393"
+            }
+          ],
+          "dis": [
+            {
+              "name": "Timestamp",
+              "type": "Double",
+              "guid": "0_8975e105-0f28-4be6-a593-fa13ceb6f9d4"
+            },
+            {
+              "name": "SignalStrength",
+              "type": "int",
+              "guid": "0_6229d388-3dc3-4186-ad4a-d7160e9a78e3"
+            },
+            {
+              "name": "GPSFix",
+              "type": "boolean",
+              "guid": "0_0c691fdd-7873-4c9f-957c-80ebc2f3c466"
+            },
+            {
+              "name": "Latitude",
+              "type": "Double",
+              "guid": "0_a40e80c7-45ef-4753-8149-661d540b78d3"
+            },
+            {
+              "name": "Longitude",
+              "type": "Double",
+              "guid": "0_bca044b6-b9ce-4261-8035-0e870b297279"
+            },
+            {
+              "name": "Altitude",
+              "type": "Double",
+              "guid": "0_7fb48509-8c4c-4482-acc8-d64f2da8b1b1"
+            },
+            {
+              "name": "OilPressure",
+              "type": "int",
+              "guid": "0_5e160a83-70d3-4b0e-98fc-30be2e4f3d6d"
+            },
+            {
+              "name": "ExternalBatteryVoltage",
+              "type": "Double",
+              "guid": "0_57a38571-eeb0-48e3-8808-0b9a85c538b8"
+            },
+            {
+              "name": "InternalBatteryCharge",
+              "type": "int",
+              "guid": "0_b9668154-f5cc-4672-8a4d-9f81ad3b3ec7"
+            },
+            {
+              "name": "VehicleSpeedGPS",
+              "type": "Double",
+              "guid": "0_9dd360d8-ce14-4b4d-a94d-242ae882420b"
+            },
+            {
+              "name": "VehicleSpeedCAN",
+              "type": "Double",
+              "guid": "0_2c95c3e1-98b5-42cb-bf1b-5985fa9e3ae7"
+            },
+            {
+              "name": "ODOMeter",
+              "type": "Double",
+              "guid": "0_39a3be0e-cafe-438b-9ca0-ed6977ce02d8"
+            },
+            {
+              "name": "EngineCoolentTemperature",
+              "type": "int",
+              "guid": "0_487fcf23-bb49-455c-9e63-01e9d7ae43e5"
+            },
+            {
+              "name": "DTC1_OCC",
+              "type": "int",
+              "guid": "0_9a06519a-67bc-43b5-bf3e-83770b72d3a4"
+            },
+            {
+              "name": "DTC1_FMI",
+              "type": "int",
+              "guid": "0_5e20448d-ad9e-4b4d-b296-2dfeff7caaa0"
+            },
+            {
+              "name": "DTC1_SPN",
+              "type": "int",
+              "guid": "0_fbc1986a-f9be-47cc-b588-fd791f9d8911"
+            },
+            {
+              "name": "DTC2_OCC",
+              "type": "int",
+              "guid": "0_f0308a45-87e2-4edc-ae0a-c6c41a41f1e7"
+            },
+            {
+              "name": "DTC2_FMI",
+              "type": "int",
+              "guid": "0_717dffea-b075-45fc-9a1b-4eca8eaa2b3d"
+            },
+            {
+              "name": "DTC2_SPN",
+              "type": "int",
+              "guid": "0_f3f1afb7-cc85-49e7-94aa-260a431f85ec"
+            },
+            {
+              "name": "Total_ODO",
+              "type": "Double",
+              "guid": "0_ee675d16-bd00-459d-8893-9a3929bfc787"
+            },
+            {
+              "name": "Last_Service_Date",
+              "type": "Double",
+              "guid": "0_96473bc6-a66b-47e6-8425-681672a68fc1"
+            },
+            {
+              "name": "Last_Service_Odo",
+              "type": "Double",
+              "guid": "0_efa9f79e-4619-46fc-826b-36ae80779a5b"
+            },
+            {
+              "name": "Next_Service_Odo",
+              "type": "Double",
+              "guid": "0_430bbeaa-f8f8-4e7c-9c8f-056063f876a0"
+            },
+            {
+              "name": "Next_Service_Date",
+              "type": "Double",
+              "guid": "0_8acee87c-d2a8-4fed-ab59-d9a6c622fdc8"
+            },
+            {
+              "name": "EngineRPM",
+              "type": "int",
+              "guid": "0_bbc51059-dea6-41ca-9273-7bb025dd569b"
+            },
+            {
+              "name": "EngineHours",
+              "type": "double",
+              "guid": "0_60b5aa97-2368-46ae-ad76-4922b8319c76"
+            },
+            {
+              "name": "Last_Updated_Timestamp",
+              "type": "Double",
+              "guid": "0_c2bc5b8f-e27e-47b4-ae39-214dbc8ba66f"
+            }
+          ]
+        },
+        "events": {
+          "error": "Looks like some columns values are missing or no such columns exist",
+          "columns": [
+            "time",
+            "name",
+            "type",
+            "status",
+            "priority",
+            "description"
+          ],
+          "values": [
+            [
+              "2018-04-09T12:38:03Z",
+              "OverSpeed",
+              100,
+              true,
+              1,
+              "FW_Version_Number:00.00.01|SerialNumber:123456789012346|Last_Updated_Timestamp:1523277483000|GPSFix:true|SignalStrength:29|Latitude:+12.870376|Longitude:+077.501743|Altitude:+0000907|EngineRPM:03873|EngineHours:00000.4|OilPressure:0808|EngineCoolentTemperature:+047|ExternalBatteryVoltage:11.0|InternalBatteryCharge:074|VehicleSpeedGPS:062|VehicleSpeedCAN:061|ODOMeter:0000031|name:15|DTC1_SPN:912581|DTC1_FMI:95|DTC1_OCC:901|DTC2_SPN:590325|DTC2_FMI:56|DTC2_OCC:489"
+            ],
+            [
+              "2018-04-09T12:33:31Z",
+              "LowInternalbattery",
+              101,
+              true,
+              1,
+              "FW_Version_Number:00.00.01|SerialNumber:123456789012346|Last_Updated_Timestamp:1523277211000|GPSFix:false|SignalStrength:34|Latitude:+12.864221|Longitude:+077.511463|Altitude:+0000917|EngineRPM:03676|EngineHours:00000.4|OilPressure:0207|EngineCoolentTemperature:+140|ExternalBatteryVoltage:19.1|InternalBatteryCharge:018|VehicleSpeedGPS:061|VehicleSpeedCAN:064|ODOMeter:0000024|name:14|DTC1_SPN:008379|DTC1_FMI:17|DTC1_OCC:555|DTC2_SPN:358558|DTC2_FMI:59|DTC2_OCC:499"
+            ],
+            [
+              "2018-04-09T12:25:25Z",
+              "DeviceRemovalFromVehicle",
+              102,
+              true,
+              1,
+              "FW_Version_Number:00.00.01|SerialNumber:123456789012346|Last_Updated_Timestamp:1523276725000|GPSFix:true|SignalStrength:36|Latitude:+12.855801|Longitude:+077.533714|Altitude:+0000913|EngineRPM:03629|EngineHours:00000.4|OilPressure:0988|EngineCoolentTemperature:+133|ExternalBatteryVoltage:21.8|InternalBatteryCharge:059|VehicleSpeedGPS:062|VehicleSpeedCAN:056|ODOMeter:0000022|name:12|DTC1_SPN:721555|DTC1_FMI:41|DTC1_OCC:568|DTC2_SPN:294333|DTC2_FMI:96|DTC2_OCC:294"
+            ],
+            [
+              "2018-04-09T11:35:14Z",
+              "LowVehicleBattery",
+              101,
+              true,
+              1,
+              "FW_Version_Number:00.00.01|SerialNumber:123456789012346|Last_Updated_Timestamp:1523273714000|GPSFix:false|SignalStrength:37|Latitude:+12.866809|Longitude:+077.633922|Altitude:+0000894|EngineRPM:04027|EngineHours:00000.1|OilPressure:0511|EngineCoolentTemperature:+138|ExternalBatteryVoltage:10.4|InternalBatteryCharge:022|VehicleSpeedGPS:055|VehicleSpeedCAN:060|ODOMeter:0000002|name:10|DTC1_SPN:064747|DTC1_FMI:37|DTC1_OCC:614|DTC2_SPN:837559|DTC2_FMI:09|DTC2_OCC:892"
+            ],
+            [
+              "2018-04-09T12:28:17Z",
+              "HighCoolantTemperature",
+              103,
+              true,
+              1,
+              "FW_Version_Number:00.00.01|SerialNumber:123456789012346|Last_Updated_Timestamp:1523276897000|GPSFix:true|SignalStrength:97|Latitude:+12.861303|Longitude:+077.518705|Altitude:+0000891|EngineRPM:04038|EngineHours:00000.4|OilPressure:0998|EngineCoolentTemperature:+009|ExternalBatteryVoltage:18.9|InternalBatteryCharge:048|VehicleSpeedGPS:061|VehicleSpeedCAN:064|ODOMeter:0000024|name:08|DTC1_SPN:515584|DTC1_FMI:77|DTC1_OCC:160|DTC2_SPN:236881|DTC2_FMI:31|DTC2_OCC:013"
+            ],
+            [
+              "2018-04-09T12:35:02Z",
+              "LowOilPressure",
+              103,
+              true,
+              1,
+              "FW_Version_Number:00.00.01|SerialNumber:123456789012346|Last_Updated_Timestamp:1523277302000|GPSFix:false|SignalStrength:98|Latitude:+12.867845|Longitude:+077.505476|Altitude:+0000893|EngineRPM:03977|EngineHours:00000.4|OilPressure:0314|EngineCoolentTemperature:+012|ExternalBatteryVoltage:12.7|InternalBatteryCharge:084|VehicleSpeedGPS:055|VehicleSpeedCAN:056|ODOMeter:0000027|name:06|DTC1_SPN:189398|DTC1_FMI:29|DTC1_OCC:530|DTC2_SPN:208615|DTC2_FMI:52|DTC2_OCC:957"
+            ],
+            [
+              "2018-04-09T10:33:59Z",
+              "IgnitionON",
+              0,
+              true,
+              3,
+              "FW_Version_Number:00.00.01|SerialNumber:123456789012346|Last_Updated_Timestamp:1523270039000|GPSFix:true|SignalStrength:35|Latitude:+12.838729|Longitude:+077.677819|Altitude:+0000910|EngineRPM:04352|EngineHours:00000.0|OilPressure:0040|EngineCoolentTemperature:+050|ExternalBatteryVoltage:10.0|InternalBatteryCharge:060|VehicleSpeedGPS:056|VehicleSpeedCAN:080|ODOMeter:0000000|name:02|DTC1_SPN:855011|DTC1_FMI:49|DTC1_OCC:420|DTC2_SPN:450957|DTC2_FMI:09|DTC2_OCC:111"
+            ],
+            [
+              "2018-04-09T10:33:40Z",
+              "PowerON",
+              0,
+              true,
+              3,
+              "FW_Version_Number:00.00.01|SerialNumber:123456789012346|Last_Updated_Timestamp:1523270020000|GPSFix:false|SignalStrength:23|Latitude:+12.838729|Longitude:+077.677819|Altitude:+0000902|EngineRPM:03620|EngineHours:00000.2|OilPressure:0040|EngineCoolentTemperature:+050|ExternalBatteryVoltage:10.0|InternalBatteryCharge:060|VehicleSpeedGPS:058|VehicleSpeedCAN:080|ODOMeter:0000004|name:01|DTC1_SPN:529576|DTC1_FMI:91|DTC1_OCC:649|DTC2_SPN:094705|DTC2_FMI:87|DTC2_OCC:964"
+            ],
+            [
+              "2018-04-09T12:09:14Z",
+              "NormalOilPressure",
+              203,
+              true,
+              2,
+              "FW_Version_Number:00.00.01|SerialNumber:123456789012346|Last_Updated_Timestamp:1523275754000|GPSFix:false|SignalStrength:28|Latitude:+12.849904|Longitude:+077.588152|Altitude:+0000909|EngineRPM:03883|EngineHours:00000.4|OilPressure:0182|EngineCoolentTemperature:+079|ExternalBatteryVoltage:12.2|InternalBatteryCharge:080|VehicleSpeedGPS:062|VehicleSpeedCAN:059|ODOMeter:0000018|name:07|DTC1_SPN:538593|DTC1_FMI:28|DTC1_OCC:626|DTC2_SPN:983181|DTC2_FMI:64|DTC2_OCC:184"
+            ],
+            [
+              "2018-04-09T12:32:30Z",
+              "NormalCoolantTemperature",
+              203,
+              true,
+              2,
+              "FW_Version_Number:00.00.01|SerialNumber:123456789012346|Last_Updated_Timestamp:1523277150000|GPSFix:false|SignalStrength:53|Latitude:+12.864221|Longitude:+077.511463|Altitude:+0000894|EngineRPM:03911|EngineHours:00000.4|OilPressure:0326|EngineCoolentTemperature:+065|ExternalBatteryVoltage:13.7|InternalBatteryCharge:058|VehicleSpeedGPS:060|VehicleSpeedCAN:057|ODOMeter:0000024|name:09|DTC1_SPN:306975|DTC1_FMI:41|DTC1_OCC:685|DTC2_SPN:139932|DTC2_FMI:67|DTC2_OCC:957"
+            ],
+            [
+              "2018-04-09T12:36:45Z",
+              "NormalVehicleBattery",
+              201,
+              true,
+              2,
+              "FW_Version_Number:00.00.01|SerialNumber:123456789012346|Last_Updated_Timestamp:1523277405000|GPSFix:false|SignalStrength:76|Latitude:+12.870376|Longitude:+077.501743|Altitude:+0000899|EngineRPM:03770|EngineHours:00000.4|OilPressure:0024|EngineCoolentTemperature:+006|ExternalBatteryVoltage:13.9|InternalBatteryCharge:099|VehicleSpeedGPS:065|VehicleSpeedCAN:062|ODOMeter:0000028|name:11|DTC1_SPN:717646|DTC1_FMI:10|DTC1_OCC:560|DTC2_SPN:262151|DTC2_FMI:98|DTC2_OCC:984"
+            ],
+            [
+              "2018-04-09T12:15:51Z",
+              "DeviceConnectedToVehicle",
+              202,
+              true,
+              2,
+              "FW_Version_Number:00.00.01|SerialNumber:123456789012346|Last_Updated_Timestamp:1523276151000|GPSFix:false|SignalStrength:94|Latitude:+12.849056|Longitude:+077.574430|Altitude:+0000893|EngineRPM:04130|EngineHours:00000.4|OilPressure:0248|EngineCoolentTemperature:+019|ExternalBatteryVoltage:02.7|InternalBatteryCharge:094|VehicleSpeedGPS:059|VehicleSpeedCAN:065|ODOMeter:0000022|name:13|DTC1_SPN:341687|DTC1_FMI:96|DTC1_OCC:254|DTC2_SPN:829212|DTC2_FMI:83|DTC2_OCC:114"
+            ],
+            [
+              "2018-04-09T12:17:44Z",
+              "NormalSpeed",
+              200,
+              true,
+              2,
+              "FW_Version_Number:00.00.01|SerialNumber:123456789012346|Last_Updated_Timestamp:1523276264000|GPSFix:true|SignalStrength:38|Latitude:+12.847926|Longitude:+077.566727|Altitude:+0000906|EngineRPM:04264|EngineHours:00000.4|OilPressure:0198|EngineCoolentTemperature:+039|ExternalBatteryVoltage:20.6|InternalBatteryCharge:053|VehicleSpeedGPS:063|VehicleSpeedCAN:057|ODOMeter:0000022|name:16|DTC1_SPN:524676|DTC1_FMI:02|DTC1_OCC:883|DTC2_SPN:487848|DTC2_FMI:97|DTC2_OCC:552"
+            ],
+            [
+              "2018-04-09T11:28:33Z",
+              "EngineON",
+              0,
+              true,
+              3,
+              "FW_Version_Number:00.00.01|SerialNumber:123456789012346|Last_Updated_Timestamp:1523273313000|GPSFix:false|SignalStrength:33|Latitude:+12.859112|Longitude:+077.655251|Altitude:+0000890|EngineRPM:03529|EngineHours:00000.0|OilPressure:0270|EngineCoolentTemperature:+133|ExternalBatteryVoltage:16.9|InternalBatteryCharge:025|VehicleSpeedGPS:063|VehicleSpeedCAN:055|ODOMeter:0000000|name:04|DTC1_SPN:526024|DTC1_FMI:16|DTC1_OCC:355|DTC2_SPN:345588|DTC2_FMI:10|DTC2_OCC:517"
+            ],
+            [
+              "2018-04-09T11:27:02Z",
+              "EngineOFF",
+              0,
+              true,
+              3,
+              "FW_Version_Number:00.00.01|SerialNumber:123456789012346|Last_Updated_Timestamp:1523273222000|GPSFix:true|SignalStrength:46|Latitude:+12.884761|Longitude:+077.488308|Altitude:+0000895|EngineRPM:04214|EngineHours:00000.4|OilPressure:0240|EngineCoolentTemperature:+123|ExternalBatteryVoltage:10.5|InternalBatteryCharge:080|VehicleSpeedGPS:057|VehicleSpeedCAN:059|ODOMeter:0000008|name:05|DTC1_SPN:124178|DTC1_FMI:45|DTC1_OCC:308|DTC2_SPN:682391|DTC2_FMI:43|DTC2_OCC:864"
+            ],
+            [
+              "2018-04-09T11:38:03.1Z",
+              "AMWServiceDue_OEMAMW_1522943602701",
+              501,
+              true,
+              2,
+              "As per engine running Miles, You need to avail Service 1(1523273881000)"
+            ],
+            [
+              "2018-04-09T12:38:05.3Z",
+              "AMWGeoFence_OEMAMW_1521106558955",
+              503,
+              true,
+              2,
+              "Geo Fence Arrival Event"
+            ],
+            [
+              "2018-04-09T12:38:05.3Z",
+              "AMWGeoFence_OEMAMW_1521106244763",
+              503,
+              true,
+              2,
+              "Geo Fence Departure Event"
+            ],
+            [
+              "2018-04-09T12:38:05.3Z",
+              "AMWGeoFence_OEMAMW_1521099802931",
+              503,
+              true,
+              2,
+              "Geo Fence Departure Event"
+            ],
+            [
+              "2018-04-09T12:35:04.8Z",
+              "EngineCoolentTemperatureAlert_OEMAMW_1518604044230",
+              603,
+              false,
+              2,
+              "Normal Engine Coolant Temperature Alert Event"
+            ],
+            [
+              "2018-04-09T12:17:46.5Z",
+              "ExternalBatteryVoltageAlert_OEMAMW_1518604044428",
+              603,
+              false,
+              2,
+              "Normal Ext Battery Voltage Alert Event"
+            ],
+            [
+              "2018-04-09T12:38:05.2Z",
+              "OilPressureAlert_OEMAMW_1518604039038",
+              603,
+              false,
+              2,
+              "Over OilPressure Alert Event"
+            ],
+            [
+              "2018-04-09T10:32:14Z",
+              "SpeedAlert_OEMAMW_1518604049825",
+              600,
+              false,
+              2,
+              "Over speed Alert Event"
+            ],
+            [
+              "2018-04-09T12:38:05.2Z",
+              "InternalBatteryChargeAlert_OEMAMW_1518604049612",
+              500,
+              true,
+              2,
+              "Over IntBatCharge Alert Event"
+            ]
+          ]
+        }
+      }
+    }
+  }
+},
+  
+  "allEvents": {"status":"success","result":{"100":2,"101":2,"102":2,"103":4}},
+  "utilization": {"status":"success","result":{"0_d40ecd40-e676-4a67-a42d-baf12f16893b":{"0_322262a1-f577-4be2-baab-ec2215baeaa6":{"data":{"asset":{"columns":["time","OilPressure"],"values":[["2018-03-07T10:00:00Z",51.0],["2018-03-07T06:00:00Z",51.0],["2018-03-06T21:30:00Z",50.0],["2018-03-06T20:30:00Z",50.0],["2018-03-06T15:30:00Z",50.0],["2018-03-06T14:30:00Z",50.0],["2018-03-06T13:05:50Z",80.0],["2018-03-06T12:20:47Z",80.0],["2018-03-05T22:00:00Z",50.0],["2018-03-05T15:30:00Z",50.0],["2018-03-05T14:30:00Z",50.0],["2018-03-05T14:00:00Z",50.0],["2018-03-05T13:00:00Z",50.0],["2018-03-05T12:30:00Z",50.0],["2018-03-05T12:00:00Z",50.0],["2018-03-05T11:30:00Z",50.0],["2018-03-05T11:00:00Z",50.0],["2018-02-26T20:00:00Z",60.0]]}},"events":{},"types":{"dis":[{"name":"OilPressure","type":"int","guid":"0_5e160a83-70d3-4b0e-98fc-30be2e4f3d6d"}]}}}}},
+  "getOrgByAssetIdAndType": {
+    "status": "success",
+    "result": [
+      {
+        "imie": "1234",
+        "delear_name": "Kalinga",
+        "delear_emailid": "Kalinga@gmail.com",
+        "mobile": "+91 9225320072",
+        "name": "Kalinga_Account_org",
+        "guid": "0_dbded0ef-16f0-4e95-a100-edce48939917",
+        "location": "Orissa",
+        "boot_strap_key": "u9Njn3YfXX3eq7QyTzKxAQ==",
+        "type": "company"
+      }
+    ]
+  },
+  "utilizationbarchart":{
+  "status": "success",
+  "result": {
+    "0_d40ecd40-e676-4a67-a42d-baf12f16893b": {
+      "0_400582b9-176a-49fb-b2f8-374d2f60ed28": { "1529257588000": 0.7}
+    }
+  }
+  },
+  "utilizationbarchart1":{  "status": "success",
+  "result": {
+    "0_d40ecd40-e676-4a67-a42d-baf12f16893b": {
+      "0_400582b9-176a-49fb-b2f8-374d2f60ed28": { "1529257588000": 0.7, "1589257588000":7,"1519257588000": 8}
+    }
+  }},
+
+  "getAggregatedData":{"status":"success","result":{"0_d40ecd40-e676-4a67-a42d-baf12f16893b":{"0_322262a1-f577-4be2-baab-ec2215baeaa6":{"data":{"asset":{"columns":["time","VehicleSpeedCAN"],"values":[["2018-03-07T10:00:00Z",1.0],["2018-03-06T21:00:00Z",1.0],["2018-03-06T20:00:00Z",1.0],["2018-03-06T15:00:00Z",1.0],["2018-03-06T14:00:00Z",1.0],["2018-03-06T13:00:00Z",1.0],["2018-03-06T12:00:00Z",1.0]]}},"types":{"dis":[{"name":"VehicleSpeedCAN","guid":"0_2c95c3e1-98b5-42cb-bf1b-5985fa9e3ae7","type":"Double","resolution":"1h","function":"COUNT"}]}}}}},
+  "healthIssue": {
+    "status": "success",
+    "result": {
+      "0_61adfbe3-8334-4751-9407-dceb1d7d5ac0": {
+        "0_92328b35-bc4c-4143-a6cd-057eb4a49a71": {
+          "events": {
+            "error": "Looks like some columns values are missing or no such columns exist",
+            "columns": [
+              "time",
+              "name",
+              "COUNT"
+            ],
+            "values": [
+              [
+                "2017-03-25T12:52:08Z",
+                "LOW_FUEL",
+                23
+              ],
+              [
+                "2017-03-25T12:52:08Z",
+                "HELLO",
+                6
+              ],
+              [
+                "2017-03-25T12:52:08Z",
+                "TEST_HELLO",
+                6
+              ],
+              [
+                "2017-03-25T12:52:08Z",
+                "ENGINE_ON",
+                614
+              ],
+              [
+                "2017-03-25T12:52:08Z",
+                "IGNITION_ON",
+                685
+              ],
+              [
+                "2017-03-25T12:52:08Z",
+                "LOW_COOLANT_LEVEL_ON",
+                68
+              ]
+            ]
+          },
+          "types": {
+            "events": [
+              {
+                "name": "EVENT19sep",
+                "guid": "0_de7aacea-1fbf-41a8-b2f5-22a53974299c"
+              },
+              {
+                "name": "TESTEVENT44",
+                "guid": "0_08f1dccd-aac1-4e93-ad28-b7fdae3b1038"
+              },
+              {
+                "name": "EVENTTEST",
+                "guid": "0_1e17e9b9-ca32-4671-a452-5889c4c52020"
+              },
+              {
+                "name": "LOW_FUEL",
+                "guid": "0_f2402071-82c5-452b-9e30-d363107d52ec"
+              },
+              {
+                "name": "OVERLOAD",
+                "guid": "0_4cc552e9-84a9-4379-9578-911a8eb7c1ac"
+              },
+              {
+                "name": "EXTERNAL_BATTERY_REMOVED",
+                "guid": "0_95c1df0d-4d2d-4f34-8bb6-4f867dc8e464"
+              },
+              {
+                "name": "ACCELEROMETER_TATUS_AT_OVER_THRESHOLD",
+                "guid": "0_6589ce90-c55e-4d1d-9c88-485f5d38c243"
+              },
+              {
+                "name": "MACHINE_BATTERY_HIGH",
+                "guid": "0_abcf558e-b1dd-45e8-82bb-a614826d60c8"
+              },
+              {
+                "name": "LOW_ENGINE_OIL_LEVEL",
+                "category": 101,
+                "guid": "0_b92966f3-6c34-4999-a3cd-177da660effd"
+              },
+              {
+                "name": "HIGH_HYDRAULIC_OIL_TEMP",
+                "guid": "0_42b83d10-8349-482e-b3e2-4693f3389e0d"
+              },
+              {
+                "name": "HELLO",
+                "guid": "0_14f3558f-9cb2-405c-aa6c-4230d06baaeb"
+              },
+              {
+                "name": "LOW_BRAKE_AIR_PRESSURE",
+                "guid": "0_acc16d98-b99f-448f-a605-82cf23d036b1"
+              },
+              {
+                "name": "CLOGGED_HYDRAULIC_OIL_FILTER",
+                "guid": "0_0ce8fd1a-d59b-4c83-9546-ed0da47cc963"
+              },
+              {
+                "name": "LOW_COOLANT_LEVEL",
+                "guid": "0_a652bbc7-2f5c-44e0-9d34-d7e666193242"
+              },
+              {
+                "name": "TRANSMISSION_OIL_PRESSURE",
+                "guid": "0_737d2934-15f9-4f4b-a2fa-cfaf45855d77"
+              },
+              {
+                "name": "HIGH_TRANSMISSION_OIL_TEMPERATURE",
+                "guid": "0_aa72fe0f-9fb4-45e4-ba3a-793b94fb212e"
+              },
+              {
+                "name": "BLOCKED_AIR_FILTER",
+                "guid": "0_c48b6a13-f048-4437-a9d2-5015586959c8"
+              },
+              {
+                "name": "WATER_IN_FUEL",
+                "guid": "0_bf7d587a-7943-408e-8f8f-8c322e232341"
+              },
+              {
+                "name": "HIGH_COOLANT_TEMPERATURE",
+                "guid": "0_8273f94c-0397-4d03-bce7-75c2eaf629ca"
+              },
+              {
+                "name": "LOW_ENGINE_OIL_PRESSURE",
+                "category": 101,
+                "guid": "0_1d59001c-5231-4af6-9b26-913b689b0cc5"
+              },
+              {
+                "name": "ENGINE_ON",
+                "category": 100,
+                "guid": "0_2ba086ae-7f56-4e53-9a3c-4cbfe8bc8c19"
+              },
+              {
+                "name": "MACHINE BATTERY NOT CHARGING",
+                "guid": "0_2d648507-61bd-449f-947b-8743055d351f"
+              },
+              {
+                "name": "MACHINE_BATTERY_LOW",
+                "guid": "0_9cd7396f-beae-48cc-82eb-3999a05627d9"
+              },
+              {
+                "name": "IGNITION_ON",
+                "category": 100,
+                "guid": "0_f6269193-e8ad-4434-bf01-31f2d33b3b69"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

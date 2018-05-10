@@ -1,0 +1,10 @@
+<div class="col s12 m12 l12">
+	<div class="card hoverable dashoardActiveAlertCard">
+		<div class="card-content">
+			<span class="titleactivealerts ">Active Alerts</span>
+			<div class="cardrowalign">
+				<bar-chart *ngIf="alertData" [data]="alertData" [yAxisLabel]="yLabel"></bar-chart>
+			</div>
+		</div>
+	</div>
+</div>

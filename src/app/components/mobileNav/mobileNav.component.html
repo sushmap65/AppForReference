@@ -1,0 +1,56 @@
+<div *ngIf="mobileNavStatusChanged" class="{{mobileNaveClass + ' mob-leftNav-div ' + 'inner-shadow-right' }} mob-leftNav-div mobileNaveClass mobile-left-nav-show inner-shadow-right">
+  <div class="row mobile-sidebarItem">
+    <div>
+        <div class="mobile-active-link" (click)="mobileLink('/home')" [routerLinkActive]="['active']" [routerLink]="['home']" [routerLink]="['home']">
+          <div class="col m3 l3">
+                <i class="fa fa-snowflake-o mobile-dashboardIconStyle" aria-hidden="true"></i>
+          </div>
+          <div class="col m5 l5">
+                <p class="mobile-dashboardtxt sidebarItemText">Dashboard</p>
+          </div>
+        </div>
+    </div>
+  </div>
+ <!--  <div> -->
+    <div class="row mobile-sidebarItem">
+        <div class="mobile-active-link" (click)="mobileLink('/fleet')" [routerLinkActive]="['active']"  [routerLink]="['fleet']">
+          <div>
+            <div class="col m3 l3">
+                <i class="fa fa-truck mobile-dashboardIconStyle1" aria-hidden="true"></i>
+            </div>
+            <div class="col m5 l5">
+                <p class="mobile-dashboardtxt1 sidebarItemText">Fleet</p>
+            </div>
+          </div>
+        </div>
+    </div>
+      <div class="row mobile-sidebarItem">
+        <div class="mobile-active-link" (click)="mobileLink('/reports')" [routerLinkActive]="['active']"  [routerLink]="['reports']">
+          <div>
+            <div class="col m3 l3">
+                <i class="fa fa-file mobile-dashboardIconStyle1" aria-hidden="true"></i>
+            </div>
+            <div class="col m5 l5">
+                <p class="mobile-dashboardtxt1 sidebarItemText">Reports</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  <!--   <div class="row mobile-sidebarItem mobile-loginBlock">
+       <div class="col m6 l6">
+          <button class="mobile-dashboardtxt btn btn-logout" (click)="logout()">logout</button>
+      </div>
+    </div> -->
+    <a href="logout">
+    <div class="row mobile-sidebarItem mobile-loginBlock" style="background: #dde0cc;">
+        <div class="col m6 l6">
+          <div style="background: #dde0cc;" (click)="logout()">
+            <a href="/logout">
+              <p class="mobile-dashboardtxt sidebarItemText logouttxt ">Logout</p>
+            </a>
+          </div>
+        </div>
+    </div>
+    </a>
+  </div>
+<!-- </div> -->

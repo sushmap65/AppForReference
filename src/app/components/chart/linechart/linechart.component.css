@@ -1,0 +1,64 @@
+
+
+.chart-title {
+    text-align: center;
+    font-weight: 600;
+    padding-top: 15px;
+}
+.d3-chart {
+    width: 91%;
+    height: 350px;
+}
+.svg-chart {
+  padding-left: 4%;
+}
+.axis .axis--y {
+    padding-left: 4px;
+  fill: #999;
+}
+.d3-chart .axis path,
+.d3-chart .axis {
+  stroke: #999;
+}
+
+.d3-chart .axis text {
+  fill: #999;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+.dot-circle {
+  stroke: blue;
+  fill: blue;
+}
+.axisX line {
+  stroke: #999;
+}
+.axisX path{
+  stroke: #999;
+}
+.axisY line {
+  stroke: #999;
+}
+
+.axisY path{
+  stroke: #999;
+}
+
+.chartTooltip {
+    position: absolute;
+    text-align: center;
+    width: 110px;
+    height: 35px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: #ADADAD;
+    color: #FFFFFF;
+    border: 0px;
+    display: block;
+    border-radius: 8px;
+    pointer-events: none;
+}

@@ -1,0 +1,27 @@
+.revenue-chart {
+    height: 540px;
+}
+.dashoardRevenueGuideCard{
+	width: centers100%;
+    height: 436px;
+    border-radius: 10px;
+}
+.titlerevenueguide{
+	width: 44px;
+    height: 26px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.3px;
+    text-align: left;
+    color: #545454;
+    font-family: Roboto;
+}
+#live-tracker-mapContainer {
+    width: 100%;
+    height: 370px;
+    margin-top: 0px;
+    margin-left: 0px;
+    border-radius: 10px;
+    overflow: hidden;
+
+}

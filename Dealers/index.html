@@ -1,0 +1,322 @@
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>JCB Project</title>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+        <link href="https://sass-lang.com/documentation/file.SASS_REFERENCE.html">
+        <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+        <link rel="stylesheet" href="icons/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/global.css">
+         <link rel="stylesheet" type="text/css" href="../css/dealerfleet.css">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        
+    </head>
+
+    <body>
+      <!--===================================header brandlogo username userimg -->
+    <!--<div id="header">
+              <div class="logo">
+                  <a href="#"><img class="brandlogo" src="images/brand_logo.png"></a>
+              </div>
+              <div class="username">
+                  <p>Hi Raphael!</p>
+              </div>   
+              <div class="row valign-wrapper">
+                 <div class="col s2">
+                     <div class="userimg">
+                         <img class="imgCircle" src="images/user2">
+                    </div>
+                </div>
+            </div>
+        </div> -->
+          <!--==============code using nav for responsive header brandlogo username userimg -->
+        <nav class="navStyle">
+            <div class="nav-wrapper">
+               <!--  <a href="#" class="brand-logo"><img class="brandlogo" src="images/brand_logo.png"></a> -->
+                <a href="#" class="brand-logo"><img class="brandlogo1" src="images/HeaderLogoFinal.png"></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                     <li><p class="userNameStyle">Hi Raphael!</p></li>
+                     <li class="userimg"><img class="imgCircle" src="images/userPic1.png" onerror="this.src='images/userPlaceholder.png';"></li>          
+                </ul>
+            </div>
+        </nav>  
+
+        <!--============================container,content,dashboard dasboardicons and text-->
+        <div id="container">
+            <div class="content">
+                <div class="row">
+                    <div class="dashboard hoverable dashboardcollapse" id="dashboardHide">
+                        <div id="dashboarddata" class="col s12 m12 l12">                    
+                            <ul id="dashboarditems">
+                                <a href="index.html">
+                                        <li class="sidebarItem accordion active itemDashboard">
+                                            <i class="material-icons" id="facebook">ac_unit</i><span class="dashboardtxt sidebarItemText">Dashboard</span>
+                                        </li>
+                                </a>                   
+                                <a href="pages/DealerFleetPage.html">
+                                        <li class="sidebarItem accordion " >
+                                              <i class="material-icons">local_shipping</i>
+                                            <span class="txt fleetHeading sidebarItemText">Fleet</span>
+                                        </li>
+                                </a> 
+                                <ul class="panel">
+                                    <li class="panelFirstItem sidebarItem active" id="fleetId"><a href="pages/DealerFleetPage.html"><img src="icons/Group 14.png"><span>Sold</span></a></li>
+                                    <li><a href="pages/sold.html"><img src="icons/Group 15.png"><span>Un-Sold</span></a></li>
+                                    <li><a href="pages/sold.html"><img src="icons/Group 16.png"><span>In-Transit</span></a></li>
+                                </ul>                            
+                                <a href="#">
+                                        <li class="sidebarItem">
+                                            <i class="material-icons">group</i><span class="dealerstxt sidebarItemText">Customers</span>
+                                        </li>
+                                </a>
+                                <a href="#">
+                                        <li class="sidebarItem">                               
+                                        <i class="fa fa-file-text"></i>
+                                        <span class="reportstxt sidebarItemText">Reports</span>
+                                        </li>
+                                </a>
+                                <a href="#">
+                                        <li class="sidebarItem">    
+                                        <i class="material-icons">notifications</i>
+                                        <span class="notificationtxt sidebarItemText">Notification</span>
+                                        </li>
+                                </a>
+                                <a href="#">
+                                        <li class="sidebarItem">
+                                        <i class="material-icons">sms</i><span class="helpsupporttxt sidebarItemText">
+                                        Demo</span>
+                                        </li>
+                                </a>
+                                <a href="#">
+                                        <li class="sidebarItem">
+                                         <i class="material-icons">feedback</i><span class="complaintstxt sidebarItemText">Complaints</span>
+                                        </li>
+                                </a>
+                                <li class="logoutcol logoutLi" id="containerdata22">
+                                        <a href="pages/DealerLogin.html"><i class="fa fa-sign-out fa-1x " id="logouticon" aria-hidden="true"></i><p class="logouttxt">Logout</p></a>
+                                </li>
+                            </ul>                            
+                        </div>
+                    </div>
+            <!--=====================================================fleet-card firstrow card1-->
+            <div id="containerdata" class="rowalignshow"> 
+                    <div class="row " id="firstrowalign">
+                        <div class="firstcardrow">
+                            <div class="col s12 m5 offset-m2">
+                                <div class="card hoverable " id="color">
+                                    <div class="card-content white-text">
+                                        <div class="row ">
+                                         <span class="titlefleet">Fleet</span>
+                                            <div class="col s12 fleetSub fleetFirst">                    
+                                               <!-- <ul class="mytaskUl">
+                                                        <li class="fleetsidetitle">Sold
+                                                        <span class="count">104322456</span>
+                                                        <span class="fleetcardsubtitle">Units Till Date</span>
+                                                        </li>
+                                                        <li class="fleetsidetitle">Warehouses
+                                                        <span class="count">522456</span>
+                                                        <span class="fleetcardsubtitle">All Locations</span>
+                                                        </li>
+                                                        <li class="fleetsidetitle">In Transit
+                                                        <span class="count">94</span>
+                                                        <span class="fleetcardsubtitle">In Multiple Shipments</span></li>
+                                                </ul>    -->
+                                                <div class="col s4 m4 l4">
+                                                    <p class="fleetsidetitle">Sold</p> 
+                                                    <p class="fleetsidetitle">Warehouses</p>
+                                                    <p class="fleetsidetitle">In Transit</p>         
+                                                </div>
+
+                                                <div class="col s4 m4 l4">
+                                                   <p class="count first-link" id="fleetCountNo">1043233</p>
+                                                   <p class="count">522456</p> 
+                                                   <p class="count">94</p>                           
+                                                </div>
+
+                                                <div class="col s4 m4 l4">
+                                                   <p class="fleetcardsubtitle">Units Till Date</p>
+                                                   <p class="fleetcardsubtitle">All Locations</p>
+                                                   <p class="fleetcardsubtitle">In Multiple Shipments</p>
+                                                </div> 
+                                                
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                       
+                            <!--================================active-alert-card firstrow card2-->
+                            <div class="col s12 m5">
+                                <div class="card hoverable ">
+                                    <div class="card-content">
+                                    <div class="row">
+                                       <!--  <span class="titleactivealerts">Active Alerts</span> -->
+                                        <div class="col s4 m4 l4"> 
+                                              <span class="titlerevenueguide">Active Alerts</span>
+                                        </div>  
+                                        <div class="col s4 m4 l4 push-l2 ActiveAlertLegendsDiv"> 
+                                              <li class="ActiveAlertLegendsLi1">
+                                              <span class="ActiveAlertLegendsSpan">Legend 1</span>                                           
+                                        </div> 
+                                        <div class="col s4 m4 l4 push-l1 ActiveAlertLegendsDiv"> 
+                                            <li class="ActiveAlertLegendsLi2"><span class="ActiveAlertLegendsSpan">Legend 2</span>
+                                        </div>
+                                    </div>
+                                         <div class="col s12">
+                                            <img class="responsive-img" src="charts/NewActiveAlert.png" style="height: 244px;">
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                        <!--================================service-guide-card third card4-->
+                    <div class="row">
+                        <div class="thirdcardrow">
+                            <div class="col s12 m10 offset-m2">
+                                <div class="card hoverable card-revenueguide RevenueGuideCard">
+                                    <div class="card-content">
+                                       <!--  <div class="row">
+                                            <span class="titlerevenueguide">Revenue Guide</span>
+                                            </div> -->
+                                       
+                                             <div class="row">
+                                                <div class="col s4 m4 l4"> 
+                                                    <span class="titlerevenueguide">Mean Time to Repair</span>
+                                                </div>  
+                                                <div class="col s4 m2 l2 push-l4 fromDateDiv" style="    margin-left: 64px;">    
+                                                    <input type="text" id="datepicker" class="RevenueGuideDatePickrFrom" placeholder="From">
+                                                </div>
+                                                <div class="col s1 m2 l2 push-l4">
+                                                    <i class="fa fa-calendar prefix" aria-hidden="true" style="color:#70c8be;"></i>  
+                                                </div> 
+                                                <div class="col s4 m2 l2 push-l2 ToDateDiv">            
+                                                    <input type="text" id="datepicker2" class="RevenueGuideDatePickrTo" placeholder="To">
+                                                </div>
+                                                <div class="col s1 m2 l2 push-l2"> 
+                                                    <i class="fa fa-calendar prefix" aria-hidden="true" style="color:#70c8be;"></i>
+                                                </div>
+                                        </div>
+                                            <div class="col s12">
+                                            <img  class="responsive-img" src="charts/NewMeanTime.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                             <!--======================================== fourth row Revenue Guide-->
+                          <div class="row">
+                        <div class="thirdcardrow">
+                            <div class="col s12 m10 offset-m2">
+                                <div class="card hoverable card-revenueguide RevenueGuideCard">
+                                    <div class="card-content">
+                                       <!--  <div class="row">
+                                            <span class="titlerevenueguide">Revenue Guide</span>
+                                            </div> -->
+                                     
+                                             <div class="row">
+                                                <div class="col s4 m4 l4"> 
+                                                    <span class="titlerevenueguide">Upcoming Services</span>
+                                                </div>  
+                                            
+                                        </div>
+                                            <div class="col s12">
+                                            <img  class="responsive-img" src="charts/newUpcomingChart.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                             <!--================================Sales Guide fifth row-->
+                          <div class="row">
+                        <div class="thirdcardrow">
+                            <div class="col s12 m10 offset-m2">
+                                <div class="card hoverable card-revenueguide RevenueGuideCard">
+                                    <div class="card-content">
+                                       <!--  <div class="row">
+                                            <span class="titlerevenueguide">Revenue Guide</span>
+                                            </div> -->
+                                       <div class="row">
+                                                <div class="col s4 m4 l4"> 
+                                                    <span class="titlerevenueguide">Service Realization</span>
+                                                </div>  
+                                                  <div class="col s4 m4 l4 push-l2" style="margin-top: 8px;"> 
+                                                  <li style="color:#f15b40;"><span style="color:#cccccc;">Number of Service Alerts</span>
+                                                  
+                                                </div> 
+                                                  <div class="col s4 m4 l4 push-l1" style="margin-top: 8px;color: #cccccc;"> 
+                                            <li style="color:#70c8be;"><span style="color:#cccccc;">Actual Services Completed</span>
+                                                </div> 
+                                               <!--  <div class="col s4 m2 l2 push-l4 fromDateDiv" style="    margin-left: 64px;">    
+                                                    <input type="text" id="datepicker" class="RevenueGuideDatePickrFrom" placeholder="From">
+                                                </div>
+                                                <div class="col s1 m2 l2 push-l4">
+                                                    <i class="fa fa-calendar prefix" aria-hidden="true"></i>  
+                                                </div> 
+                                                <div class="col s4 m2 l2 push-l2 ToDateDiv">            
+                                                    <input type="text" id="datepicker2" class="RevenueGuideDatePickrTo" placeholder="To">
+                                                </div>
+                                                <div class="col s1 m2 l2 push-l2"> 
+                                                    <i class="fa fa-calendar prefix" aria-hidden="true"></i>
+                                                </div> -->
+                                        </div>
+                                            <div class="col s12">
+                                            <img  class="responsive-img" src="charts/NewServiceRealization.png">
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+         
+    <!--================================footer-->
+        <footer class="page-footer" style="background-color: #F9F9F9!important;">                
+            <p id="footerid" class="footertxt">
+               <!--  <img src="images/LG_Logo.png" style="width: 20px;height: 20px;margin-bottom: -4px;"></img> --><span>&nbsp;&nbsp;Powered by Wipro Looking Glass. <!-- Privacy Policy -->
+                <!-- <span class="footertxt2">Helpline No: +91 9101234567 | About Us | Contact Us</span> -->
+            </p>                            
+        </footer>  
+        <!--================================material scripts-->
+        <script type="text/javascript " src="js/jquery.min.js "></script>
+        <script type="text/javascript " src="js/materialize.min.js "></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript" src="js/barchart1.js"></script>
+        <script type="text/javascript" src="js/dropdown.js"></script>
+          <script type="text/javascript" src="js/fleetDiscrption.js"></script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+         <script src="js/dashboardcollapse.js"></script>
+        <script src="js/fleetaccordion.js"></script>
+        <script type="text/javascript ">
+        
+        $(document).ready(function() {
+            $(".button-collapse ").sideNav();
+            $(".navicon").sideNav();
+            $('.dropdown').dropdown('open');
+            $('.dropdown').dropdown('close');
+            $('.count').each(function() {
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function(now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });       
+        });
+        </script>
+    </body>
+
+    </html>

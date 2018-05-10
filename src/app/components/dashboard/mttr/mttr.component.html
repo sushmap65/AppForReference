@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="thirdcardrow">
+        <div class="col s12 m10 offset-m2">
+            <div class="card #bdbdbd hoverable card-revenueguide dashoard-mttr-card ">
+                <div class="card-content">
+                    <span class="titlerevenueguide">Mean Time to Repair</span>
+                    <div class="col s12 mttr-chart">
+                        <bar-chart *ngIf="chartData" [data]="chartData" [yAxisLabel]="yLabel"></bar-chart>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

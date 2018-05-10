@@ -1,0 +1,32 @@
+<div class="card-content card-content-block scrollSmallCard scrollbar" id="style-2">
+  <div class="pagedetails">
+   <p class="caption">Fleet Search Result
+   </p>
+ </div>
+ <div class="divider soldpagedevider1"></div>
+ <div class="container searchdatatcontainer">
+   <div class="row alignRowItem">
+    <!-- single asset details start -->
+    <div *ngFor="let asset of data" class="col s12 m4 l3 push-s2">
+      <div class="card fleetsmallcard"
+      (mouseenter)="showAssetAlert(asset.guid)"
+      *ngIf="!asset.status">
+      <a [routerLink]="['/asset', asset.guid]">
+        <p class="searchcarddatatitle">{{asset.name}}</p>
+        <div class="searchcarddata">
+          Type- {{asset.type}}<br>
+          IMEI- {{asset.name}}<br>
+          Location- {{asset.location}}<br>
+        </div>
+      </a>
+    </div>
+    <div class="card fleetChartCard" *ngIf="asset.status" (mouseleave)="toggleVisibility(asset.guid)">
+      <a [routerLink]="['/asset', asset.guid]">
+        <bar-chart *ngIf="asset.alerts" [data]="asset.alerts" [yAxisLabel]="yLabel"></bar-chart>
+      </a>
+    </div>
+  </div>
+  <!-- single asset details end -->
+</div>
+</div>
+</div>

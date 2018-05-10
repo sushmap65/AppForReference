@@ -1,0 +1,46 @@
+<div id="containerdata">
+  <div class="rowalignshow">
+    <div class="row fleettyperow">
+      <div class="nav-content fleetDisNavContent">
+        <ul class="tabs tabs-transparent">
+          <li class="tab fleetDisctab">
+            <a class="OverviewTab" [href]="assetUrl">Overview</a>
+          </li>
+          <li class="tab fleetDisctab">
+            <a class="UtilisationTab" href="#utilisation">Utilization</a>
+          </li>
+          <li class="tab fleetDisctab">
+            <a class="HealthTab" href="#health">Health</a>
+          </li>
+          <li class="tab fleetDisctab">
+            <a class="ServiceTab active-nav" href="#service">Service</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- utilisation start -->
+  <div class="row fleettyperow active" id="utilisation-screen">
+    <div class="row fleettyperow">
+      <div class="col s12 m10 l0 offset-m2 offset-l2">
+        <div class="col s12 m12 l12">
+          <div class="card UtilisationPatternCard">
+            <div class="card-content">
+              <div class="row">
+                <div class="col s12 m4 l4"> 
+                  <span class="UtilisationPatternTitle">Service Cost</span>
+                </div>
+              </div>
+              <div class="col s12 ActiveAlertDiv">
+                <groupbar-chart *ngIf="chartData"
+                [data]="chartData"
+                [key]="keys"
+                [yAxisLabel]="yLabel"
+                ></groupbar-chart>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,101 @@
+<div class="container-fluid service-container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="service-page-heading">
+        <h3>
+          Services
+        </h3>
+        <small>Subscribe and edit services</small>
+      </div>
+      <div class="row body-container">
+        <div class="col-md-6">
+          <div [hidden]="!loading" class="row">
+           <app-loader [loading]="!loading"></app-loader>
+         </div>
+         <div [hidden]="loading" class="row">
+          <div class="col-md-6 service-available-block">
+            <div>Available Services</div>
+            <ol>
+              <li *ngFor= 'let x of availableServices'>
+                <input type='checkbox'
+                value='{{x.guid}}'
+                [(ngModel)]="x.checked"
+                (click)="showSubscribeButton($event.target.checked, x.guid)">
+                <span>{{x.name}}</span>
+              </li>
+            </ol>
+            <button  *ngIf='isSubBtnVisible'
+            type="button"
+            class="btn btn-default service-button"
+            (click)="subscribeServices()"
+            [disabled]=isSubBtnActive>
+            Subscribe
+          </button>
+        </div>
+        <div class="col-md-6 service-subscribed-block">
+          <div>Subscribed Services</div>
+          <input #searchItem placeholder="search services" type="text" class="search-sub-item" (keyup)="0">
+          <ul>
+            <li *ngFor= 'let x of subscribedServices | searchItemFilter: searchItem.value; let i=index'
+            class="subscrib-items"
+            [ngClass]="{ 'active': x.isSelected }"
+            id="{{x.guid}}"
+            (click)= "getScriptDetailsById(x.guid,x.name)">
+            <span class="item-index">{{i+1}}.</span> <span class="item-name">{{x.name}}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div [hidden]="!loadingScript" class="row">
+     <app-loader [loading]="!loadingScript"></app-loader>
+   </div>
+   <!-- <div [hidden]="loadingScript || isConfigEmpty || isConfigServerError || !showScriptConfig" class="content-block"> -->
+   <div  class="content-block">
+    <div *ngFor= 'let x of scriptCofigData' class="panel-body">
+      <div class="form-group">
+        <label>{{x.name}}</label>
+        <input type="text" class="form-control script-label" [(ngModel)]="x.value" (change)="updateScriptValue(x)" >
+      </div>
+    </div>
+    <div class="panel-body geofence-assetlist">
+      <div [hidden]="isAssetEmpty">
+        <div class="slect-instruction">Please Select Applicable Assets</div>
+        <div class="select-all-asset">
+          <input type="checkbox"
+          (click)="selectAllAssets($event.target.checked)">
+          <span>Select All</span>
+        </div>
+      </div>
+      <ol>
+        <li *ngFor= 'let a of availableAssetdata'>
+          <input type='checkbox'
+          value='{{a.guid}}'
+          [(ngModel)]="a.checked">
+          <span>{{a.name}}</span>
+        </li>
+      </ol>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <button class="service-button simple-button"
+        (click)= "submitServiceConfig()">Save</button>
+        <button class="service-button simple-button"
+        (click)= "cancelServiceConfig()">Cancel</button>
+      </div>
+    </div>
+
+    <div class="asset-map-container geofince-container" *ngIf="mapsListsss !== map">
+     <map [mapdata]="mapsLists" [centers]="mapsListsItem"> </map>
+   </div> 
+ </div>
+ <div class="error-block">
+  <div [hidden]="!isConfigServerError" class="server-error">Server Error</div>
+  <div [hidden]="!isConfigEmpty" class="empty-config">No Configuration Found</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

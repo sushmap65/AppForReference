@@ -1,0 +1,32 @@
+/*---------------------------------main container style---------*/
+.my-dashbbord{
+	/*margin-left: 16%;*/
+}
+.dashboardCard_50 {	
+    width: 100%;    
+}
+.dashboardCard_100 {
+    width: 100%;  
+}
+.height_above_300 {	
+	height: 100%;
+}
+.height_above_500 {
+	 height: 100%;
+}
+.rowalignshow {
+    margin-left: 0;
+    margin-right: 0;
+    background:#F9F9F9;
+}
+.row {
+    margin-bottom: 0!important;
+}
+/*---------------------------------first row style--------------*/
+/*.firstcardrow {
+    padding-top: 25px;
+}
+.page-footer{
+	padding-left: 213px;
+}
+*/

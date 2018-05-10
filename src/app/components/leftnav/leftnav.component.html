@@ -1,0 +1,56 @@
+<div class="dashboard hoverable dashboardcollapse" id="dashboardHide" *ngIf="navStatus">
+	<div id="dashboarddata" class="col s12 m12 l12" *ngIf="navStatus === 'login-success'">
+		<div>
+      <div class="row sidebarItem" [routerLinkActive]="['active']" [routerLink]="['home']" [routerLink]="['home']">
+        <div>
+          <div class="col m3 l3">
+            <i class="fa fa-snowflake-o dashboardIconStyle" aria-hidden="true"></i>
+          </div>
+          <div class="col m5 l5">
+            <p class="dashboardtxt sidebarItemText">Dashboard</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="row sidebarItem" [routerLinkActive]="['active']"  [routerLink]="['fleet']" target="_blank">
+        <div>
+          <div class="col m3 l3">
+            <i class="fa fa-truck dashboardIconStyle" aria-hidden="true"></i>
+          </div>
+          <div class="col m5 l5">
+            <p class="dashboardtxt sidebarItemText">Fleet</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="row sidebarItem" [routerLinkActive]="['active']"  [routerLink]="['reports']">
+        <div>
+          <div class="col m3 l3">
+            <i class="fa fa-file dashboardIconStyle" aria-hidden="true"></i>
+          </div>
+          <div class="col m5 l5">
+            <p class="dashboardtxt sidebarItemText">Reports</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--   <div class="row sidebarItem loginBlock">
+     <div class="col m6 l6">
+    <button class="btn-large btn-logout" (click)="logout()">logout</button>
+    </div>
+    </div> -->
+    <a href="logout">
+     <div class="row sidebarItem loginBlock" style="background: #dde0cc;" (click)="logout()">
+      <div class="col m6 l6">
+        <a href="/logout">
+          <p class="dashboardtxt sidebarItemText logouttxt" 
+          *ngIf="navStatus === 'login-success'">Logout</p>
+        </a>
+        <p class="dashboardtxt sidebarItemText logouttxt" *ngIf="navStatus ==! 'login-success'">Login</p>    
+      </div>
+    </div> 
+  </a>
+</div>
+</div>

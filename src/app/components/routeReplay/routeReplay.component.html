@@ -1,0 +1,109 @@
+<!-- <div [hidden]="!loading" class="spin-loader">
+  <app-loader [loading]="!loading"></app-loader>
+</div> -->
+<div id="containerdata">
+
+  <!-- *************************Nav Bar Tabs-->
+  <div class="rowalignshow"> 
+    <div class="row fleettyperow">
+      <div class="nav-content fleetDisNavContent">
+        <ul class="tabs tabs-transparent">
+          <li class="tab fleetDisctab">
+            <a class="OverviewTab" [href]="assetUrl">Overview</a>
+          </li>
+          <li class="tab fleetDisctab">
+            <a class="UtilisationTab" href="#utilisation">Utilization</a>
+          </li>
+          <li class="tab fleetDisctab">
+            <a class="HealthTab" href="#health">Health</a>
+          </li>
+          <li class="tab fleetDisctab">
+            <a class="RulesTab" href="#rules">Rules</a>
+          </li>
+          <li class="tab fleetDisctab">
+            <a class="ETATab" href="#eta">ETA</a>
+          </li>
+          <li class="tab fleetDisctab">
+            <a class="SOSTab" href="#sos">Nearby Dealer</a>
+          </li>
+          <li class="tab fleetDisctab">
+            <a class="RouteReplayTab active-nav" 
+            href="#routereplay">Route Replay</a>
+          </li>
+          <li class="tab fleetDisctab">
+            <a class="DataTab" href="#data">Data</a>
+          </li>
+          <li class="tab fleetDisctab" *ngIf="userType === 'Dealer'">
+            <a class="ServiceTab" href="#service">Service</a>
+          </li>
+        </ul>
+      </div> 
+    </div>
+  </div>
+
+  <!-- ******************************Event Data Tab col 1-->
+  <div class="row fleettyperow active" id="utilisation-screen">
+    <div class="row fleettyperow">
+      <div class="col s12 m10 offset-m2">
+        <div class="col s12 m12">
+          <div class="card PreferencesPatternCard">
+            <div class="card-content">
+              <div class="col s12 m12 l12">
+                <div class="row">
+                  <div class="col s12 m4 l4 UtilisationPatternTitle"> 
+                    Route Information
+                  </div>
+                  <div class="col l6 push-l2 asset-title">Asset Name - {{assetSerialNo}}</div>
+                </div>
+                <div class="row">
+                  <div class="col s12 m6 l6">
+                    <div class="row">
+                      <div class="col s12 m12 l4 sos-current-txt">Date</div>
+                      <div class="col s12 m12 l8">
+                        <div>
+                          <label>Select Date:</label>
+                          <div [ngClass]="{'invaliddata' : uiErrorStartDate == true}">
+                            <my-date-picker [options]="myDatePickerOptions" (dateChanged)="onDateChanged($event, 'startDate')" [(ngModel)]="startInput"></my-date-picker>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col l6 push-l1">
+                        <button class="btn_btncolr" (click)="getRoute()">SET</button>
+                      </div>
+                    </div>
+                       <div class="row icon-row">
+                      <div class="col l5 icon-col"><img src="../assets/img/maps-and-flags (29).png">&nbsp;&nbsp;Events</div>
+                      <div class="col l6 icon-col"><img src="../assets/img/delivery-truck (1).png" >&nbsp;&nbsp;DataItems</div>
+                    </div>
+                       
+                   
+                    </div>
+                    <!-- Modal Structure -->
+               <!--      <div class="row">
+                      <div class="col l5">
+                        <div id="modal1" class="modal" *ngIf = "routeReplay !== undefined && !modalDisplay && routeReplay.length <= 1 && !loading">
+                          <div class="close-mark"><button (click)="closeModal()">X</button></div>
+                          <div class="modal-content">
+                            <p class="modal-msg"><i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;No data available for selected date</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div> -->
+              <!--     </div> -->
+                  <div class="col s12 m6 l6" *ngIf = "maplist !== undefined">
+                    <div class="row">
+
+                      <div class="routereplay-map">
+                        <map  
+                        [mapdata]="maplist" [centers]="centerlist" [config]="config"> </map>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>

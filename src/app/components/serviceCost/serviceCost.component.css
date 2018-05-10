@@ -1,0 +1,395 @@
+.tabs .tab{
+  text-transform: capitalize;
+   color: black!important;
+}
+.dashoard-sr-card{
+    width: auto;
+    height: 450px;
+    border-radius: 10px;
+}
+
+.service-realization-chart {
+    height: 370px;
+}
+.active-nav {
+  border-bottom: 2px solid #70c8be;
+}
+.titlerevenueguide{
+	width: 44px;
+    height: 26px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.3px;
+    text-align: left;
+    color: #545454;
+    font-family: Roboto;
+}
+
+
+/*--------------------------------------------------Overview Tab---------------------*/
+.asset-details {
+  padding-left: 30px;
+  margin-top: -17px;
+}
+.asset-details p {
+  font-size: .9em;;
+}
+
+.ActiveAlertDiv{
+    height: 300px;
+    margin-left: 10px;
+     margin-top: 27px;
+}
+.fleetDisNavContent{
+  background: #ffffff;
+  height: 62px;
+  padding-left: 18%;
+  width: 108%;
+}
+.BackloaderCard{
+  height: 221px;
+  background: #f9f9f9;
+  box-shadow: none;
+}
+.card2{
+  width: auto;
+  height: 587px;
+}
+.card3{
+  margin-top: -369px;
+  height: 355px;
+}
+.user-details {
+  overflow-y: scroll;
+}
+.card4{
+    width: auto;
+    height: 320px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.fleettyperow{
+  background: #f9f9f9;
+}
+.cardrowaling {
+  padding: 0px;
+  margin: 0;
+}
+.fleetDisCardJcb{
+  width: auto;
+  height: 240px;
+  border-radius: 10px;
+}
+img.responsive-img, video.responsive-video {
+  max-width: 117%;
+}
+.card .card-content {
+    padding: 0;
+    border-radius: 0 0 2px 2px;
+}
+img#fleetDisImgCard{
+  width: 322px;
+  height: 190px;
+  margin-left: -20px;
+  margin-top: -15px;
+}
+img#fleetDisMap{
+border-radius: 10px;
+    margin-top: -38px;
+    height: 587px;
+    width: 529px;
+    margin-left: -36px;
+}
+/*.fleetDisMap1{
+border-radius: 10px;
+    margin-top: -38px;
+    height: 587px;
+    width: 546px;
+    margin-left: -36px;
+}*/
+.fleetDisCardMap{
+   width: auto;
+  height: 420px;
+  border-radius: 10px;
+}
+.BackloaderJCBDiv{
+    margin-top: 0px;
+    padding-left: 5px;
+}
+.BackloaderJCBDiv2{
+  margin-top: 10px;
+  padding-left: 5px;
+}
+.FleetDisDealerTitle{
+   font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  color: #545454;
+}
+.FleetDisUserTitle{
+   font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  color: #545454;
+}
+.BackloaderJcbImg{
+  height: 215px;
+
+}
+.UserSubData{
+  padding-left: 108px;
+  margin-top: 18px;
+}
+.DealerSubData{
+   padding-left: 111px;
+
+}
+.DealerUserDivider{
+  margin-top: 47px;
+}
+
+.imgCircleDealer{
+    border-radius: 50%!important;
+    width: 65px!important;
+    height: 60px!important;
+    margin-top: 12px;
+}
+.imgCircleUser{
+    border-radius: 50%!important;
+    width: 65px!important;
+    height: 60px!important;
+    margin-top: 12px;
+}
+.DealerDetailsUl{
+      margin-left: 81px;
+    margin-top: -70px;
+}
+.UserDetailsUl{
+      margin-left: 81px;
+    margin-top: -70px;
+}
+.DealerNameLi{
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+  color: #545454;
+}
+.UserNameLi{
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+  color: #545454;
+}
+.DealerDetailsLi{
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  color: #545454;
+  margin-top: 0px;
+}
+.UserDetailsLi{
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  color: #545454;
+  margin-top: 0px;
+}
+.AssetsOwned{
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+  color: #545454;
+  padding-left: 82px;
+  padding-top: 4px;
+}
+.AssetsOwnedNo{
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+  color: #f8b004!important;
+   padding-left: 82px;
+}
+
+/*.card.horizontal .card-image img{
+max-width: 121%;
+}*/
+.fleetDisBklodrData{
+  float: right;
+}
+.cardStackHeadingMain{
+  font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.3px;
+    color: #545454;
+}
+.cardStackHeadingSub{
+  font-size: 14px;
+    font-weight: bold;
+    letter-spacing: -0.3px;
+    color: #545454;
+}
+.cardStackHeadingSub2{
+  font-size: .7em;
+    letter-spacing: -0.3px;
+    color: #686868;
+    margin-top: 0px;
+}
+.tabs .indicator {
+  width: 79px;
+  height: 2px;
+  background-color: #70c8be!important;
+  margin-left:  18px!important;
+  /*position: absolute;*/
+  bottom: 0;
+ /* will-change: left, right;*/
+}
+/*--------------------------------fleetdiscription nav tab style*/
+.fleetDisctab a{ 
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  color: #545454!important;
+  padding: 0 15px!important;
+}
+/*.OverviewTab {
+  padding-left: 0!important;
+
+}*/
+.fleetDisMapCard{
+  height: 600px;
+}
+.fleetDisDealrUserCard{
+  margin-top: -350px;
+  height: 336px;
+
+}
+.FleetDisMap{
+  height: 600px!important;
+}
+.activeAlertLi p{
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+  color: #545454!important;
+
+}
+.activeAlertLi span{
+  font-size: 12px;
+  letter-spacing: -0.3px;
+  color: #545454!important;
+
+}
+.activeAlertLi{
+    list-style-type: disc!important;
+     padding-bottom: 31px;
+   
+    color:#ff0000;
+  /*  margin-bottom:0px;
+    margin-top: -3px;*/
+}
+.activeAlertLi2{
+    list-style-type: disc!important;
+   
+    color:#f8b004!important;
+  /*  margin-bottom:0px;
+    margin-top: -3px;*/
+}
+.activeAlertLi2 p{
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+  color: #545454!important;
+
+}
+.activeAlertLi2 span{
+  font-size: 12px;
+  letter-spacing: -0.3px;
+  color: #545454!important;
+}
+.verticalLine {
+  border-left: 2px solid  #cacaca;
+  padding-left: 40px!important;
+
+}
+.activeAlertLiIconMedikit{
+   margin-left: 108px;margin-top: 58px;color: red;
+
+}
+.activeAlertLiIconRecycle1{
+  margin-left: 108px;padding-top: 110px;color:#f8b004;
+
+}
+.activeAlertLiIconRecycle2{
+   margin-left: 167px;margin-top: 58px;color: red;
+
+}
+.activeAlertLiIconUnlock{
+  margin-left: 167px;padding-top: 110px;color:red;
+}
+
+.fleetDisActiveAlerts{
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.3px;   
+    color: #545454;
+}
+.activeAlertcolDiv{
+  padding-top:26px!important;
+}
+
+
+/*--------------------------------------------------Utilisation Tab---------------------*/
+.navbar-custom {
+  background-color: #fff;
+}
+.navbar-custom  button {
+  padding: 0;
+  border: none;
+  background: none;
+}
+.UtilisationPatternCard{
+    width: auto;
+    height: 511px;
+    border-radius: 10px;
+}
+.UtilisationPatternTitle {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  color: #545454!important;
+  float: left;
+    font-family: Roboto;
+  padding-left: 21px;
+    padding-top: 13px;
+}
+
+
+
+
+
+/*------------------------------Mobile version*/
+
+@media only screen and (max-width: 500px) {
+  .fleetDisNavContent{
+    margin-top: 15%!important;
+    padding-left: 0%;
+    width: 100%;
+  }
+  .UtilisationPatternCard{
+    margin-top: 5%;
+  }
+  .fleetDisctab a{
+    font-size: 13px;
+  }
+}
+/*------------------------------Tab version*/
+  @media (max-width:900px) and (min-width:600px) {
+    .fleetDisNavContent{
+    margin-top: 4%;
+    margin-left: -6%;
+  }
+   .UtilisationPatternCard{
+    margin-top: 4%;
+  }
+
+}
+

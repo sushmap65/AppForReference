@@ -1,0 +1,120 @@
+           <!DOCTYPE html>
+                  <html>
+
+                  <head>
+                  <title>JCB Project</title>
+                  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+                  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+                  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+                  <link href="https://sass-lang.com/documentation/file.SASS_REFERENCE.html">
+                  <link rel="stylesheet" type="text/css" href="../css/materialize.min.css">
+                  <link rel="stylesheet" href="../icons/font-awesome-4.7.0/css/font-awesome.min.css">
+                  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+                  <script
+                        src="https://code.jquery.com/jquery-3.1.1.min.js"
+                        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+                        crossorigin="anonymous">                            
+                  </script>
+                  <link rel="stylesheet" type="text/css" href="../css/global.css">
+                  <link rel="stylesheet" type="text/css" href="../css/fleetSold.css">
+                   <link rel="stylesheet" type="text/css" href="../css/loginpage.css">
+                  <script src="../js/semantic.min.js"></script>
+                  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                  </head>
+
+                  <body>
+                  <!--===================================header-->
+                  <div class="row" style="margin-bottom: 90%;">
+                   <nav class="navClass">
+                        <div class="nav-wrapper">
+                          <a href="#" class="brand-logo"><img class="brandlogo" src="../images/brand_logo.png"></a>
+                          <ul id="nav-mobile" class="right hide-on-med-and-down">
+                          <a href="#loginUser" class="waves-effect waves-light btn" style="background: #2C3E50!important;">Login</a>
+                          </ul>
+                        </div>
+                 </nav>  
+                 <div class="modal loginModal" id="loginUser">
+                     <div class="modal-content">
+                       <div class="row">
+                          <form>
+                            <div class="col s12 m12">  
+                                  <div class="row modalContentDiv">
+                                      <p>Login OR <span>Sign up</span>
+                                      </p>
+
+                                       <a href="https://www.facebook.com/sharer.php?s=100&amp;p%5Burl%5D=https://cdpn.io/btHlc&amp;p%5Btitle%5D=CodePen%20Rules&amp;p%5Bsummary%5D=CodePen%20is%20Great" class="popup facebook waves-effect waves-light btn facebooktn" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+
+                                  <div class="divider dividerAfterFBtn"></div>
+                                  <div class="LoginUserLogo">
+                                       <i class="fa fa-user-circle fa-4x" aria-hidden="true"></i>
+                                  </div>
+                                  </div>
+                                  <div class="row">
+                                  <div class="input-field col s4 TxtboxEmailID">
+                                      <input placeholder="Enter your mailid" id="first_name" type="text" class="validate"> 
+                                 </div>
+                                 </div>
+
+                                  <div class="row">
+                                  <div class="input-field col s4 TxtboxPassword">
+                                        <input placeholder="Enter your Password" id="Password" type="text" class="validate">
+                                  </div>
+                                  </div>
+
+                                  <p class="forgotPassword">Forgot Password ?</p>
+                                   <div class="row loginBtnDiv"><a href="../index.html" class="waves-effect waves-light btn">Login</a>
+                                   </div>
+                             </div>
+                         </form>
+                     </div>
+                 </div>   
+          </div>
+      </div>
+
+
+ <!--================================footer-->
+ <div class="row">
+       <div class="col s12 m12 l12">
+              <footer class="homefooter">                
+                  <div class="col m1 l1">
+                  <img src="../images/LG_Logo.png" class="LookingGlassLogo">
+                  </div>
+                  <div class="col m3 l3 pull-l1">
+                  <p class="LookingGlassTxtDiv">Powered by Wipro Looking Glass</p> 
+                  </div>                          
+              </footer> 
+       </div>
+</div>
+
+
+
+
+
+
+
+                <script type="text/javascript " src="../js/jquery.min.js "></script>
+                <script type="text/javascript " src="../js/materialize.min.js "></script>
+                <script type="text/javascript">
+                    $(document).ready(function(){
+                    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+                    $('.modal').modal();
+                    $('.modal').modal({
+                            dismissible: true, // Modal can be dismissed by clicking outside of the modal
+                            opacity: .5, // Opacity of modal background
+                            inDuration: 300, // Transition in duration
+                            outDuration: 200, // Transition out duration
+                            startingTop: '4%', // Starting top style attribute
+                            endingTop: '10%', // Ending top style attribute
+                            ready: function(modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
+                              //alert("Ready");
+                              console.log(modal, trigger);
+                            },
+                            complete: function() {
+                            // alert('Closed');
+                             } // Callback for Modal close
+                          }
+                        );
+                     });
+                 </script>        
+                  </body>
+                  </html>

@@ -1,0 +1,417 @@
+ /* .mob-leftNav-div{
+        display: none;
+      }
+*/
+
+
+/* ------------------------------iPhone 5 ----------- */
+
+/*
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {*/
+@media only screen and (max-width: 640px) and (orientation : portrait) {
+     /* .mob-leftNav-div{
+        display: none;
+      }*/
+       .mob-leftNav-div{
+        height: 100%;
+        color: #5D6D7E;
+        width: 72%;
+       /* height: 823%;*/
+        background-color:white;
+        font-weight: bold;
+       /* position: absolute;*/
+       position: fixed;
+        z-index: 10;
+        box-shadow:3px 3px 5px 6px #ccc;
+        } 
+        .sidebarItemText{
+        padding: 30px;
+        }
+        .mobile-dashboardIconStyle1{
+        color:#ff8192;
+        font-size:18px;
+        vertical-align: middle;
+        padding-top: 30px;
+        }
+        .mobile-sidebarItem.active {
+        border-left: 4px solid #ff8192;  
+        padding-bottom: 8px;
+        margin-top: 12px;
+        background: #fcf0f1;
+        outline: none;
+        }
+        /*---------------------------- dashboard item hover style*/
+        .mobile-sidebarItem:hover {
+        background-color: #fcf0f1;
+        }
+        .mobile-sidebarItem{
+        padding-bottom: 0px;
+        }
+        /*---------------------------- dashboard icon style*/
+        .mobile-dashboardIconStyle{
+        color:#ff8192;
+        font-size:18px;
+        vertical-align: middle;
+        padding-top: 30px;
+        padding-left: 31px;
+        }
+        /*---------------------------- dashboard txt style*/
+        .mobile-dashboardtxt{
+        margin-bottom: 5px;
+        margin-left: 0px;
+        color: #4a4a4a;
+        font-weight: bold;
+        }
+        .mobile-dashboardtxt1{
+        margin-bottom: 5px;
+        margin-left: 0px;
+        color: #4a4a4a;
+        font-weight: bold;
+        }
+        .mobile-dashboardIconStyle1{
+        color:#ff8192;
+        font-size:18px;
+        vertical-align: middle;
+        padding-top: 30px;
+         padding-left: 31px;
+        }
+        .mobile-loginBlock{
+       /* margin-top: 160%;*/
+        background: #dde0cc;  
+        }
+        .logouttxt{
+            margin-left: 40%;
+        }
+}
+
+/*------------------------------Mobile version*/
+/*@media only screen and (max-width: 500px) {
+     .mob-leftNav-div{
+        color: #5D6D7E;
+        width: 60%;
+        height: 823%;
+        background-color:white;
+        font-weight: bold;
+        margin-top: -26%;
+        position: relative;
+        z-index: 10;
+       box-shadow:3px 3px 5px 6px #ccc;
+    } 
+    .mobile-nav-hamburger-menu{
+        color: black;
+        margin-left: -5%;
+    }
+    .mobile-nav-button i{
+        display: inline;
+        font-size: 18px;
+    }
+    .mobile-nav-button{
+        margin-top: -21%;
+        padding-left: 0;
+    }
+    .navStyle{
+        height: 12%!important;
+        position: fixed;z-index: 10;
+        border: solid 0.5px #e7ebf1;
+        box-shadow: none;
+    }
+    .userNameStyle{
+        display: none!important;
+    }
+    .userimg{
+        display: none!important;
+    }
+    .mobile-left-nav-hide {
+        display: none;
+    }
+    .mobile-left-nav-show {
+        display: block;
+    }*/
+    /*-----------------------------------------------------------------new start*/
+/*    .mobile-sidebarItem.active {
+    border-left: 4px solid #ff8192;  
+    padding-bottom: 8px;
+    margin-top: 12px;
+    background: #fcf0f1;
+    outline: none;
+    }*/
+    /*---------------------------- dashboard item hover style*/
+/*    .mobile-sidebarItem:hover {
+    background-color: #fcf0f1;
+    }
+    .mobile-sidebarItem{
+    padding-bottom: 0px;
+    margin-top: 18px;
+    }*/
+    /*---------------------------- dashboard icon style*/
+/*    .mobile-dashboardIconStyle{
+    color:#ff8192;
+    font-size:18px;
+    vertical-align: middle;
+    padding-top: 30px;
+    padding-left: 0px;
+    }*/
+    /*---------------------------- dashboard txt style*/
+ /*   .mobile-dashboardtxt{
+    margin-bottom: 5px;
+    margin-left: 0px;
+    color: #4a4a4a;
+    font-weight: bold;
+    }*/
+   /* .mobile-dashboardtxt1{
+    margin-bottom: 5px;
+    margin-left: 0px;
+    color: #4a4a4a;
+    font-weight: bold;
+    }
+    .mobile-dashboardIconStyle1{
+    color:#ff8192;
+    font-size:18px;
+    vertical-align: middle;
+    padding-top: 30px;
+    padding-left: 31px;
+    }
+    .mobile-loginBlock{
+    margin-top: 162%;
+    background: #dde0cc;  
+    }
+   
+}*/
+  
+    /*-----------------------------------------------------------------galexy phone media uery end*/
+
+
+    /* iPhone 5 ----------- */
+/* ------------------------------iPhone 5 ----------- */
+
+/*
+     .mob-leftNav-div{
+        color: #5D6D7E;
+        width: 60%;
+        height: 863%;
+        background-color:white;
+        font-weight: bold;
+        margin-top: -26%;
+        position: relative;
+        z-index: 10;
+       box-shadow:3px 3px 5px 6px #ccc;
+    } 
+    .mobile-nav-hamburger-menu{
+        color: black;
+        margin-left: -5%;
+    }
+    .mobile-nav-button i{
+        display: inline;
+        font-size: 18px;
+    }
+    .mobile-nav-button{
+        margin-top: -21%;
+        padding-left: 0;
+    }
+    .navStyle{
+        height: 12%!important;
+        position: fixed;z-index: 10;
+        border: solid 0.5px #e7ebf1;
+        box-shadow: none;
+    }
+    .userNameStyle{
+        display: none!important;
+    }
+    .userimg{
+        display: none!important;
+    }
+    .mobile-left-nav-hide {
+        display: none;
+    }
+    .mobile-left-nav-show {
+        display: block;
+    }*/
+
+    /*-----------------------------------------------------------------new start*/
+ 
+
+
+
+ /* iPhone 6 ----------- */
+/*@media only screen and (min-device-width: 375px) and (max-device-height: 667px){
+    .mob-leftNav-div{
+        color: #5D6D7E;
+        width: 60%;
+        height: 863%;
+        background-color:white;
+        font-weight: bold;
+        margin-top: -26%;
+        position: relative;
+        z-index: 10;
+       box-shadow:3px 3px 5px 6px #ccc;
+    } 
+    .mobile-nav-hamburger-menu{
+        color: black;
+        margin-left: -5%;
+    }
+    .mobile-nav-button i{
+        display: inline;
+        font-size: 18px;
+    }
+    .mobile-nav-button{
+        margin-top: -21%;
+        padding-left: 0;
+    }
+    .navStyle{
+        height: 12%!important;
+        position: fixed;z-index: 10;
+        border: solid 0.5px #e7ebf1;
+        box-shadow: none;
+    }
+    .userNameStyle{
+        display: none!important;
+    }
+    .userimg{
+        display: none!important;
+    }
+    .mobile-left-nav-hide {
+        display: none;
+    }
+    .mobile-left-nav-show {
+        display: block;
+    }*/
+    /*-----------------------------------------------------------------new start*/
+/*    .mobile-sidebarItem.active {
+    border-left: 4px solid #ff8192;  
+    padding-bottom: 8px;
+    margin-top: 12px;
+    background: red;
+    outline: none;
+    }*/
+    /*---------------------------- dashboard item hover style*/
+/*    .mobile-sidebarItem:hover {
+    background-color: #fcf0f1;
+    }
+    .mobile-sidebarItem{
+    padding-bottom: 0px;
+    margin-top: 18px;
+    }*/
+    /*---------------------------- dashboard icon style*/
+  /*  .mobile-dashboardIconStyle{
+    color:#ff8192;
+    font-size:18px;
+    vertical-align: middle;
+    padding-top: 30px;
+    padding-left: 0px;
+    }*/
+    /*---------------------------- dashboard txt style*/
+/*    .mobile-dashboardtxt{
+    margin-bottom: 5px;
+    margin-left: 0px;
+    color: #4a4a4a;
+    font-weight: bold;
+    }
+    .mobile-dashboardtxt1{
+    margin-bottom: 5px;
+    margin-left: 0px;
+    color: #4a4a4a;
+    font-weight: bold;
+    }
+    .mobile-dashboardIconStyle1{
+    color:#ff8192;
+    font-size:18px;
+    vertical-align: middle;
+    padding-top: 30px;
+    padding-left: 31px;
+    }
+    .mobile-loginBlock{
+    margin-top: 170%;
+    background: #dde0cc;  
+    }
+*/
+/*}*/   
+/* iPhone 6+ ----------- */
+/*@media only screen and (min-device-width: 414px) and (max-device-height: 736px){
+ .mobile-nav-button{
+    margin-top: -18%;
+    padding-left: 0;
+}
+ .mobile-loginBlock{
+margin-top: 179%;
+background: #dde0cc;  
+}
+}*/
+
+
+/*------------------------------Tab version*/
+  @media (max-width:900px) and (min-width:600px) {
+    
+  .dashboard{
+    display: none;
+  }
+   .mob-leftNav-div{
+        color: #5D6D7E;
+        width: 72%;
+       /* height: 823%;*/
+        background-color:white;
+        font-weight: bold;
+       /* position: absolute;*/
+       position: fixed;
+        z-index: 10;
+        box-shadow:3px 3px 5px 6px #ccc;
+        } 
+        .sidebarItemText{
+        padding: 30px;
+        }
+        .mobile-dashboardIconStyle1{
+        color:#ff8192;
+        font-size:18px;
+        vertical-align: middle;
+        padding-top: 30px;
+        }
+        .mobile-sidebarItem.active {
+        border-left: 4px solid #ff8192;  
+        padding-bottom: 8px;
+        margin-top: 12px;
+        background: #fcf0f1;
+        outline: none;
+        }
+        /*---------------------------- dashboard item hover style*/
+        .mobile-sidebarItem:hover {
+        background-color: #fcf0f1;
+        }
+        .mobile-sidebarItem{
+        padding-bottom: 0px;
+        }
+        /*---------------------------- dashboard icon style*/
+        .mobile-dashboardIconStyle{
+        color:#ff8192;
+        font-size:18px;
+        vertical-align: middle;
+        padding-top: 30px;
+        padding-left: 31px;
+        }
+        /*---------------------------- dashboard txt style*/
+        .mobile-dashboardtxt{
+        margin-bottom: 5px;
+        margin-left: 0px;
+        color: #4a4a4a;
+        font-weight: bold;
+        }
+        .mobile-dashboardtxt1{
+        margin-bottom: 5px;
+        margin-left: 0px;
+        color: #4a4a4a;
+        font-weight: bold;
+        }
+        .mobile-dashboardIconStyle1{
+        color:#ff8192;
+        font-size:18px;
+        vertical-align: middle;
+        padding-top: 30px;
+         padding-left: 31px;
+        }
+        .mobile-loginBlock{
+        margin-top: 140%;
+        background: #dde0cc;  
+        }
+        .logouttxt{
+            margin-left: 40%;
+        }
+}
+

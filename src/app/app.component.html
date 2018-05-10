@@ -1,0 +1,18 @@
+<main>
+<div class="prelogin" *ngIf="message==='pre-login'">
+  <pre-login></pre-login>
+</div>
+<div class="mainlogin" *ngIf="message === 'perlogin-success'">
+	<login [userType]="type"></login>
+</div>
+<div *ngIf="message=== 'login-success'">
+  <ng-header [message]="message"></ng-header>
+  <div id="container">
+    <div class="content">
+      <left-nav [navStatus]="message"></left-nav>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <ng-footer></ng-footer>
+</div>
+</main>

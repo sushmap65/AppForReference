@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="thirdcardrow">
+        <div class="col s12 m10 offset-m2">
+            <div class="card #bdbdbd hoverable card-revenueguide dashoard-ups-card">
+                <div class="card-content">
+                    <span class="titlerevenueguide">Upcoming Services</span>
+                    <div class="col s12 upcomingService-chart">
+                        <bar-chart *ngIf="chartData" [data]="chartData" [yAxisLabel]="yLabel"></bar-chart>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

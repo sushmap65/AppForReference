@@ -1,0 +1,30 @@
+.dashoard-sr-card{
+    width: auto;
+    height: 450px;
+    border-radius: 10px;
+}
+.service-realization-chart {
+    height: 370px;
+}
+.titlerevenueguide{
+	width: 44px;
+    height: 26px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.3px;
+    text-align: left;
+    color: #4a4a4a!important;
+    font-family: Roboto;
+}
+/*------------------------------Mobile version*/
+@media only screen and (max-width: 500px) {
+   /* .navStyle{
+        background-color: red!important;
+    }*/
+  .dashoard-sr-card{
+        margin-top: 10%;
+        width: auto;
+        border-radius: 10px;
+    }
+
+}

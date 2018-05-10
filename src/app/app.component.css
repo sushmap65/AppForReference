@@ -1,0 +1,16 @@
+html, body, main{
+  height: 100%;
+  min-height: 100% !important;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+a.active {
+  background-color: gray;
+}
+.prelogin, .mainlogin{
+	height: 100%;
+}
+
+.content {
+    padding-top: 1%!important;
+}

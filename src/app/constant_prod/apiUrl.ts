@@ -1,0 +1,19 @@
+// export const FleetData = 'http://localhost:8087/fleet';
+// export const RevenueData = 'http://localhost:8087/revenue';
+// export const PrivateLogin = 'http://localhost:8087/login';
+// export const FindAsset = 'http://localhost:8087/findAsset';
+// export const AssetStatus = 'http://localhost:8087/assetStatus';
+// export const AllEvents = 'http://localhost:8087/allEvents';
+// export const GetAssetByClass = 'http://localhost:8087/getAssetByClass';
+// export const GetOrgByAssetIdAndType = 'http://localhost:8087/getOrgByAssetIdAndType';
+// export const GetEventHistory = 'http://localhost:8087/history';
+
+export const FleetData = '/lg/script/getJcbFleetData';
+export const RevenueData = '/lg/script/getJcbRevenueData';
+export const PrivateLogin = '/lg/login/private';
+export const FindAsset = '/lg/asset/get';
+export const AssetStatus = 'lg/ts/asset/status';
+export const AllEvents = '/lg/ts/events/aggregate';
+export const GetAssetByClass = '/lg/class/asset/get';
+export const GetOrgByAssetIdAndType = '/lg/user/org/type/get';
+export const GetEventHistory = '/lg/tsdata/read/history';
